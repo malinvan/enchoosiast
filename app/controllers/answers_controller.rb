@@ -3,6 +3,9 @@ class AnswersController < ApplicationController
     @questions = Question.all
   end
 
+  def results
+  end
+
   # def create
   #   raise
   # end
