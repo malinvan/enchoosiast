@@ -29,7 +29,7 @@ import swal from 'sweetalert';
 // Internal imports, e.g:
 import { showPopUp } from '../components/register-popup'
 // import { initSelect2 } from '../components/init_select2';
-import { initNavbar } from '../channels/navbar';
+import { initNavbar } from '../components/navbar';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
