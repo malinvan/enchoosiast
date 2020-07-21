@@ -24,6 +24,7 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import swal from 'sweetalert';
 
 // Internal imports, e.g:
 import { showPopUp } from '../components/register-popup'
@@ -32,5 +33,15 @@ import { showPopUp } from '../components/register-popup'
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  const alert = document.querySelector('.sweetalert')
+  if (alert) {
+    swal({
+      title: "Congratulations!",
+      text: "You took the first steps....",
+      icon: "success",
+      buttons: ["Complete later", "Complete profile"],
+
+    });
+  };
   showPopUp();
 });
