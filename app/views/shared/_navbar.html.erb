@@ -1,35 +1,18 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-    <% end %>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" id="nav-close">&times;</a>
+  <%= link_to "My suggestions", "/", class: "card-title secondary-button"%>
+  <%= link_to "My career guide", bikes_path, class: "card-title secondary-button"%>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <% if policy(Bike).create? %>
+  <%= link_to "➕ Add bike", new_bike_path, class: "a-white seconday-button"%>
+  <% end %>
+</div>
 
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item dropdown">
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#", class: "dropdown-item" %>
-            <%= link_to "Another action", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
-      <% end %>
-    </ul>
+<div class="flexbox-nav">
+  <div id="main">
+    <%= link_to "<h2 style='color:#7BC4CB'><i class='fas fa-biking' style='font-size: 26px;'></i>  Bike<span style='color:#D92E1E'>Share</span></h2>".html_safe, root_path  %>
+  </div>
+  <div>
+    <span style="font-size:30px; padding: 20px; cursor: pointer" id="nav-open">&#9776; </span>
   </div>
 </div>
