@@ -1,16 +1,9 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" id="nav-close">&times;</a>
-  <%= link_to "My suggestions", "/", class: "card-title secondary-button"%>
-  <%= link_to "My career guide", bikes_path, class: "card-title secondary-button"%>
-
-  <% if policy(Bike).create? %>
-  <%= link_to "➕ Add bike", new_bike_path, class: "a-white seconday-button"%>
-  <% end %>
 </div>
 
 <div class="flexbox-nav">
   <div id="main">
-    <%= link_to "<h2 style='color:#7BC4CB'><i class='fas fa-biking' style='font-size: 26px;'></i>  Bike<span style='color:#D92E1E'>Share</span></h2>".html_safe, root_path  %>
   </div>
   <div>
     <span style="font-size:30px; padding: 20px; cursor: pointer" id="nav-open">&#9776; </span>

@@ -6,5 +6,5 @@ class User < ApplicationRecord
   has_many :answers
   has_many :user_traits
   has_many :traits, through: :user_traits
-  belongs_to :career
+  belongs_to :career, optional: true
 end
