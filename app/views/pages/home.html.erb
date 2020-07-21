@@ -5,7 +5,7 @@
 <% if  request.referer == "http://localhost:3000/users/sign_in" && !current_user.nil? %>
   <div class="sweetalert"></div>
 
-<% content_for :navbar do %>
-   <div class="empty"></div>
-
+  <% content_for :navbar do %>
+     <div class="empty"></div>
+  <% end %>
 <% end %>
