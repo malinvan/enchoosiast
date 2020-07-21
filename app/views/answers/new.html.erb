@@ -1,0 +1,8 @@
+<h1>Please answer these questions</h1>
+<%= form_with url: answers_path, scope: :questions do |f| %>
+  <% @questions.each do |question| %>
+    <%= f.label question.question %>
+    <%= f.check_box question.id %>
+  <% end %>
+  <%= submit_tag "Submit" %>
+<% end %>
