@@ -1,27 +1,46 @@
-body {
-  background-color: white;
-}
-
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   right: 0;
-  background-color: #ee6c4d;
+  background-color: #003066;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
   color: white;
+  transition: 0.3s;
   display: block;
-  transition: 0.3s
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0px; right: 0px;
+  font-size: 30px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+.menue-links{
+  margin: 20px 30px 20px 50px;
+}
+
+.menue-link{
+  margin: 10px 0px;
+  box-shadow: 0px 1px 0px white;
+  padding: 5px;
+}
+
+#sidenav-header{
+  margin-right: 40px;
+  font-size: 24px;
+  color: white;
+  margin: 30px 30px;
+
 }
 
 .sidenav a:hover,
@@ -29,16 +48,14 @@ body {
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0; right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
 #main {
   transition: margin-left .5s;
   padding: 16px;
+  z-index: 2;
+}
+
+#nav-open{
+  color: #003066;
 }
 
 @media screen and (max-height: 450px) {
@@ -64,4 +81,15 @@ body {
 
 .menu-bar {
   font-size: 50px;
+}
+
+.hide-box{
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(3px);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
