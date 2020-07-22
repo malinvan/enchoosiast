@@ -1,0 +1,10 @@
+<div id="carousel-questions" class="carousel slide" data-ride="false">
+  <div class="carousel-inner">
+    <% questions.each_with_index do |question, index| %>
+       <% css_class = (index == 0) ? "carousel-item active" : "carousel-item" %>
+       <div class="<%= css_class %>">
+         <%= render "question", question: question %>
+       </div>
+    <% end %>
+  </div>
+</div>
