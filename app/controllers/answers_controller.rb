@@ -4,6 +4,7 @@ class AnswersController < ApplicationController
   end
 
   def results
+
   end
 
   # def create

@@ -2,8 +2,9 @@
 <p>Find me in app/views/pages/home.html.erb</p>
 
 
-<% if  request.referer == "http://localhost:3000/users/sign_in" && !current_user.nil? %>
+<% if request.referer == "http://localhost:3000/users/sign_in" && !current_user.nil? %>
   <div class="sweetalert"></div>
+<% end %>
 
 <% content_for :navbar do %>
    <div class="empty"></div>
