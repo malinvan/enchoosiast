@@ -1,0 +1,75 @@
+.card-career-suggestion{
+  background-color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+
+}
+
+
+.card-suggestion{
+  background-color:white;
+  display:flex;
+  flex-direction:column;
+  border-radius: 10px;
+  box-shadow:1px 1px 8px;
+  padding: 5px;
+  margin: 15px;
+
+}
+
+
+.card-body{
+  width: 30% !important ;
+}
+
+.suggestion-carousel{
+  box-shadow: 0 0 10px grey;
+  margin: 20px;
+  padding: 20px;
+  border-radius:4px;
+  text-align: center;
+}
+
+h2{
+  text-align:center;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next {
+  &.right{
+    right: -26px;
+  }
+}
+
+
+.carousel-control-prev {
+  &.left{
+    left: -26px;
+  }
+}
+
+
+.card-career-suggestion-liked{
+  color: #C4C0C0;
+}
+
+
+
+
+
+
+
+
+
+
+
