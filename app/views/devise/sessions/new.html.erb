@@ -1,0 +1,74 @@
+<div class="card loginForm">
+  <div class="card-body">
+    <h2>Log in</h2>
+
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="form-inputs">
+        <%= f.input :email,
+                    required: false,
+                    autofocus: true,
+                    input_html: { autocomplete: "email", id: "login"} %>
+        <%= f.input :password,
+                    required: false,
+                    input_html: { autocomplete: "current-password", id: "login1" } %>
+        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn-primary">
+        <%= f.button :submit, "Log in" %>
+        </button>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>
+
+<div id="registerForm">
+
+  <div class="modal fade" id="popupMessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Register</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { id: :register }) do |f| %>
+            <%= f.error_notification %>
+
+            <div class="form-inputs">
+              <%= f.input :email,
+                          required: true,
+                          autofocus: true,
+                          input_html: { autocomplete: "email" }%>
+              <%= f.input :password,
+                          required: true,
+                          hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                          input_html: { autocomplete: "new-password" } %>
+              <%= f.input :password_confirmation,
+                          required: true,
+                          input_html: { autocomplete: "new-password" } %>
+            </div>
+            <div class="modal-actions">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#popupMessage">
+                Cancel
+              </button>
+
+              <%= f.submit "Register" , class: 'btn btn-primary' %>
+            </div>
+        <% end %>
+
+
+        </div>
+       <!--  <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Register</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>

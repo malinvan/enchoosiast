@@ -1,11 +1,18 @@
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" id="nav-close">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" id="nav-close">&#9776;</a>
+  <h1 id="sidenav-header">menu</h1>
+  <div class="menue-links">
+    <%= link_to "career suggestions", "/careers/suggerstions", class: "menue-link"%>
+    <%= link_to "career guide", "/answers/results", class: "menue-link"%>
+  </div>
 </div>
 
 <div class="flexbox-nav">
   <div id="main">
+    <%= link_to "enchoosiast", root_path  %>
   </div>
   <div>
     <span style="font-size:30px; padding: 20px; cursor: pointer" id="nav-open">&#9776; </span>
   </div>
 </div>
+
