@@ -1,45 +1,23 @@
-<!-- <h1>Please answer these questions</h1>
-<%= form_with url: answers_path, scope: :questions do |f| %>
-  <% @questions.each do |question| %>
-    <%= f.label question.question %>
-    <%= f.check_box question.id %>
-  <% end %>
-  <%= submit_tag "Submit" %>
-<% end %>
- -->
+<!-- <h1>Please answer these questions</h1>  -->
+<%#= form_with url: answers_path, scope: :questions do |f| %>
+  <%# @questions.each do |question| %>
+    <%#= f.label question.question %>
+    <%#= f.check_box question.id %>
+  <%# end %>
+  <%#= submit_tag "Submit" %>
+<%# end %>
+
 <div class="test-container">
   <form action="" class="test">
-    <div class="question1">Do you consider yourself a creative person?</div>
-    <div class="form-check form-check-inline">
-      <input class="inlineRadio1 form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-      <label class="form-check-label" for="inlineRadio1"></label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="inlineRadio2 form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-      <label class="form-check-label" for="inlineRadio2"></label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="inlineRadio3 form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-      <label class="form-check-label" for="inlineRadio3"></label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="inlineRadio3 form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-      <label class="form-check-label" for="inlineRadio1"></label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="inlineRadio2 form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-      <label class="form-check-label" for="inlineRadio2"></label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input class="inlineRadio1 form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
-      <label class="form-check-label" for="inlineRadio3"></label>
-    </div>
-    <div class="test-buttons">
-      <button type="button" class="btn btn-primary">back</button>
-      <button type="submit" class="btn btn-primary">submit</button>
-      <button type="button" class="btn btn-primary">forward</button>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <%= render "questions_carousel", questions: @questions %>
+      </div>
     </div>
   </form>
+
+  <!--
+
   <form action="" class="test">
     <div class="question2">Are you an outdoorsy person?</div>
     <div class="form-check form-check-inline">
@@ -136,4 +114,6 @@
       <button type="button" class="btn btn-primary">forward</button>
     </div>
   </form>
+   -->
 </div>
+
