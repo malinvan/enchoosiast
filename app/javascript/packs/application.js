@@ -45,4 +45,5 @@ document.addEventListener('turbolinks:load', () => {
     });
   };
   showPopUp();
+  initNavbar();
 });
