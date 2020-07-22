@@ -1,11 +1,14 @@
-<% content_for :navbar do %>
-   <div class="empty"></div>
+<% if request.referer == "http://localhost:3000/users/sign_in" && !current_user.nil? %>
+  <div class="sweetalert"></div>
 <% end %>
+
+  <% content_for :navbar do %>
+     <div class="empty"></div>
+  <% end %>
 
   <div class="banner">
     <div class="container">
       <div class="blurred-background" style="margin:40px;">
-<!--         <div class="img"></div> -->
         <h1>enchoosiast</h1>
         <h2>find your passion, start your career</h2>
         <%= link_to "Sign in", "#", class: "transparent-button" %>
@@ -13,15 +16,6 @@
         <%= link_to "Another button", "#", class: "dark-button" %>
       </div>
 </div>
-     <!--      <div class="card">
-      <p>hi</p>
-    </div>
-    <div class="card">
-    </div>
-    <div class="card">
-    </div>
-    </div> -->
-
 
 
 
