@@ -11,3 +11,30 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+.footer {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+}
+
+.footer .push{
+  height: 50px;
+}
+
+.footer-container {
+  flex-grow: 0;
+}
+
+.fab{
+  color:#003066;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.far{
+  color:#003066;
+  font-size: 30px;
+  padding: 20px;
+}
