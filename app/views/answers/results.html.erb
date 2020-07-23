@@ -1,3 +1,7 @@
+<% content_for :navbar do %>
+     <div class="empty"></div>
+<% end %>
+
 <div class="background">
   <div id="results-title">
     <h1>Your future starts now!</h1>
@@ -5,7 +9,7 @@
   <div class="blurred-background" id="result-text">
     <p>Your just made the first steps towards your new career. We analized your answers and came up with some career suggestions.</p>
     <div class="align-right">
-      <%= link_to "suggested careers", "careers/suggestions", class: "secondary-button suggestions-button" %>
+      <%= link_to "suggested careers", "/careers/suggestions", class: "secondary-button suggestions-button" %>
     </div>
   </div>
 
