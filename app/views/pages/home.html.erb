@@ -2,34 +2,32 @@
   <div class="sweetalert"></div>
 <% end %>
 
-  <% content_for :navbar do %>
-     <div class="empty"></div>
-  <% end %>
+<% content_for :navbar do %>
+  <div class="empty"></div>
+<% end %>
 
-<div class=flexbox-pictures>
-  <div class="picture-change"></div>
-  <div class="picture-fall"></div>
-  <div class="picture-color"></div>
-</div>
-
-  <div class="title">
-    <h1>enchoosiast</h1>
-    <h2>find your passion, start your career</h2>
+<div class="page-home">
+  <div class="background">
+    <div class=flexbox-pictures>
+      <div class="picture picture-jump"></div>
+      <div class="picture picture-fall"></div>
+      <div class="picture picture-overlay"></div>
+    </div>
+    <div class="flexbox-pictures">
+      <div class="picture picture-search"></div>
+      <div class="picture picture-color"></div>
+      <div class="picture picture-pair-jump"></div>
+    </div>
   </div>
-  <div class="button-div">
-    <%= link_to "Sign in", "#", class: "transparent-button" %>
-    <%= link_to "Create an account", "#", class: "light-button" %>
-    <%= link_to "Another button", "#", class: "dark-button" %>
+  <div class="foreground">
+    <div class="title">
+      <h1>enchoosiast</h1>
+      <h2>find your passion, start your career</h2>
+    </div>
+    <div class="button-div">
+      <%= link_to "Sign in", "#", class: "dark-button" %>
+      <%= link_to "Create an account", "#", class: "light-button" %>
+    </div>
   </div>
-
-<div class="flexbox-pictures">
-  <div class="picture-jump"></div>
-  <div class="picture-pair-jump"></div>
-  <div class="picture-sand"></div>
-  <div class="picture-clean"></div>
 </div>
-
-<!-- this is the comment -->
-
-
 

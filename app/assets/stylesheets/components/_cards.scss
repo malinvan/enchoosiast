@@ -1,5 +1,4 @@
 .card-career-suggestion{
-  background-color: white;
   padding: 10px 30px;
   text-align: center;
   display: flex;
@@ -16,7 +15,7 @@
   display:flex;
   flex-direction:column;
   border-radius: 10px;
-  box-shadow:1px 1px 8px;
+  box-shadow:1px 1px 5px;
   padding: 5px;
   margin: 15px;
 }
@@ -32,6 +31,12 @@
 
 .card-career-suggestion-liked p {
   margin: 0 auto;
+}
+
+
+.card-suggestion-img{
+  height: 200px;
+  object-fit: cover;
 }
 
 
