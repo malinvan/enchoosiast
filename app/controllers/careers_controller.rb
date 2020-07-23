@@ -13,8 +13,9 @@ class CareersController < ApplicationController
     html_file = open(url).read
     html_doc = Nokogiri::HTML(html_file)
     html_doc.search('.cp-jacket-cover').each do |book_cover|
-      html_doc.search('.cp-title').each do |book_title|
-        books << { cover: book_cover, title: book_title}
+      html_doc.search('.title-content').each do |book_title|
+        #html_doc.search('.title-content').each do |book_title|
+        books << { cover: book_cover.to_s, title: book_title.to_s }
       end
     end
     @book_groups = books.each_slice(3).to_a

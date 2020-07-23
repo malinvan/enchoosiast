@@ -134,7 +134,3 @@ file = URI.open('https://mk0aanmclgjj7059fc.kinstacdn.com/wp-content/uploads/201
 doctor.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://images05.military.com/sites/default/files/styles/full/public/2018-10/legal_court_justice_lawyer_18x12.png.jpg?itok=ebyoFLGm')
 lawyer.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-
-
-
-

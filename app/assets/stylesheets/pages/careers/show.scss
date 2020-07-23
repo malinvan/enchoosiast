@@ -1,0 +1,93 @@
+.career-banner{
+  height: 50vh;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.title-box{
+  width: 350px;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+.page-section{
+  margin: 30px 150px;
+
+}
+
+.section-header{
+  font-size: 24px;
+}
+
+.info-box{
+  display: flex;
+  background-color: #C8F0F8;
+  padding: 15px;
+  color: #003066;
+}
+
+.icon-with-info{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 30px;
+  align-items: center;
+}
+
+#flexibility-header{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 50px;
+  align-items: top;
+}
+
+.icon-market{
+  font-size: 35px;
+}
+
+.small-icon-market{
+  font-size: 25px;
+}
+
+.info{
+  margin-left: 20px;
+
+  h4{
+    font-size: 18px;
+  }
+  p{
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+
+
+.left-icons-container{
+  position: relative;
+}
+
+.flexibility-info{
+  position: relative;
+  left: 120px;
+  top: -30px;
+}
+
+.icon-with-info-flexibility{
+  margin: opx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+
+  p{
+    margin: 0px;
+
+  }
+
+  h4{
+    margin: 0px;
+  }
+}
+
+
