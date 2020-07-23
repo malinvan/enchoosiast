@@ -1,117 +1,100 @@
 // Specific CSS for your home-page
+body {
+  background-color:white;
+}
+
 .flexbox-pictures{
   display:flex;
   justify-content:space-around;
   position:relative;
 }
 
-.picture-jump {
-  overflow: hidden;
-  margin: 20px;
-  height: 180px;
-  width: 240px;
-  display: flex;
-  align-items: center;
-  background-image: asset-url("landing-jump.jpg");
+.flexbox-pictures .picture{
   background-size: cover;
   background-position: center;
-  object-fit:cover;
-  top: 10px;
-  left: 10px;
+}
+
+.picture-jump {
+  margin: 20px;
+  margin-left: 80px;
+  margin-top: 50px;
+  height: 180px;
+  width: 240px;
+  background-image: asset-url("landing-jump.jpg");
 }
 
 .picture-color {
-  overflow: hidden;
   margin: 40px;
-  height: 220px;
-  width: 220px;
-  display: flex;
-  align-items: center;
+  height: 120px;
+  width: 120px;
   background-image: asset-url("color.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit:cover;
+  margin-top: 200px;
 }
 
 .picture-fall {
-  overflow: hidden;
   margin: 10px;
   height: 250px;
   width: 250px;
-  display: flex;
-  align-items: center;
   background-image: asset-url("fall.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit:cover;
 }
 
 .picture-pair-jump {
-  overflow: hidden;
   margin: 20px;
   height: 280px;
   width: 240px;
-  display: flex;
-  align-items: center;
   background-image: asset-url("pair-jump.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit:cover;
 }
 
-.picture-change {
-  overflow: hidden;
+.picture-search {
   margin: 20px;
   height: 180px;
   width: 280px;
-  display: flex;
-  align-items: center;
-  background-image: asset-url("change.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit:cover;
+  background-image: asset-url("search.jpg");
+  margin-top: 8rem;
 }
-.picture-clean {
-  overflow: hidden;
+
+.picture-overlay {
   margin: 20px;
   height: 200px;
   width: 220px;
-  display: flex;
-  align-items: center;
-  background-image: asset-url("clean.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit:cover;
+  background-image: asset-url("overlay.png");
 }
 
-.picture-sand {
-  overflow: hidden;
-  margin: 20px;
-  height: 150px;
-  width: 150px;
+.page-home .container {
   display: flex;
   align-items: center;
-  background-image: asset-url("sand.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit:cover;
+  position: absolute;
 }
 
-.container {
+.page-home {
+  position: relative;
+}
+
+.page-home .background {
+  width: 100%;
+  height: 100%;
+}
+
+.page-home .foreground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
   display: flex;
-  align-items: center;
-  position:absolute;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.title {
+.page-home .foreground .title {
   h1 {
-  font-size:80px;
-  color:#9CECFC;
+  font-size:100px;
+  color:#003066;
   text-align:center;
   text-shadow: 20px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   padding:20px;
-  z-index:1;
   }
 
   h2 {
