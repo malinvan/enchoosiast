@@ -3,11 +3,21 @@
   background-color: white;
   padding: 20px;
 }
-
 .footer .push{
   height: 50px;
 }
-
+body {
+  height: 100%;
+  margin: 0;
+}
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.content-container {
+  flex-grow: 1;
+}
 .footer-container {
   flex-grow: 0;
 }
