@@ -3,33 +3,40 @@
   background-color: white;
   padding: 20px;
 }
-.footer .push{
+
+.footer .push {
   height: 50px;
 }
+
 body {
   height: 100%;
   margin: 0;
 }
+
 .page-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
 .content-container {
   flex-grow: 1;
 }
+
 .footer-container {
   flex-grow: 0;
 }
 
-.fab{
+.fab {
   color:#003066;
   font-size: 30px;
   padding: 20px;
 }
 
-.far{
+.far {
   color:#003066;
   font-size: 30px;
   padding: 20px;
 }
+
+
