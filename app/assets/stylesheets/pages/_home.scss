@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-position: center;
   font-size: 100px;
-  height: 100vh;
+  height: 800px;
   align-items: center;
   text-align: left;
   object-fit: cover;
@@ -20,40 +20,28 @@ body {
   align-items: center;
 }
 
-// .transbox {
-//   margin:50px;
-//   border-radius: 2%;
-//   backdrop-filter: blur(15px);
-//   text-align:center;
-//   width: 800px;
-//   padding: 100px;
-//   color: white;
-//   box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+h1 {
+  font-size:80px;
+  color:#9CECFC;
+  font-family: dosis;
+  text-align:center;
+  text-shadow: 20px;
+  padding: 60px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
 
-//   // .btn {
-//   //   padding: 15px 50px;
-//   // }
-// }
+h2 {
+  font-size: 40px;
+  color: white;
+  font-family: dosis;
+  text-align:center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
 
-// .transbox h1 {
-//   font-size:60px;
-//   color:#9CECFC;
-//   font-family: dosis;
-//   text-align:center;
-//   text-shadow: 20px;
-//   padding: 60px;
-//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-// }
-
-// .transbox h2 {
-//     font-size: 40px;
-//     color: white;
-//     font-family: dosis;
-//     opacity: .7;
-//     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-// }
-
-
+.card {
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
 
 
 
