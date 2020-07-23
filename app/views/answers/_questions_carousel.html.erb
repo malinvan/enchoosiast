@@ -1,8 +1,14 @@
 <div id="carousel-questions" class="carousel slide" data-interval="false" data-ride="carousel">
   <div class="carousel-inner">
     <% questions.each_with_index do |question, index| %>
+       <% css_last = nil %>
+       <% if question == questions.last%>
+        <% css_last = "last-slide" %>
+        <% elsif question == questions[-2] %>
+        <% css_last = "second-last" %>
+       <% end %>
        <% css_class = (index == 0) ? "carousel-item active" : "carousel-item" %>
-       <div class="<%= css_class %>">
+       <div class="<%= css_class %> <%= css_last %>">
          <%= render "question", question: question %>
        </div>
     <% end %>
