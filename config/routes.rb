@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/answers/results', to: 'answers#results'
   get '/careers/suggestions', to: 'careers#suggestions'
   resources :answers, only: [:new, :create]
+  resources :careers, only: [:show]
 end

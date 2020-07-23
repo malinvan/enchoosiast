@@ -1,0 +1,105 @@
+<div class="career-banner">
+  <div class="blurred-background">
+    <h1><%= @career.title %></h1>
+  </div>
+</div>
+
+<div class="career-summary">
+  <h3>summary</h3>
+  <p><%= @career.summary %></p>
+</div>
+
+<div class="labour-market-info">
+  <h3>labour market</h3>
+  <div class="info-box">
+    <div class="right-icons-container">
+      <div class="icon-with-info">
+        <div class="icon-market"></div>
+        <div class="info">
+          <h4>average entry salary (yearly)</h4>
+          <p> <%= @career.salary %></p>
+        </div>
+      </div>
+      <div class="icon-with-info">
+        <div class="icon-market"></div>
+        <div class="info">
+          <h4>entry barriers</h4>
+          <p> <%= @career.entry_barriers %></p>
+        </div>
+      </div>
+      <div class="icon-with-info">
+        <div class="icon-market"></div>
+        <div class="info">
+          <h4>social_interaction</h4>
+          <p> <%= @career.social_interaction %></p>
+        </div>
+      </div>
+    </div>
+    <div class="left-icons-container">
+      <div class="icon-with-info">
+        <div class="icon-market"></div>
+        <div class="info">
+          <h4>flexibility</h4>
+        </div>
+      </div>
+      <div class="icon-with-info">
+        <div class="small-icon-market"></div>
+        <div class="info">
+          <h4>international</h4>
+          <p> <%= @career.entry_barriers %></p>
+        </div>
+      </div>
+      <div class="icon-with-info">
+        <div class="small-icon-market"></div>
+        <div class="info">
+          <h4>remote</h4>
+          <p> <%= @career.remote_flexibility %></p>
+        </div>
+      </div>
+      <div class="icon-with-info">
+        <div class="small-icon-market"></div>
+        <div class="info">
+          <h4>working hours</h4>
+          <p> <%= @career.working_hour_flexibility %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="career-details">
+    <h3>detailed description</h3>
+    <p> <%= @career.detailed_description %></p>
+  </div>
+ <div class="further-readings">
+  <h3>further readings</h3>
+  <div class="suggestion-carousel">
+    <div id="new-suggestion-carousel-controls" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="further-reading-card">
+              <h3>Wikipedia</h3>
+        </div>
+      </div
+      <% @book_groups.each  do |book_group| %>
+        <div class="carousel-item">
+          <% @book_group.each do |book| %>
+            <div class="card-further-reading">
+              <%= book[:cover] %>
+              <%= book[:title] %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+    <a class="carousel-control-prev left" href="#new-suggestion-carousel-controls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next right" href="#new-suggestion-carousel-controls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+  </div>
+ </div>
+</div>
