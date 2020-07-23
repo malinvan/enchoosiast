@@ -1,5 +1,22 @@
-<div class="d-block w-100 question">
+<div class="d-block w-300 question">
   <h3> <%= question.question %> </h3>
+    <form action="">
+     <label for="one">disagree</label>
+      <input type="radio" id="one" name="scale" value="1"></input>
+      <input type="radio" id="two" name="scale" value="2"></input>
+      <input type="radio" id="three" name="scale" value="3"></input>
+      <input type="radio" id="four" class="" name="scale" value="4">
+      <input type="radio" id="five" class="" name="scale" value="5">
+      <input type="radio" id="six" class="" name="scale" value="6">
+     <label class="" for="six">agree</label></input>
+    </form>
+</div>
+
+
+
+<!-- <div>
+    <label class="disagree" for="">disagree</label>
+  </div>
   <div class="form-check form-check-inline">
     <input class="inlineRadio1 form-check-input" type="radio" name="question-<%= question.id %>" id="inlineRadio1" value="option1">
     <label class="form-check-label" for="inlineRadio1"></label>
@@ -24,4 +41,6 @@
     <input class="inlineRadio1 form-check-input" type="radio" name="question-<%= question.id %>" id="inlineRadio6" value="option6">
     <label class="form-check-label" for="inlineRadio3"></label>
   </div>
-</div>
+  <div>
+    <label class="agree" for="">agree</label>
+  </div> -->
