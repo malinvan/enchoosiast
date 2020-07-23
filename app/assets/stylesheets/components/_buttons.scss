@@ -1,27 +1,5 @@
-.primary-button{
-  border: 2px solid #003066;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 6px 12px;
-  display: inline-block;
-  text-decoration: none;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 20px;
-  transition: 0.3s;
-  color: #003066;
-  background-color: #white;
-}
-
-.primary-button:hover{
-  text-decoration: none;
-  background-color: #003066;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-  color: white;
-}
-
-
-.secondary-button{
-  border: 2px solid white;
+.dark-button{
+  // border: 2px solid white;
   padding: 6px 12px;
   display: inline-block;
   text-decoration: none;
@@ -30,12 +8,57 @@
   box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
   font-size: 20px;
   transition: 0.3s;
-  color: rgba(0,0,0,0.3);
+  background-color: #003066;
+  color: white;
 }
 
-.secondary-button:hover{
+.dark-button:hover{
   text-decoration: none;
-  background-color: white;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+  background-color: #1277C5;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+  color: white;
+}
+
+.transparent-button{
+  border: 2px solid white;
+  padding: 4px 10px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+  font-size: 20px;
+  transition: 0.3s;
+  color: white;
+}
+
+.transparent-button:hover{
+  text-decoration: none;
   color: #003066;
+  background-color: rgba(255,255,255,1);
+  text-shadow:none;
+}
+
+.light-button{
+  border-radius: 5px;
+  margin: 10px;
+  padding: 6px 12px;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 20px;
+  transition: 0.3s;
+  color: grey;
+  background-color: white;
+  text-shadow:none;
+  opacity: 0.7;
+}
+
+.light-button:hover{
+  text-decoration: none;
+  background-color: none;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  color: #003066;
+  text-shadow:none;
+  opacity: 1;
 }

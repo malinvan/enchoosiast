@@ -1,50 +1,128 @@
 // Specific CSS for your home-page
-body {
-  background-color: white;
+.flexbox-pictures{
+  display:flex;
+  justify-content:space-around;
+  position:relative;
 }
 
-.banner {
-  background-image: asset-url("jump.jpg");
+.picture-jump {
+  overflow: hidden;
+  margin: 20px;
+  height: 180px;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  background-image: asset-url("landing-jump.jpg");
   background-size: cover;
   background-position: center;
-  font-size: 100px;
-  height: 800px;
+  object-fit:cover;
+  top: 10px;
+  left: 10px;
+}
+
+.picture-color {
+  overflow: hidden;
+  margin: 40px;
+  height: 220px;
+  width: 220px;
+  display: flex;
   align-items: center;
-  text-align: left;
-  object-fit: cover;
+  background-image: asset-url("color.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit:cover;
+}
+
+.picture-fall {
+  overflow: hidden;
+  margin: 10px;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  background-image: asset-url("fall.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit:cover;
+}
+
+.picture-pair-jump {
+  overflow: hidden;
+  margin: 20px;
+  height: 280px;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  background-image: asset-url("pair-jump.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit:cover;
+}
+
+.picture-change {
+  overflow: hidden;
+  margin: 20px;
+  height: 180px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  background-image: asset-url("change.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit:cover;
+}
+.picture-clean {
+  overflow: hidden;
+  margin: 20px;
+  height: 200px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  background-image: asset-url("clean.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit:cover;
+}
+
+.picture-sand {
+  overflow: hidden;
+  margin: 20px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  background-image: asset-url("sand.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit:cover;
 }
 
 .container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  position:absolute;
 }
 
-h1 {
+.title {
+  h1 {
   font-size:80px;
   color:#9CECFC;
-  font-family: dosis;
   text-align:center;
   text-shadow: 20px;
-  padding: 60px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
+  padding:20px;
+  z-index:1;
+  }
 
-h2 {
+  h2 {
   font-size: 40px;
   color: white;
-  font-family: dosis;
   text-align:center;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
 }
 
-.card {
-  border-radius: 4px;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+.button-div{
+  display: flex;
+  justify-content: center;
 }
-
-
-
-
-
-

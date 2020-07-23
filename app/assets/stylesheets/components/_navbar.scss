@@ -1,4 +1,3 @@
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -44,6 +43,12 @@
 
 }
 
+
+.sidenav a:hover,
+.offcanvas a:focus{
+  color: #f1f1f1;
+}
+
 #main {
   transition: margin-left .5s;
   padding: 16px;
@@ -52,6 +57,25 @@
 
 #nav-open{
   color: #003066;
+}
+
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+
+.flexbox-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+
+  a {
+    text-decoration:none;
+  }
 }
 
 .menu-bar {

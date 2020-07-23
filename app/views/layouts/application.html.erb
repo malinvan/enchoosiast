@@ -12,9 +12,14 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <div class="hide-box"></div>
+
+    <% if content_for? :navbar %>
+          <%= yield :navbar %>
+        <% else %>
+          <%= render "shared/navbar" %>
+          <div class="hide-box"></div>
+        <% end %>
       <%= yield %>
     <div class="footer-container">
       <%= render "shared/footer" %>
