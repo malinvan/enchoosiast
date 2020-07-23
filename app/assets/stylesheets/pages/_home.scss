@@ -1,93 +1,107 @@
 // Specific CSS for your home-page
-body {
-  background-color: white;
-
-  .flexbox-pictures{
+.flexbox-pictures{
   display:flex;
   justify-content:space-around;
+  position:relative;
+}
 
-  }
-
-  .picture-jump {
+.picture-jump {
   overflow: hidden;
   margin: 20px;
-  height: 120px;
-  width: 200px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 180px;
+  width: 240px;
   display: flex;
   align-items: center;
   background-image: asset-url("landing-jump.jpg");
   background-size: cover;
   background-position: center;
   object-fit:cover;
-  }
+  top: 10px;
+  left: 10px;
+}
 
-  .picture-color {
+.picture-color {
   overflow: hidden;
-  margin: 20px;
-  height: 150px;
+  margin: 40px;
+  height: 220px;
   width: 220px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   background-image: asset-url("color.jpg");
   background-size: cover;
   background-position: center;
   object-fit:cover;
-  }
+}
 
-  .picture-fall {
+.picture-fall {
   overflow: hidden;
   margin: 10px;
-  height: 200px;
-  width: 200px;
-  background: white;
+  height: 250px;
+  width: 250px;
   display: flex;
   align-items: center;
   background-image: asset-url("fall.jpg");
   background-size: cover;
   background-position: center;
   object-fit:cover;
-  }
+}
 
-  .picture-pair-jump {
+.picture-pair-jump {
   overflow: hidden;
   margin: 20px;
-  height: 120px;
-  width: 200px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 280px;
+  width: 240px;
   display: flex;
   align-items: center;
   background-image: asset-url("pair-jump.jpg");
   background-size: cover;
   background-position: center;
   object-fit:cover;
-  }
+}
 
-  .picture-change {
+.picture-change {
   overflow: hidden;
   margin: 20px;
-  height: 120px;
-  width: 200px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 180px;
+  width: 280px;
   display: flex;
   align-items: center;
   background-image: asset-url("change.jpg");
   background-size: cover;
   background-position: center;
   object-fit:cover;
-  }
+}
+.picture-clean {
+  overflow: hidden;
+  margin: 20px;
+  height: 200px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  background-image: asset-url("clean.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit:cover;
+}
+
+.picture-sand {
+  overflow: hidden;
+  margin: 20px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  background-image: asset-url("sand.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit:cover;
 }
 
 .container {
   display: flex;
   align-items: center;
+  position:absolute;
 }
-
 
 .title {
   h1 {
@@ -96,8 +110,8 @@ body {
   font-family: dosis;
   text-align:center;
   text-shadow: 20px;
-  padding: 60px;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  padding:20px;
   z-index:1;
   }
 
