@@ -8,16 +8,17 @@ class CareersController < ApplicationController
 
   def show
     @career = Career.find(params[:id])
-    books = []
-    url = "https://austin.bibliocommons.com/v2/search?query=#{@career.title}&searchType=smart"
+    @books = []
+    url = "https://openlibrary.org/search?q=#{@career.title}&mode=ebooks&has_fulltext=true"
     html_file = open(url).read
     html_doc = Nokogiri::HTML(html_file)
-    html_doc.search('.cp-jacket-cover').each do |book_cover|
-      html_doc.search('.title-content').each do |book_title|
-        #html_doc.search('.title-content').each do |book_title|
-        books << { cover: book_cover.to_s, title: book_title.to_s }
-      end
+    html_doc.search('.searchResultItem').each do |book|
+      book_cover = book.search('.bookcover')
+      book_details = book.search('.details')
+      @books << { cover: book_cover.to_s, details: book_details.to_s }
+      # html_doc.search('.details').each do |book_details|
+      #   @books << { cover: book_cover.to_s, details: book_details.to_s }
+      # end
     end
-    @book_groups = books.each_slice(3).to_a
   end
 end
