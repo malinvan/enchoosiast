@@ -3,6 +3,7 @@
   padding: 20px;
   border-radius:4px;
   text-align: center;
+  width: 1000px;
 }
 
 .carousel-control-prev-icon {
@@ -14,13 +15,13 @@
 
 .carousel-control-next {
   &.right{
-    right: -26px;
+    right: -50px;
   }
 }
 
 .carousel-control-prev {
   &.left{
-    left: -26px;
+    left: -50px;
   }
 }
 

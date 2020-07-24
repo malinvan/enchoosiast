@@ -8,6 +8,8 @@
   h2{
   text-align:center;
   }
+
+
 }
 
 .card-suggestion{
@@ -16,8 +18,14 @@
   flex-direction:column;
   border-radius: 10px;
   box-shadow:1px 1px 5px;
-  padding: 5px;
+  padding: 0px;
   margin: 15px;
+  width: 500px;
+
+  a{
+      text-decoration: none;
+    }
+
 }
 
 .card-body{
@@ -34,10 +42,8 @@
 }
 
 
-.card-suggestion-img{
-  height: 200px;
-  object-fit: cover;
+.card-suggestion-img img{
+  border-radius: 4px 4px 0px 0px;
 }
-
 
 
