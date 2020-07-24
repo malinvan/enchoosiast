@@ -17,52 +17,69 @@ puts "Creating new careers.."
 
 
 
-clown= Career.create(title: 'clown', summary:'very funny clown' , detailed_description: 'make living a funny story',
-                     social_interaction: 'very high', salary: 23 ,  entry_barriers: 'easy', remote_flexibility: 'none',
+clown= Career.create(title: 'clown', summary:'very funny clown' , detailed_description: 'A clown is a public entertainer who dresses in outlandish
+                     attire and attempts to please audiences with comical and chaotic behaviour.
+                     Clowns are typically hired to entertain children at events such as birthday parties and public gatherings.
+                     Most, though, choose to freelance, travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.',
+                     social_interaction: 'very high', salary: 23000 ,  entry_barriers: 'easy', remote_flexibility: 'none',
                      international_flexibility: 'high', working_hour_flexibility:'very high',
-                     next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
+                     next_steps:'A clown is a public entertainer who dresses in outlandish attire and attempts to please
+                     audiences with comical and chaotic behaviour. Clowns are typically hired to entertain children at
+                     events such as birthday parties and public gatherings. Most, though, choose to freelance,
+                     travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.')
 
 housekeeping= Career.create(title: 'housekeeping', summary:'clean is your passion' , detailed_description: 'make a living of cleaning',
-                            social_interaction: 'easy', salary: 21 ,  entry_barriers: 'medium', remote_flexibility: 'none',
+                            social_interaction: 'easy', salary: 21000 ,  entry_barriers: 'medium', remote_flexibility: 'none',
                             international_flexibility: 'very high', working_hour_flexibility:'low', next_steps:'1.  , 2. , 3. ')
 
 chef= Career.create(title: 'chef', summary:'Love cooking' , detailed_description: 'make a living of cooking',
-                    social_interaction: 'high', salary: 27 ,  entry_barriers: 'medium', remote_flexibility: 'none',
+                    social_interaction: 'high', salary: 27000 ,  entry_barriers: 'medium', remote_flexibility: 'none',
                     international_flexibility: 'high', working_hour_flexibility:'low',
                     next_steps:'1. Take cooking classes , 2. Go to culinary school, 3. Buy your knives')
 
 teacher= Career.create(title: 'teacher', summary:'Transmit knowledge' ,
                        detailed_description: 'make a living of leading the new generations to a better future',
-                       social_interaction: 'very high', salary: 30 ,  entry_barriers: 'difficult',
+                       social_interaction: 'very high', salary: 30000 ,  entry_barriers: 'difficult',
                        remote_flexibility: 'medium', international_flexibility: 'medium',
                        working_hour_flexibility:'high',
                        next_steps:'1. Read books about the topic , 2. Go to school, 3. Be patient')
 
 itdeveloper= Career.create(title: 'itdeveloper', summary:'be in the most demanding career of the future' ,
                            detailed_description: 'make a living in the best tech companies', social_interaction: 'high',
-                           salary: 35 ,  entry_barriers: 'medium', remote_flexibility: 'high',
+                           salary: 35000 ,  entry_barriers: 'medium', remote_flexibility: 'high',
                            international_flexibility: 'high', working_hour_flexibility:'very high',
                            next_steps:'1. Learn coding , 2. Go to coding school, 3. Buy a good laptop')
 
 
 astronaut= Career.create(title: 'astronaut', summary:'see the stars' ,
                          detailed_description: 'you will be on board of a taking samples of Mars surface ',
-                         social_interaction: 'high', salary: 60 ,  entry_barriers: 'really difficult',
+                         social_interaction: 'high', salary: 60000 ,  entry_barriers: 'really difficult',
                          remote_flexibility: 'none', international_flexibility: 'very high', working_hour_flexibility:'low',
                          next_steps:'1. Learn physics , 2. Go to NASA, 3. Train hard')
 
-pilot= Career.create(title: 'pilot', summary:'love speed' , detailed_description: 'be always ready for the greeen light',
-                     social_interaction: 'very high', salary: 35 ,  entry_barriers: 'medium', remote_flexibility: 'none',
+pilot= Career.create(title: 'pilot', summary:'Love freedom and travel' , detailed_description: "Professional pilots fly and navigate airplanes, helicopters,
+                     and other types of aircraft. They must have excellent communication and problem-solving skills, and be detail-oriented.
+                     The ability to work as part of a team is also vital. In addition to working with the crew, a pilot also works with air traffic
+                     controllers and flight dispatchers.",
+                     social_interaction: 'very high', salary: 35000 ,  entry_barriers: 'medium', remote_flexibility: 'none',
                      international_flexibility: 'high', working_hour_flexibility:'very high',
-                     next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
+                     next_steps:"To become a pilot, you will need to satisfy several different requirements, including education, training, and licensing:
+                      Training: Pilots receive their training in the military or by attending U.S. Federal Aviation Administration (FAA)-certified flight schools.
+                      Education: Most employers prefer to hire candidates who have a bachelor's degree, although the minimum education requirement is two years of college.
+                      Coursework should include English, math, physics, and aeronautical engineering.
+                      License: To work as a pilot, you need a commercial pilot's license.
+                      Certification: Airline captains and first officers need a transport pilot certificate. To qualify for one, a pilot must be 23 years old with 1,500 hours of flight time
+                      and pass written and flight exams.")
 
 singer= Career.create(title: 'singer', summary:'show your voice to the world' , detailed_description: 'singing',
-                      social_interaction: 'very high', salary: 26 ,  entry_barriers: 'easy', remote_flexibility: 'none',
+                      social_interaction: 'very high', salary: 26000 ,  entry_barriers: 'easy', remote_flexibility: 'none',
                       international_flexibility: 'high', working_hour_flexibility:'very high',
                       next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
 actor= Career.create(title: 'actor', summary:'better than clooney?' , detailed_description: 'learn the script and be natural',
-                     social_interaction: 'very high', salary: 50 ,  entry_barriers: 'easy', remote_flexibility: 'none',
+                     social_interaction: 'very high', salary: 50000 ,  entry_barriers: 'easy', remote_flexibility: 'none',
                      international_flexibility: 'high', working_hour_flexibility:'very high',
                      next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
@@ -72,17 +89,17 @@ spy= Career.create(title: 'spy', summary:'hitman' , detailed_description: 'XXXcl
                    next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
 consultant= Career.create(title: 'consultant', summary:'make you richer' , detailed_description: 'help others to handle their investing',
-                          social_interaction: 'very high', salary: 56 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
+                          social_interaction: 'very high', salary: 56000 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
                           international_flexibility: 'high', working_hour_flexibility:'very high',
                           next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
 banker= Career.create(title: 'banker', summary:'money is all for you' , detailed_description: 'make a living in a groing sector',
-                      social_interaction: 'high', salary: 45 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
+                      social_interaction: 'high', salary: 45000 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
                       international_flexibility: 'high', working_hour_flexibility:'very high',
                       next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
 doctor= Career.create(title: 'doctor', summary:'help others and cure cancer' , detailed_description: 'basic knowledge of medicine',
-                      social_interaction: 'very high', salary: 52 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
+                      social_interaction: 'very high', salary: 52000 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
                       international_flexibility: 'high', working_hour_flexibility:'very high',
                       next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
@@ -90,7 +107,7 @@ lawyer= Career.create(title: 'lawyer', summary:'Perform legal work for individua
                       detailed_description: 'As advocates, they represent one of the parties in a criminal or civil trial by presenting evidence and arguing in support of their client.
                                             As advisors, lawyers counsel their clients about their legal rights and obligations and suggest courses of action in business and personal matters.
                                             All attorneys research the intent of laws and judicial decisions and apply the laws to the specific circumstances that their clients face.',
-                                            social_interaction: 'very high', salary: 52 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
+                                            social_interaction: 'very high', salary: 53000 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
                                              international_flexibility: 'high', working_hour_flexibility:'very high',
                                              next_steps:'1. Study law 2. Get an internship 3. Study even more')
 
