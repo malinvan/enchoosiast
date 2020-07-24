@@ -98,7 +98,7 @@ lawyer= Career.create(title: 'lawyer', summary:'Perform legal work for individua
 
 puts "Creating questions..."
 
-Question.create(question: 'You often spend time exploring unrealstic yet intriguing ideas')
+Question.create(question: 'You often spend time exploring unrealistic yet intriguing ideas')
 Question.create(question: 'It would be a challenge to to spend the whole weekend by yourself in your pyjamas without feeling bored')
 Question.create(question: 'When you sleep, your dreams tend to be bizarre and fantastical')
 Question.create(question: 'Your personal work style is closer to spontaneous bursts of energy than to organized and consistent efforts')
