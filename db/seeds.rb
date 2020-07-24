@@ -119,7 +119,7 @@ file = URI.open('https://img2.chinadaily.com.cn/images/201911/23/5dd88492a310cf3
 teacher.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://inteng-storage.s3.amazonaws.com/img/iea/9lwjAVnM6E/sizes/ocde_resize_md.jpg')
 itdeveloper.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://media3.s-nbcnews.com/i/newscms/2014_29/573886/ss-140719-apollo-11-01_4396b2820b1792587ced6204c09099fb.jpg')
+file = URI.open('https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/5d8cc0875bafe8b4043c986a/astronauta-rock.jpg')
 astronaut.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://www.pilots.nu/wp-content/uploads/piloter.jpg')
 pilot.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
