@@ -29,7 +29,7 @@
 
 }
 
-.section-header{
+.section-header-result{
   font-size: 24px;
 }
 
@@ -71,6 +71,9 @@
 
 .readings-carousel{
   height: 50vh;
+  padding: 20px;
+  border-radius:4px;
+  text-align: center;
 }
 
 .readings-carousel-element{

@@ -5,63 +5,63 @@
 </div>
 
 <div class="career-summary page-section">
-  <h3 class= "section-header">summary</h3>
+  <h3 class= "section-header-result">summary</h3>
   <p><%= @career.summary %></p>
 </div>
 <div class="labour-market-info page-section">
-  <h3 class= "section-header">labour market</h3>
+  <h3 class= "section-header-result">labour market</h3>
   <div class="info-box">
     <div class="icon-with-info">
       <div class="icon-market"> <i class="fas fa-money-bill-alt"></i> </div>
       <div class="info">
-        <h4 class= "section-header">average entry salary (yearly)</h4>
+        <h4 class= "section-header-result">average entry salary (yearly)</h4>
         <p> <%= "#{@career.salary} €"%></p>
       </div>
     </div>
     <div class="icon-with-info">
       <div class="icon-market"><i class="fas fa-sign-in-alt"></i></div>
       <div class="info">
-        <h4 class= "section-header">entry barriers</h4>
+        <h4 class= "section-header-result">entry barriers</h4>
         <p> <%= @career.entry_barriers %></p>
       </div>
     </div>
     <div class="icon-with-info">
       <div class="icon-market"><i class="fas fa-people-arrows"></i></div>
       <div class="info">
-        <h4 class= "section-header">social_interaction</h4>
+        <h4 class= "section-header-result">social_interaction</h4>
         <p> <%= @career.social_interaction %></p>
       </div>
     </div>
     <div class="icon-with-info">
       <div class="icon-market"><i class="fas fa-globe-africa"></i></div>
       <div class="info">
-        <h4 class= "section-header">internationality</h4>
+        <h4 class= "section-header-result">internationality</h4>
         <p> <%= @career.international_flexibility%></p>
       </div>
     </div>
     <div class="icon-with-info">
       <div class="icon-market"><i class="fas fa-house-user"></i></div>
       <div class="info">
-        <h4 class= "section-header">remote flexibility</h4>
+        <h4 class= "section-header-result">remote flexibility</h4>
         <p> <%= @career.remote_flexibility %></p>
       </div>
     </div>
     <div class="icon-with-info">
       <div class="icon-market"><i class="fas fa-clock"></i></div>
       <div class="info">
-        <h4 class= "section-header">working hours flexibility</h4>
+        <h4 class= "section-header-result">working hours flexibility</h4>
         <p> <%= @career.working_hour_flexibility %></p>
       </div>
     </div>
   </div>
 </div>
 <div class="career-details page-section">
-  <h3 class= "section-header">detailed description</h3>
+  <h3 class= "section-header-result">detailed description</h3>
   <p> <%= @career.detailed_description %></p>
 </div>
 <div class="further-readings page-section">
-  <h3 class= "section-header">further readings</h3>
-  <div class="suggestion-carousel readings-carousel">
+  <h3 class= "section-header-result">further readings</h3>
+  <div class="readings-carousel">
     <div id="new-suggestion-carousel-controls" class="carousel slide readings-carousel-element" data-ride="carousel" data-interval="false">
     <div class="carousel-inner readings-carousel-element">
       <div class="carousel-item active readings-carousel-element">
