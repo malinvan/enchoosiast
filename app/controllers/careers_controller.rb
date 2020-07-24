@@ -16,9 +16,6 @@ class CareersController < ApplicationController
       book_cover = book.search('.bookcover')
       book_details = book.search('.details')
       @books << { cover: book_cover.to_s, details: book_details.to_s }
-      # html_doc.search('.details').each do |book_details|
-      #   @books << { cover: book_cover.to_s, details: book_details.to_s }
-      # end
     end
   end
 end
