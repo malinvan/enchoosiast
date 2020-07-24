@@ -12,25 +12,30 @@ function initCarousel() {
   btnNext.addEventListener("click", (event) => {
     const lastSlide = document.querySelector(".last-slide");
     const seconToLast = document.querySelector(".second-last");
+    //If we are not on the last slide
     if (lastSlide.classList.contains("active") === false) {
       carousel.carousel('next');
       console.log(lastSlide)
-      if (counter === carouselItems - 1) {
-        btnSubmit.style.display = "inline-block"
-      }
-      // console.log(event);
-      // console.log(event.currentTarget);
     }
-    // else if (secondToLast.classlist.contains("active")){
-    // }
+
     counter += 1;
   });
 
+  carousel.on('slid.bs.carousel', function () {
+     if (counter === carouselItems - 1) {
+        btnSubmit.style.display = "inline-block"
+        btnNext.style.display = "none"
+      } else {
+        btnSubmit.style.display = "none"
+        btnNext.style.display = "inline-block"
+      }
+  })
+
   btnPrev.addEventListener("click", (event) => {
     carousel.carousel('prev');
+    counter -= 1;
     console.log(event);
     console.log(event.currentTarget);
   });
 }
 export { initCarousel }
-
