@@ -1,15 +1,27 @@
 .career-banner{
   height: 50vh;
   background-size: cover;
-  background-position: top;
+  background-position-y: 40%;
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 .title-box{
-  width: 350px;
-  position: absolute;
-  top: 50px;
-  left: 150px;
+  width: 300px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(3px);
+  text-shadow: 1px 1px 7px rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.1);
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 5px;
+
+  h1{
+    font-size: 60px;
+  }
 }
 
 .page-section{
@@ -23,6 +35,7 @@
 
 .info-box{
   display: flex;
+  flex-wrap: wrap;
   background-color: #C8F0F8;
   padding: 15px;
   color: #003066;
@@ -33,13 +46,7 @@
   flex-direction: row;
   margin: 20px 30px;
   align-items: center;
-}
-
-#flexibility-header{
-  display: flex;
-  flex-direction: row;
-  margin: 20px 50px;
-  align-items: top;
+  width: 255px;
 }
 
 .icon-market{
@@ -62,32 +69,49 @@
   }
 }
 
-
-.left-icons-container{
-  position: relative;
+.readings-carousel{
+  height: 50vh;
 }
 
-.flexibility-info{
-  position: relative;
-  left: 120px;
-  top: -30px;
+.readings-carousel-element{
+  height: 100%;
 }
-
-.icon-with-info-flexibility{
-  margin: opx;
+.wiki-card{
+  height: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin-top: 15px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/07/Wikipedia_logo_%28svg%29.svg');
+  //object-fit: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
-  p{
-    margin: 0px;
+}
 
+.wiki-card:hover{
+  text-decoration: none;
+}
+
+.card-further-reading{
+  margin: 0 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+
+
+  .book-details{
+    text-align: left;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
   }
-
-  h4{
-    margin: 0px;
+  .book-details:hover{
+    text-decoration: none;
   }
 }
+
+
+
 
 

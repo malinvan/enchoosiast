@@ -9,8 +9,9 @@ require "open-uri"
 
 puts "Deleting careers..."
 Career.destroy_all
-puts " Creating new careers.."
-
+puts "Deleting questions..."
+Question.destroy_all
+puts "Creating new careers.."
 
 
 
@@ -95,8 +96,9 @@ lawyer= Career.create(title: 'lawyer', summary:'Perform legal work for individua
 
 
 
+puts "Creating questions..."
 
-Question.create(question: 'You often spend time exploring unrealstic yet itriguing ideas')
+Question.create(question: 'You often spend time exploring unrealistic yet intriguing ideas')
 Question.create(question: 'It would be a challenge to to spend the whole weekend by yourself in your pyjamas without feeling bored')
 Question.create(question: 'When you sleep, your dreams tend to be bizarre and fantastical')
 Question.create(question: 'Your personal work style is closer to spontaneous bursts of energy than to organized and consistent efforts')
@@ -105,6 +107,7 @@ Question.create(question: 'I see myself as conventional and uncreative')
 Question.create(question: 'I prefer variety to routine')
 Question.create(question: 'I panic easily')
 
+puts "Attaching images to careers"
 
 file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
 clown.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
@@ -116,7 +119,7 @@ file = URI.open('https://img2.chinadaily.com.cn/images/201911/23/5dd88492a310cf3
 teacher.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://inteng-storage.s3.amazonaws.com/img/iea/9lwjAVnM6E/sizes/ocde_resize_md.jpg')
 itdeveloper.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://media3.s-nbcnews.com/i/newscms/2014_29/573886/ss-140719-apollo-11-01_4396b2820b1792587ced6204c09099fb.jpg')
+file = URI.open('https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/5d8cc0875bafe8b4043c986a/astronauta-rock.jpg')
 astronaut.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://www.pilots.nu/wp-content/uploads/piloter.jpg')
 pilot.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
