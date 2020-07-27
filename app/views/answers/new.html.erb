@@ -8,18 +8,19 @@
 <%# end %>
 
 <div class="test-container">
-  <form action="" class="test">
+  <%= form_with url: answers_path, scope: :questions, class: "test" do |f| %>
     <div class="row">
       <div class="col-md-8 offset-md-2">
         <%= render "questions_carousel", questions: @questions %>
         <div class="test-buttons">
           <button type="button" id="btn-prev" class="btn"><i class="fas fa-angle-left"></i></button>
-          <%= link_to "submit", '/answers/results', class: "questions-submit btn btn-secondary"  %>
+          <%#= link_to "submit", answers_results_path, class: "questions-submit btn btn-secondary"  %>
+          <%= submit_tag "Submit", class: "questions-submit btn btn-secondary"  %>
           <button type="button" id="btn-next" class="btn"><i class="fas fa-angle-right"></i></button>
         </div>
       </div>
     </div>
-  </form>
+  <% end %>
 
   <!--
 

@@ -3,13 +3,10 @@ class AnswersController < ApplicationController
     @questions = Question.all
   end
 
-  def results
-
+  def create
+    p params
+    raise
   end
-
-  # def create
-  #   raise
-  # end
 
   # def create
   #   @question = Question.find
