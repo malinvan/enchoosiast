@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_23_141034) do
+ActiveRecord::Schema.define(version: 2020_07_27_103229) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,20 @@ ActiveRecord::Schema.define(version: 2020_07_23_141034) do
     t.text "next_steps"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "likes", id: :serial, force: :cascade do |t|
+    t.string "likee_type"
+    t.integer "likee_id"
+    t.string "liker_type"
+    t.integer "liker_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["likee_id", "likee_type", "liker_id", "liker_type"], name: "likes_likee_liker_idx", unique: true
+    t.index ["likee_id", "likee_type"], name: "likes_likee_idx"
+    t.index ["likee_type", "likee_id"], name: "index_likes_on_likee_type_and_likee_id"
+    t.index ["liker_id", "liker_type"], name: "likes_liker_idx"
+    t.index ["liker_type", "liker_id"], name: "index_likes_on_liker_type_and_liker_id"
   end
 
   create_table "questions", force: :cascade do |t|
