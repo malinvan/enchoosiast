@@ -33,6 +33,8 @@ import { initNavbar } from '../components/navbar';
 
 import { initCarousel } from '../components/questions_carousel';
 
+import { clickShow } from '../components/show_text';
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -49,5 +51,7 @@ document.addEventListener('turbolinks:load', () => {
   };
   showPopUp();
   initNavbar();
+  clickShow();
   initCarousel();
+
 });
