@@ -1,10 +1,22 @@
+@mixin material-shadow($level){
+    @if $level == 1 {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    } @elseif $level == 2 {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    } @elseif $level == 3 {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    } @elseif $level == 4 {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    } @elseif $level == 5 {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+}
+
 .card-career-suggestion{
-  padding: 10px 30px;
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
   h2{
   text-align:center;
 
@@ -13,28 +25,59 @@
 
 }
 
+.card-suggestion {
+  @include material-shadow(1);
+  transition: all .3s;
+}
+
+.card-suggestion:hover {
+  @include material-shadow(3);
+  transition: all .3s;
+
+}
+
 .card-suggestion{
+  text-align: left;
   background-color:white;
   display:flex;
+  width: 50%;
   flex-direction:column;
   border-radius: 10px;
-  box-shadow:0px 0px 8px;
-  padding: 0px;
-  margin: 15px;
+  overflow: hidden;
   color: black;
     &:hover {
       text-decoration: none;
       color:black;
 
     }
+    h3{
+      padding: 15px 15px 0 15px;
+      margin: 0px;
+    }
+
+    p {
+       padding: 0px 15px;
+    }
 
 }
 
-.card-suggestion:hover {
-  transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
-  box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
-  transition: all .4s ease; /* zoom in */
-  cursor: pointer;
+.card-caption {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-caption div:first-child {
+  width: 100%;
+}
+
+.carousel-item .card-suggestion:first-child {
+  margin-right: 5px
+}
+.carousel-item .card-suggestion:last-child {
+  margin-left: 5px
+}
+
+.card-career-suggestion:hover {
 }
 .card-body{
   width: 30% !important ;
@@ -46,24 +89,23 @@
 
 
 .card-career-suggestion-liked p {
+  text-align:center;
+  font-size: 4vw;
   margin: 0 auto;
 }
 
 
 .card-suggestion-img img{
-  border-radius: 4px 4px 0px 0px;
+  width: 100% !important;
+  height: auto !important;
 }
 
-h3{
-  padding: 10px;
-}
+
 
 
 .header{
   margin-top: 40px;
   border-bottom: 2px solid grey;
-  max-width: 69%;
-  margin-left: 231px;
   h1{
     color: #003066;
   }
