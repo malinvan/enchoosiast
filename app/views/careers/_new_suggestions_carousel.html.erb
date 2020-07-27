@@ -10,15 +10,24 @@
       <div class="card-career-suggestion">
         <%= link_to career_path(pair[0]), class: "card-suggestion" do  %>
             <div class="card-suggestion-img">
-              <%= cl_image_tag pair.first.photo.key, height: 200, width: 420 , crop: :fill %>
+              <%= cl_image_tag pair.first.photo.key, height: 400, width: 840 , crop: :fill %>
             </div>
-            <h3><%= pair.first.title  %></h3>
-            <p><%= pair.first.summary %></p>
+            <div class="card-caption">
+              <div>
+                <h3><%= pair.first.title  %></h3>
+                <p><%= pair.first.summary %></p>
+              </div>
+              <div>
+                estrellitas
+              </div>
+
+            </div>
+
         <% end %>
         <% if pair.count == 2 %>
           <%= link_to career_path(pair[1]), class: "card-suggestion" do  %>
             <div class="card-suggestion-img">
-              <%= cl_image_tag pair.last.photo.key, height: 200, width: 420, crop: :fill %>
+              <%= cl_image_tag pair.last.photo.key, height: 400, width: 840, crop: :fill %>
             </div>
             <h3><%= pair.last.title  %></h3>
             <p><%= pair.last.summary %></p>
