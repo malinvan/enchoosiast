@@ -4,11 +4,17 @@
 
 <div class="results-background">
   <div id="results-title">
-    <h1>Your future starts now!</h1>
+    <h1>Your are one fascinating person! </h1>
+    <p>We have analized your test results!</p>
+    <ul>
+      <% @user_traits.each do |trait| %>
+      <li><%= trait.title %></li>
+      <% end %>
+    </ul>
   </div>
   <div class="blurred-background" id="result-text">
-    <p class="m-0">Your just made the first steps towards your new career.</p>
-    <p class="m-0">We analized your answers and came up with some career suggestions.</p>
+    <p class="m-0">Your just made the first step to find your passion.</p>
+    <p class="m-0">Based on your test results, we suggest the following careers for you.</p>
     <div class="button-flex">
       <%= link_to "cancel", "/", class: "transparent-button" %>
       <%= link_to "suggested careers", "/careers/suggestions", class: "dark-button suggestions-button" %>

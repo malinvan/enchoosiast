@@ -115,14 +115,47 @@ lawyer= Career.create(title: 'lawyer', summary:'Perform legal work for individua
 
 puts "Creating questions..."
 
-Question.create(question: 'You often spend time exploring unrealistic yet intriguing ideas')
-Question.create(question: 'It would be a challenge to to spend the whole weekend by yourself in your pyjamas without feeling bored')
-Question.create(question: 'When you sleep, your dreams tend to be bizarre and fantastical')
-Question.create(question: 'Your personal work style is closer to spontaneous bursts of energy than to organized and consistent efforts')
-Question.create(question: 'I see myself as anxious and I easily get upset')
-Question.create(question: 'I see myself as conventional and uncreative')
-Question.create(question: 'I prefer variety to routine')
-Question.create(question: 'I panic easily')
+questions = []
+questions << Question.create(question: 'I often spend time exploring unrealistic yet intriguing ideas')
+questions << Question.create(question: 'I prefer variety to routine')
+questions << Question.create(question: 'When I face a problem, I prefer talking to others about it and involve them in my problem solving process.')
+questions << Question.create(question: 'When working in teams, I usually take the initiative and the other team members follow my lead.')
+questions << Question.create(question: 'When making a decision, I rather analise the situation than trust my gut feeling.')
+
+puts "Creating traits..."
+
+traits = []
+traits << Trait.create(title: "creative")
+traits << Trait.create(title: "practical")
+
+traits << Trait.create(title: "flexible")
+traits << Trait.create(title: "inflexible")
+
+traits << Trait.create(title: "social")
+traits << Trait.create(title: "insocial")
+
+traits << Trait.create(title: "leadering")
+traits << Trait.create(title: "submissive")
+
+traits << Trait.create(title: "structured")
+traits << Trait.create(title: "impulsive")
+
+puts "Connection traits to questions..."
+
+TraitQuestion.create(question: questions[0], trait: traits[0], answer_value: true)
+TraitQuestion.create(question: questions[0], trait: traits[1], answer_value: false)
+
+TraitQuestion.create(question: questions[1], trait: traits[2], answer_value: true)
+TraitQuestion.create(question: questions[1], trait: traits[3], answer_value: false)
+
+TraitQuestion.create(question: questions[2], trait: traits[4], answer_value: true)
+TraitQuestion.create(question: questions[2], trait: traits[5], answer_value: false)
+
+TraitQuestion.create(question: questions[3], trait: traits[6], answer_value: true)
+TraitQuestion.create(question: questions[3], trait: traits[7], answer_value: false)
+
+TraitQuestion.create(question: questions[4], trait: traits[8], answer_value: true)
+TraitQuestion.create(question: questions[4], trait: traits[9], answer_value: false)
 
 puts "Attaching images to careers"
 
