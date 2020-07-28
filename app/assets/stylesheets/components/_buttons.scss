@@ -1,22 +1,23 @@
 .dark-button{
-  // border: 2px solid white;
-  padding: 6px 12px;
+  border: 1px solid white;
+  padding: 10px 10px;
   display: inline-block;
   text-decoration: none;
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+  margin: 20px;
+  border-radius: 25px;
+  font-weight: lighter;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
   font-size: 20px;
-  transition: 0.3s;
-  background-color: #003066;
+  transition: opacity 0.3s ease;
   color: white;
+  background-color: #003066;
 }
 
 .dark-button:hover{
   text-decoration: none;
-  background-color: #1277C5;
-  text-shadow: 0px 0px 3px rgba(0,0,0,0.2);
-  color: white;
+  background-color: #9CECFC;
+  text-shadow:  4px 4px 4px rgba(0,0,0,0.2);
+  color: #003066;
 }
 
 .transparent-button{
@@ -40,25 +41,26 @@
 }
 
 .light-button{
-  border-radius: 5px;
-  margin: 10px;
-  padding: 6px 12px;
+  border: 1px solid white;
+  padding: 10px 10px;
   display: inline-block;
   text-decoration: none;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin: 20px;
+  border-radius: 25px;
+  font-weight: lighter;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
   font-size: 20px;
-  transition: 0.3s;
-  color: grey;
-  background-color: white;
-  text-shadow:none;
-  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  color: white;
 }
 
 .light-button:hover{
   text-decoration: none;
   background-color: none;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+  background-color: white;
   color: #003066;
   text-shadow:none;
   opacity: 1;
+  border: 1px solid #9CECFC;
 }
