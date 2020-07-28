@@ -18,12 +18,11 @@ function initCarousel() {
         carousel.carousel('next');
         console.log(lastSlide)
       }
-
-      counter += 1;
     });
 
-    carousel.on('slid.bs.carousel', function () {
-       if (counter === carouselItems - 1) {
+    carousel.on('slid.bs.carousel', function (event) {
+      console.log(event)
+       if (event.to === carouselItems - 1) {
           btnSubmit.style.display = "inline-block"
           btnNext.style.display = "none"
         } else {
@@ -34,7 +33,6 @@ function initCarousel() {
 
     btnPrev.addEventListener("click", (event) => {
       carousel.carousel('prev');
-      counter -= 1;
       console.log(event);
       console.log(event.currentTarget);
     });
