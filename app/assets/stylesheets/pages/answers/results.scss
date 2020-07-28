@@ -4,27 +4,26 @@
   background-image: asset-url("results-jump.jpg");
   background-size: cover;
   background-position: left;
-  position: relative;
-}
-
-.blurred-background{
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
-  overflow: hidden;
-  color: white;
-  backdrop-filter: blur(3px);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-  background-color: rgba(0,0,0,0.1);
-  text: right;
-
 }
 
 #results-title{
-  position: absolute;
-  top: 50px;
-  left: 50px;
   color: #003066;
+  padding-top: 50px;
+  padding-left: 50px;
+
+  h1{
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  }
+  p{
+    font-size: 18px;
+  }
+}
+.test-results-container{
+  display: flex;
+  align-items: flex-end;
+  margin: 0px 50px;
+  justify-content: space-between;
+  max-width: 800px;
 }
 
 #result-text{
@@ -38,6 +37,39 @@
   text-align: right;
    //justify-content: right;
   margin-top: 10px;
+}
+
+.trait-flexbox{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 30px;
+  align-items: center;
+
+}
+
+.test-results{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+}
+
+.trait-icon{
+  font-size: 35px;
+}
+
+.trait-text{
+  margin-left: 20px;
+
+  h4{
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  p{
+    font-size: 15px;
+    margin: 0px;
+  }
 }
 
 

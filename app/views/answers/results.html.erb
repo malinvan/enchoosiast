@@ -5,21 +5,49 @@
 <div class="results-background">
   <div id="results-title">
     <h1>Your are one fascinating person! </h1>
-    <p>We have analized your test results!</p>
-    <ul>
-      <% @user_traits.each do |trait| %>
-      <li><%= trait.title %></li>
-      <% end %>
-    </ul>
+    <p>We have analyzed your test results! Based on your test results, we suggest the following careers for you.</p>
   </div>
-  <div class="blurred-background" id="result-text">
-    <p class="m-0">Your just made the first step to find your passion.</p>
-    <p class="m-0">Based on your test results, we suggest the following careers for you.</p>
-    <div class="button-flex">
-      <%= link_to "cancel", "/", class: "transparent-button" %>
-      <%= link_to "suggested careers", "/careers/suggestions", class: "dark-button suggestions-button" %>
+  <div class="test-results-container blurred-background">
+    <div class="test-results ">
+      <div class="creativity trait-flexbox">
+        <i class="far fa-lightbulb trait-icon"></i>
+        <div class="trait-text">
+        <h4 class="trait-title"> creativity</h4>
+        <p><%= @creativity %></p>
+        </div>
+      </div>
+      <div class="flexibility trait-flexbox">
+        <i class="fas fa-arrows-alt trait-icon"></i>
+        <div class="trait-text">
+        <h4 class="trait-title"> flexibility</h4>
+        <p><%= @flexibility %></p>
+        </div>
+      </div>
+      <div class="sociality trait-flexbox">
+        <i class="fas fa-people-arrows trait-icon"></i>
+        <div class="trait-text">
+        <h4 class="trait-title"> teamwork</h4>
+        <p><%= @sociality %></p>
+        </div>
+      </div>
+      <div class="dominance trait-flexbox">
+        <i class="fas fa-users-cog trait-icon"></i>
+        <div class="trait-text">
+        <h4 class="trait-title"> leadership</h4>
+        <p><%= @dominance %></p>
+        </div>
+      </div>
+      <div class="structuredness trait-flexbox">
+        <i class="fas fa-tasks trait-icon"></i>
+        <div class="trait-text">
+        <h4 class="trait-title"> structuredness</h4>
+        <p><%= @structuredness %></p>
+        </div>
+      </div>
+    </div>
+    <div class="results-buttons">
+        <%= link_to "suggested careers", "/careers/suggestions", class: "dark-button suggestions-button" %>
     </div>
   </div>
-
 </div>
 
