@@ -8,26 +8,63 @@
 
 <div class="page-home">
   <div class="background">
-    <div class=flexbox-pictures>
-      <div class="picture picture-jump"></div>
-      <div class="picture picture-fall"></div>
-      <div class="picture picture-overlay"></div>
-    </div>
-    <div class="flexbox-pictures">
-      <div class="picture picture-search"></div>
-      <div class="picture picture-color"></div>
-      <div class="picture picture-pair-jump"></div>
-    </div>
-  </div>
-  <div class="foreground">
+<!--   <div class=flexbox-pictures>
+      <div class="picture-illustration"></div>
+  </div> -->
+    <div class="foreground">
     <div class="title">
-      <h1>enchoosiast</h1>
+      <h1 class="animate__fadeInUp">enchoosiast</h1>
       <h2>find your passion, start your career</h2>
     </div>
     <div class="button-div">
-      <%= link_to "Sign in", "/answers/new", class: "dark-button" %>
-      <%= link_to "Create an account", "/answers/new", class: "light-button" %>
+      <%= link_to "More information", "/answers/new", class: "dark-button" %>
+      <%= link_to "Take the test", "/answers/new", class: "light-button" %>
     </div>
   </div>
 </div>
+
+<div class="flexbox-icon-cards">
+  <div class="card-suggestion">
+    <div class="picture picture-icon"></div>
+    <h4>1. take the personality test</h4>
+  </div>
+  <div class="card-suggestion">
+    <div class="picture picture-icon-second"></div>
+    <h4>2. get inspired by careers</h4>
+    </div>
+  <div class="card-suggestion">
+    <div class="picture picture-icon-third"></div>
+    <h4>3. find passion & guidance</h4>
+  </div>
+</div>
+
+<div class= flexbox-testimonials>
+  <div class="card-testimonial">
+    <div>
+      <h4><i class="far fa-lightbulb" style="font-size: 20px;"></i>Testimonial 1</h4>
+      <p>enchoosiast helped me finding my dream career!</p>
+    </div>
+  </div>
+  <div class="card-testimonial">
+    <div>
+      <h4><i class="far fa-star" style="font-size: 20px;"></i>Testimonial 2</h4>
+      <p>the personality test is simply awesome.</p>
+    </div>
+  </div>
+  <div class="card-testimonial">
+    <div>
+      <h4><i class="far fa-lightbulb" style="font-size: 20px;"></i>Testimonial 3</h4>
+      <p>.....</p>
+    </div>
+  </div>
+</div>
+<div class="button-div-second">
+  <%= link_to "Take the test", "/answers/new", class: "dark-button" %>
+</div>
+
+
+
+
+
+
 
