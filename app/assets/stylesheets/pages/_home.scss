@@ -97,10 +97,6 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
   padding-right: 350px;
 }
 
-.button-div-second{
-  display: flex;
-  justify-content: center;
-}
 
 .card-suggestion{
   background-color:white;
@@ -138,7 +134,7 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
 .flexbox-testimonials{
   display:flex;
   margin: 120px;
-  margin-left: 250px;
+  margin-left: 220px;
   align-items:center;
   flex-direction: column;
   border-radius: 10px;
@@ -233,6 +229,12 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
 
 }
 
+.ilustration img {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin-left: 20px;
+}
 
 
 
