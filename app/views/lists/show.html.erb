@@ -1,48 +1,63 @@
 <h1 class="guide-header">action plan</h1>
 
 <div class="todo">
+
   <div class="reading-list">
-  <h5>my reading list</h5>
-    <img src="/assets/images/undraw_book_lover_mkck.svg" alt="">
-    <div class="list">
-      <% @reading_todos.each do |todo| %>
-      <%= todo.title %>
-      <%= todo.description %>
-      <% end %>
+    <%= image_tag "undraw_book_lover_mkck.svg", height: "100" %>
+    <div class="todo-card">
+      <h5>my reading list</h5>
+      <ul>
+        <div class="list">
+          <% @reading_todos.each do |todo| %>
+          <li><strong><%= todo.title %></strong></li>
+          <li><%= todo.description %></li>
+          <% end %>
+        </div>
+      </ul>
+      <%= link_to "➕", "/todos/new", class: "todo-btn"%>
     </div>
-    <%= link_to "➕", "/todos/new", class: "todo-btn"%>
   </div>
 
   <div class="edu-list">
-    <h5>education & practice</h5>
-    <img src="/assets/images/undraw_book_lover_mkck.svg" alt="">
-    <div class="list">
-      <% @education_todos.each do |todo| %>
-      <%= todo.title %>
-      <% end %>
+    <div class="todo-card">
+      <h5>education & practice</h5>
+      <ul>
+        <div class="list">
+          <% @education_todos.each do |todo| %>
+          <li><%= todo.title %></li>
+          <% end %>
+          <%= link_to "➕", "/todos/new", class: "todo-btn"%>
+        </div>
+      </ul>
     </div>
-    <%= link_to "➕", "/todos/new", class: "todo-btn"%>
+    <%= image_tag "undraw_Graduation_ktn0.svg", height: "100" %>
   </div>
 
   <div class="online-list">
-    <h5>online content</h5>
-    <img src="/assets/images/undraw_book_lover_mkck.svg" alt="">
-    <div class="list">
-      <% @online_content_todos.each do |todo| %>
-      <%= todo.title %>
-      <% end %>
+    <%= image_tag "undraw_online_articles_79ff.svg", height: "100" %>
+    <div class="todo-card">
+      <h5>online content</h5>
+      <ul>
+        <div class="list">
+          <% @online_content_todos.each do |todo| %>
+          <li><%= todo.title %></li>
+          <% end %>
+        </div>
+        <%= link_to "➕", "/todos/new", class: "todo-btn"%>
+      </ul>
     </div>
-    <%= link_to "➕", "/todos/new", class: "todo-btn"%>
   </div>
+
+  <%= simple_form_for([@list, @todo]) do |f| %>
+    <%= f.input :category, collection: Todo.categories %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.submit %>
+  <% end %>
+
 </div>
 
 <div class="progressbar">
 
 </div>
 
-<%= simple_form_for([@list, @todo]) do |f| %>
-  <%= f.input :category, collection: Todo.categories %>
-  <%= f.input :title %>
-  <%= f.input :description %>
-  <%= f.submit %>
-<% end %>
