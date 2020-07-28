@@ -33,13 +33,13 @@ class TodosController < ApplicationController
   end
 
   def destroy
-    @todo = Todo.find(params[:id])
-    @todo.destroy
-    redirect_to todo_path
+    todo = Todo.find(params[:id])
+    list = List.find(params[:list_id])
+    todo.destroy
+    redirect_to list_path(list)
   end
 
   private
-
   def todo_params
     params.require(:todo).permit(:title, :description, :category)
   end

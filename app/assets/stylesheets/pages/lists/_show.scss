@@ -32,4 +32,8 @@
 
 .list {
   list-style-type: none;
+
+  .list-item {
+    display: flex;
+  }
 }
