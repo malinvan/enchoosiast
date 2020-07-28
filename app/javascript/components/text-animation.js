@@ -1,12 +1,15 @@
 import Typed from 'typed.js';
 
 const initLandingpageAnimation = () => {
-  var typed = new Typed('#home-animation', {
-    stringsElement: '#typed-strings',
-    typeSpeed: 40,
-    loop: true,
-    loopCount: 2
-  });
+  const landingAnimation = document.querySelector("#home-animation")
+  if (landingAnimation) {
+    var typed = new Typed(landingAnimation, {
+      stringsElement: '#typed-strings',
+      typeSpeed: 40,
+      loop: true,
+      loopCount: 2
+    });
+  };
 };
 
 export { initLandingpageAnimation };

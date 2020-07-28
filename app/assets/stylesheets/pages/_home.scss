@@ -103,7 +103,7 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
   justify-content: center;
 }
 
-.card-suggestion{
+.card-icons{
   background-color:white;
   display:flex;
   flex-direction:column;
@@ -122,7 +122,7 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
     }
 }
 
-.card-suggestion:hover {
+.card-icons:hover {
   transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
   box-shadow: 2px 20px 30px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
   transition: all .4s ease; /* zoom in */
