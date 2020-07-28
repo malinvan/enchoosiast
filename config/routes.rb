@@ -6,5 +6,11 @@ Rails.application.routes.draw do
   get '/careers/suggestions', to: 'careers#suggestions'
   get '/careers/:id/toggle_like', to: 'careers#toggle_like', as: :career_toggle_like
   resources :answers, only: [:new, :create]
-  resources :careers, only: [:show]
+  resources :careers, only: [:show] do
+    resources :lists, only: :create
+  end
+  resources :todos, only: [:destroy, :update]
+  resources :lists, only: [:show] do
+    resources :todos, only: :create
+  end
 end
