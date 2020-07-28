@@ -18,10 +18,10 @@ const toggleText = (event) => {
 };
 
 const clickShow = () => {
-  if ("detailedDescrition && showMoreOrLess") {
-    detailedDescription.style.display = "none";
-    showMoreOrLess.addEventListener("click", toggleText);
-  };
+    if (showMoreOrLess) {
+      detailedDescription.style.display = "none";
+      showMoreOrLess.addEventListener("click", toggleText);
+    };
 };
 
 export { clickShow }
