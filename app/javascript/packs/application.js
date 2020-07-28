@@ -38,6 +38,8 @@ import { initCareerGrid } from '../components/career-grid';
 
 import { clickShow } from '../components/show_text';
 
+import { initLandingpageAnimation } from '../components/text-animation';
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -57,5 +59,5 @@ document.addEventListener('turbolinks:load', () => {
   initNavbar();
   clickShow();
   initCarousel();
-
+  initLandingpageAnimation();
 });
