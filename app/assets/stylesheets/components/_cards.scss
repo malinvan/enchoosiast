@@ -1,4 +1,4 @@
-@mixin material-shadow($level){
+@mixin material-shadow($level) {
     @if $level == 1 {
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     } @elseif $level == 2 {
@@ -12,17 +12,33 @@
     }
 }
 
-.card-career-suggestion{
+.card-career-suggestion {
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  h2{
-  text-align:center;
+
+}
+
+.card-career-suggestion .career {
+  position: relative;
+
+
+  h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+    backdrop-filter: blur(3px);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.1);
+    text: right;
 
   }
-
-
 }
 
 .card-suggestion {
@@ -36,13 +52,12 @@
 
 }
 
+
+
+
 .card-suggestion{
-  text-align: left;
-  background-color:white;
-  display:flex;
-  width: 300px;
-  height: 230px;
-  flex-direction:column;
+  width: 400px;
+  height: 200px;
   border-radius: 10px;
   overflow: hidden;
   color: black;
@@ -63,40 +78,6 @@
 }
 
 
-
-.carousel-item .card-suggestion:first-child {
-  margin-right: 5px
-}
-.carousel-item .card-suggestion:last-child {
-  margin-left: 5px
-}
-
-.card-career-suggestion:hover {
-}
-.card-body{
-  width: 30% !important ;
-}
-
-.card-career-suggestion-liked{
-  color: #C4C0C0;
-}
-
-
-.card-career-suggestion-liked p {
-  text-align:center;
-  font-size: 4vw;
-  margin: 0 auto;
-}
-
-
-.card-suggestion-img img{
-  width: 100% !important;
-  height: auto !important;
-}
-
-
-
-
 .row h2{
   margin-top: 40px;
   margin-bottom: 20px;
@@ -105,7 +86,7 @@
 
 
 
-
+// <----------GRID--------->
 
 
 .suggestion-card{
@@ -118,6 +99,8 @@
   color: black;
   @include material-shadow(1);
   transition: all .3s;
+  cursor: pointer;
+  border-radius: 4px;
   &:hover {
       text-decoration: none;
       color:black;
@@ -139,7 +122,78 @@
 .card-text {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 8px;
+
+  h3{
+    padding-left: 8px;
+    text-align: left;
+  }
+
+
 }
+
+
+a.like-toggle[data-liked="true"] {
+  .star.like {
+    display: none;
+  }
+  .star.unlike {
+    display: inline-block;
+  }
+}
+
+
+a.like-toggle[data-liked="false"] {
+  .star.like {
+    display: inline-block;
+  }
+  .star.unlike {
+    display: none;
+  }
+}
+
+
+
+
+.star {
+    margin: 0px;
+    padding: 0px 5px 0px 0px !important;
+    font-size: 15px !important;
+  }
+
+
+.star.far{
+  padding: 0px 5px 0px 0px !important;
+}
+
+
+.star.fas{
+  padding: 0px 5px 0px 0px !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

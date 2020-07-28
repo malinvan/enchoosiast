@@ -2,16 +2,22 @@
 <div class="grid-container">
   <div class="suggestion-card">
     <% @careers.each do |threeCard|  %>
-      <%= link_to career_path(threeCard), class: "card-pack" do  %>
-        <div class="card-back-img" style="background-image: url('<%= cl_image_path threeCard.photo.key, height: 200, width: 400 , crop: :fill %>')">
-        </div>
+      <%#= link_to career_path(threeCard), class: "card-pack" do  %>
+      <div class="card-pack career-clickable" data-url="<%= career_path(threeCard) %>">
+        <div class="card-back-img" style="background-image: url('<%= cl_image_path threeCard.photo.key, height: 200, width: 400 , crop: :fill %>')"></div>
         <div class="card-text">
           <h3><%= threeCard.title  %></h3>
           <div class="card-symbols">
-            estrellitas
-          </div>
-        </div>
-      <% end %>
+            <%= link_to career_toggle_like_path(threeCard), class: "like-toggle",
+                        remote: true, data: {
+                        liked: threeCard.liked_by?(current_user),
+                        :"career-id" => threeCard.id } do %>
+              <i class="star like far fa-star" data-career-id="<%= threeCard.id %>"></i>
+              <i class="star unlike fas fa-star" data-career-id="<%= threeCard.id %>"></i>
+            <% end %>
+          </div><!-- .card-symbols -->
+        </div><!-- .card-text -->
+      </div><%# end %><!-- .card-pack -->
     <% end %>
   </div>
 </div>

@@ -8,21 +8,18 @@
     <% css_class = (pair.first == @careers.first) ? "carousel-item active" : "carousel-item" %>
     <div class="<%= css_class %>">
       <div class="card-career-suggestion">
-        <%= link_to career_path(pair[0]), class: "card-suggestion" do  %>
-              <%= cl_image_tag pair.first.photo.key, height: 230, width: 300, crop: :fill %>
-            <div class="card-caption">
-              <div>
-                <h3><%= pair.first.title  %></h3>
-              </div>
-            </div>
-
+        <%= link_to career_path(pair[0]), class: "card-suggestion"  do  %>
+          <div class="career" >
+            <%= cl_image_tag pair.first.photo.key, height: 200, width: 400, crop: :fill %>
+            <h3><%= pair.first.title  %></h3>
+          </div>
         <% end %>
         <% if pair.count == 2 %>
           <%= link_to career_path(pair[1]), class: "card-suggestion" do  %>
-            <div class="card-suggestion-img">
-              <%= cl_image_tag pair.last.photo.key, height: 230, width: 300, crop: :fill %>
+            <div class="career" >
+              <%= cl_image_tag pair.last.photo.key, height: 200, width: 400, crop: :fill %>
+              <h3><%= pair.last.title  %></h3>
             </div>
-            <h3><%= pair.last.title  %></h3>
           <% end %>
         <% end %>
       </div>
@@ -40,3 +37,4 @@
     </a>
   </div>
 </div>
+
