@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/careers/suggestions', to: 'careers#suggestions'
   resources :answers, only: [:new, :create]
   resources :careers, only: [:show]
+  resources :todos, only: [:index, :create, :destroy, :update]
 end

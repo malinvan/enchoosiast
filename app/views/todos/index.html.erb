@@ -1,0 +1,41 @@
+<h1 class="guide-header">action plan</h1>
+
+<div class="todo">
+  <div class="reading-list">
+  <h5>my reading list</h5>
+    <img src="/assets/images/undraw_book_lover_mkck.svg" alt="">
+    <div class="list">
+      <% @todo.each do |todo| %>
+      <%= todo.title %>
+      <%= todo.description %>
+      <% end %>
+    </div>
+    <%= link_to "➕", "/todos/new", class: "todo-btn"%>
+  </div>
+
+  <div class="edu-list">
+    <h5>education & practice</h5>
+    <img src="/assets/images/undraw_book_lover_mkck.svg" alt="">
+    <div class="list">
+      <% @todo.each do |todo| %>
+      <%= todo.title %>
+      <% end %>
+    </div>
+    <%= link_to "➕", "/todos/new", class: "todo-btn"%>
+  </div>
+
+  <div class="online-list">
+    <h5>online content</h5>
+    <img src="/assets/images/undraw_book_lover_mkck.svg" alt="">
+    <div class="list">
+      <% @todo.each do |todo| %>
+      <%= todo.title %>
+      <% end %>
+    </div>
+    <%= link_to "➕", "/todos/new", class: "todo-btn"%>
+  </div>
+</div>
+
+<div class="progressbar">
+
+</div>
