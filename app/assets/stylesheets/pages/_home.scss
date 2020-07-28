@@ -98,17 +98,13 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
   padding-right: 350px;
 }
 
-.button-div-second{
-  display: flex;
-  justify-content: center;
-}
 
-.card-suggestion{
+.card-icons{
   background-color:white;
   display:flex;
   flex-direction:column;
   border-radius: 10px;
-  box-shadow:0px 0px 4px;
+  box-shadow:0px 0px 2px;
   padding: 30px;
   width: 300px;
   margin: -60px;
@@ -122,7 +118,7 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
     }
 }
 
-.card-suggestion:hover {
+.card-icons:hover {
   transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
   box-shadow: 2px 20px 30px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
   transition: all .4s ease; /* zoom in */
@@ -139,29 +135,109 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
 .flexbox-testimonials{
   display:flex;
   margin: 120px;
+  margin-left: 220px;
   align-items:center;
   flex-direction: column;
-  border: 1px solid #003066;
   border-radius: 10px;
   padding: 20px;
+  width: 70%;
+  // box-shadow: 2px 20px 30px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+  // transition: all .4s ease; /* zoom in */
+  // transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
    &:hover {
       text-decoration: none;
     }
   h4 {
-    color:#003066;
+    color:grey;
+    padding-bottom: 10px;
   }
 }
 
-.flexbox-testimonials:hover {
-  transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
-  box-shadow: 2px 20px 30px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
-  transition: all .4s ease; /* zoom in */
-  cursor: pointer;
-}
+
 
 .card-testimonial{
-  margin: 40px;
+  margin: 25px;
   width: 100%;
+}
+
+
+.middle-avatar {
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+.middle-user-name{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+.top-bottom-avatar {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.text-avatar {
+  color: grey;
+  border-radius: 5px;
+  background-color:  rgba(151, 232, 250, 0.3);
+  position: relative;
+
+}
+
+.text-avatar p {
+  padding: 20px;
+  width: 500px;
+  font-size: 25px;
+
+}
+
+.text-avatar h4{
+  padding-left: 20px;
+
+
+}
+
+.middle-text-avatar {
+  color: grey;
+  width: 500px;
+  background-color: rgba(27, 99, 169, 0.2);
+  border-radius: 5px;
+  padding-right: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.avatar-img {
+  padding: 5px;
+}
+
+.middle-text-avatar p {
+  direction: ltr;
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.middle-text-avatar h4 {
+  text-align: end;
+  padding-right: 20px;
+}
+
+.quotes {
+  width: 100%;
+  position: absolute;
+  top: -25px;
+  left: 6px;
+}
+
+
+.ilustration img {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin-left: 20px;
 }
 
 
