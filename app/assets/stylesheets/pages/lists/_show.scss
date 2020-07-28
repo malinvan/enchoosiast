@@ -1,0 +1,35 @@
+.guide-header {
+  width: 200px;
+  margin: 0 auto;
+  color: #393e46;
+}
+
+.todo {
+  margin: 50px 50px;
+}
+
+.todo-card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 70px 20px 70px;
+  color: #393e46;
+
+    h5 {
+      font-weight: bold;
+    }
+
+    li {
+      font-weight: 200;
+    }
+}
+
+.reading-list, .edu-list, .online-list {
+ display: flex;
+ flex-direction: row;
+ margin-left: 40px;
+ margin: 30px 30px;
+}
+
+.list {
+  list-style-type: none;
+}
