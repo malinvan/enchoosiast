@@ -51,6 +51,7 @@
         <h4 class= "section-header">remote flexibility</h4>
         <p class="strong-info"> <%= @career.remote_flexibility %></p>
       </div>
+    </div>
     <div class="icon-with-info">
       <div class="icon-market"><i class="fas fa-clock"></i></div>
       <div class="info">
@@ -58,7 +59,6 @@
         <p class="strong-info"> <%= @career.working_hour_flexibility %></p>
       </div>
     </div>
-  </div>
 </div>
 </div>
 <div class="further-readings page-section">
@@ -90,5 +90,8 @@
     </a>
     </div>
   </div>
-  <%= link_to "get started!", career_lists_path(@career), method: :post %>
+  <div class="result-button-flex-box">
+    <%= link_to "back to suggestions", suggestions_path, class: "light-button"%>
+    <%= link_to "choose this career", career_lists_path(@career), method: :post, class: "dark-button"%>
+  </div>
 </div>

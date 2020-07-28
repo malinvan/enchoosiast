@@ -48,16 +48,16 @@
   margin: 20px;
   border-radius: 25px;
   font-weight: lighter;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 20px;
   transition: opacity 0.3s ease;
-  color: white;
+  color: rgba(0,0,0,0.2);
 }
 
 .light-button:hover{
   text-decoration: none;
   background-color: none;
-  box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
   background-color: white;
   color: #003066;
   text-shadow:none;
