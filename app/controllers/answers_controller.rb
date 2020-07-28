@@ -4,18 +4,19 @@ class AnswersController < ApplicationController
   end
 
   def create
-    p params
-    raise
+    questions = Question.all
+    questions.each do |question|
+      value = params["question-#{question.id}"]
+      unless value.nil?
+        answer = Answer.new(question: question, user: current_user)
+        if value <= 3
+          answer.value = false
+        else
+          answer.value = true
+        end
+        answer.save
+      end
+    end
+    redirect_to results_path
   end
-
-  # def create
-  #   @question = Question.find
-  #   @answer = Answer.new(params[:answer])
-  #   @answer.question =
-  #   @answer.save
-  # end
-
-  # def results
-  #   @answers = Answer.all
-  # end
 end

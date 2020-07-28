@@ -1,9 +1,8 @@
 <h2>suggestions</h2>
 <div class="grid-container">
-  <div class="suggestion-card">
+  <div class="grid">
     <% @careers.each do |threeCard|  %>
-      <%#= link_to career_path(threeCard), class: "card-pack" do  %>
-      <div class="card-pack career-clickable" data-url="<%= career_path(threeCard) %>">
+      <div class="card-pack career-clickable grid-item" data-url="<%= career_path(threeCard) %>">
         <div class="card-back-img" style="background-image: url('<%= cl_image_path threeCard.photo.key, height: 200, width: 400 , crop: :fill %>')"></div>
         <div class="card-text">
           <h3><%= threeCard.title  %></h3>
@@ -15,9 +14,9 @@
               <i class="star like far fa-star" data-career-id="<%= threeCard.id %>"></i>
               <i class="star unlike fas fa-star" data-career-id="<%= threeCard.id %>"></i>
             <% end %>
-          </div><!-- .card-symbols -->
-        </div><!-- .card-text -->
-      </div><%# end %><!-- .card-pack -->
+          </div>
+        </div>
+      </div>
     <% end %>
   </div>
 </div>

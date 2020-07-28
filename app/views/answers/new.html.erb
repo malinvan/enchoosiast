@@ -23,7 +23,7 @@
 </div>
 
 <div class="test-container">
-  <%= form_with url: answers_path, scope: :questions, class: "test" do |f| %>
+  <%= form_with url: answers_path, scope: :questions, local: true, class: "test" do |f| %>
     <div class="row">
       <div class="col-md-8 offset-md-2">
         <%= render "questions_carousel", questions: @questions %>

@@ -9,9 +9,11 @@
     "animate.css": "^4.1.0",
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
+    "masonry-layout": "^4.2.2",
     "popper.js": "^1.16.1",
     "sweetalert": "^2.1.2",
-    "turbolinks": "^5.2.0"
+    "turbolinks": "^5.2.0",
+    "typed.js": "^2.0.11"
   },
   "version": "0.1.0",
   "devDependencies": {
