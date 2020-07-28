@@ -5,7 +5,7 @@
   <h5>my reading list</h5>
     <img src="/assets/images/undraw_book_lover_mkck.svg" alt="">
     <div class="list">
-      <% @todo.each do |todo| %>
+      <% @reading_todos.each do |todo| %>
       <%= todo.title %>
       <%= todo.description %>
       <% end %>
@@ -17,7 +17,7 @@
     <h5>education & practice</h5>
     <img src="/assets/images/undraw_book_lover_mkck.svg" alt="">
     <div class="list">
-      <% @todo.each do |todo| %>
+      <% @education_todos.each do |todo| %>
       <%= todo.title %>
       <% end %>
     </div>
@@ -28,7 +28,7 @@
     <h5>online content</h5>
     <img src="/assets/images/undraw_book_lover_mkck.svg" alt="">
     <div class="list">
-      <% @todo.each do |todo| %>
+      <% @online_content_todos.each do |todo| %>
       <%= todo.title %>
       <% end %>
     </div>
@@ -39,3 +39,10 @@
 <div class="progressbar">
 
 </div>
+
+<%= simple_form_for([@list, @todo]) do |f| %>
+  <%= f.input :category, collection: Todo.categories %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.submit %>
+<% end %>

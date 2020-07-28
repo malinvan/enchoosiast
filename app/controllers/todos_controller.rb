@@ -9,7 +9,18 @@ class TodosController < ApplicationController
   end
 
   def create
-    @todo = Todo.create(todo_params)
+    @todo = Todo.new(todo_params)
+    @list = List.find(params[:list_id])
+    @todo.list = @list
+    if @todo.save
+      redirect_to list_path(@list)
+    else
+      @todos = @list.todos
+      @reading_todos = @todos.where(category: "reading")
+      @education_todos = @todos.where(category: "education")
+      @online_content_todos = @todos.where(category: "online content")
+      render "lists/show"
+    end
   end
 
   def edit
@@ -30,6 +41,6 @@ class TodosController < ApplicationController
   private
 
   def todo_params
-    params.require(:todo).permit(:title, :description)
+    params.require(:todo).permit(:title, :description, :category)
   end
 end
