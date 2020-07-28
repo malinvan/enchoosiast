@@ -28,29 +28,28 @@ class AnswersController < ApplicationController
 
     # CHARACTERISTICS
 
-  #   @creativity = ""
-  #   @flexibility = ""
-  #   @sociality = ""
-  #   @dominance = ""
-  #   @structuredness = ""
+    @creativity = ""
+    @flexibility = ""
+    @sociality = ""
+    @dominance = ""
+    @structuredness = ""
 
 
   #   #TRAITS
 
-  #   creative = Trait.where(title: "creative")
-  #   practical = Trait.where(title: "practical")
-  #   flexible = Trait.where(title: "flexible")
-  #   inflexible = Trait.where(title: "inflexible")
-  #   social = Trait.where(title: "social")
-  #   insocial = Trait.where(title: "insocial")
-  #   leading = Trait.where(title: "leading")
-  #   submissive = Trait.where(title: "submissive")
-  #   structured = Trait.where(title: "structured")
-  #   impulsive = Trait.where(title: "impulsive")
+    creative = Trait.where(title: "creative")
+    practical = Trait.where(title: "practical")
+    flexible = Trait.where(title: "flexible")
+    inflexible = Trait.where(title: "inflexible")
+    social = Trait.where(title: "social")
+    insocial = Trait.where(title: "insocial")
+    leading = Trait.where(title: "leading")
+    submissive = Trait.where(title: "submissive")
+    structured = Trait.where(title: "structured")
+    impulsive = Trait.where(title: "impulsive")
 
 
   #   if @user_traits.include? creative
-
   end
 
   private
