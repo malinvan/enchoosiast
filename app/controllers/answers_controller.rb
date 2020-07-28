@@ -51,7 +51,7 @@ class AnswersController < ApplicationController
 
   #   if @user_traits.include? creative
 
-  # end
+  end
 
   private
 
