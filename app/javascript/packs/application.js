@@ -33,7 +33,12 @@ import { initNavbar } from '../components/navbar';
 
 import { initCarousel } from '../components/questions_carousel';
 
+
+import { initCareerGrid } from '../components/career-grid';
+
 import { clickShow } from '../components/show_text';
+
+import { initLandingpageAnimation } from '../components/text-animation';
 
 
 document.addEventListener('turbolinks:load', () => {
@@ -49,9 +54,10 @@ document.addEventListener('turbolinks:load', () => {
 
     });
   };
+  initCareerGrid();
   showPopUp();
   initNavbar();
   clickShow();
   initCarousel();
-
+  initLandingpageAnimation();
 });

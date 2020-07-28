@@ -7,4 +7,5 @@ class User < ApplicationRecord
   has_many :user_traits
   has_many :traits, through: :user_traits
   belongs_to :career, optional: true
+  act_as_liker
 end

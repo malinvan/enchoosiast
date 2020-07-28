@@ -1,0 +1,6 @@
+var stars = document.querySelectorAll("[data-career-id='<%= @career.id %>']");
+console.log(stars);
+stars.forEach((star) => {
+  star.classList.toggle("far")
+  star.classList.toggle("fas")
+});
