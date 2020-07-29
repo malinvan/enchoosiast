@@ -1,6 +1,7 @@
 .grid {
-  background: #EEE;
-  max-width: 1200px;
+  background: #white;
+  width: 100%;
+  margin: 0 auto;
 }
 /* clearfix */
 .grid:after {
@@ -10,18 +11,18 @@
 }
 /* ---- grid-item ---- */
 .grid-item {
-  width: 160px;
+  width: 195px;
   height: 250px;
-  float: left;
-  border: 1px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
+  border: 1px solid white;
+  border-color: hsla(0, 0%, 0%, 0.1);
   border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
 }
-.grid-item--width2 { width:  320px; }
-.grid-item--width3 { width:  480px; }
+.grid-item--width2 { width:  420px; }
+.grid-item--width3 { width:  580px; }
 .grid-item--width4 { width:  720px; }
-.grid-item--height2 { height: 200px; }
+.grid-item--height2 { height: 220px; }
 .grid-item--height3 { height: 260px; }
 .grid-item--height4 { height: 360px; }
-
-

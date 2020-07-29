@@ -1,8 +1,7 @@
-<h2>liked suggestions</h2>
+<h2>career suggestions you loved</h2>
 <div class="suggestion-carousel">
   <div id="new-suggestion-carousel-controls" class="carousel slide" data-ride="carousel" data-interval="false">
   <div class="carousel-inner">
-
 
   <% @careers.each_slice(2) do |pair|  %>
     <% css_class = (pair.first == @careers.first) ? "carousel-item active" : "carousel-item" %>
