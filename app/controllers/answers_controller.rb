@@ -14,12 +14,12 @@ class AnswersController < ApplicationController
         else
           answer.value = true
         end
-        if answer.save
+        if answer.save!
           create_user_trait(answer)
         end
       end
-    end
 
+    end
     redirect_to results_path
   end
 
@@ -85,7 +85,7 @@ class AnswersController < ApplicationController
     if @user_traits.include? structured
       @structuredness = "You are a structured problem solver!"
     elsif @user_traits.include? impulsive
-      @structuredness= "You approach problems impulsively and trust your gut."
+      @structuredness = "You approach problems impulsively and trust your gut."
     else
       @structuredness = "Unfortunately, you did not answer the questions about structrued thinking..."
     end
@@ -95,5 +95,6 @@ class AnswersController < ApplicationController
 
   def create_user_trait(answer)
     user_trait = UserTrait.create(user: current_user, trait: answer.traits[0])
+    user_trait.save!
   end
 end
