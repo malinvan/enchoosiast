@@ -1,15 +1,21 @@
 import Masonry from "masonry-layout"
+import imagesLoaded from "imagesloaded"
 
 const masonry = () => {
-  var elem = document.querySelector('.grid');
-  if (elem) {
-    var msnry = new Masonry( elem, {
-    // options
-      itemSelector: '.grid-item',
-      columnWidth: 200
+  var grid = document.querySelector('.grid');
+  if (grid) {
+    var msnry;
+    imagesLoaded(grid, (inst) => {
+      // init Isotope after all images have loaded
+      setTimeout(() => {
+        msnry = new Masonry( grid, {
+          itemSelector: '.grid-item',
+          columnWidth: 195,
+          percentPosition: true,
+          gutter: 30,
+        });
+      }, 400);
     });
   };
-  console.log(msnry)
 }
-
 export { masonry };
