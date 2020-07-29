@@ -4,19 +4,25 @@
 <div class="todo">
 
   <div class="reading-list">
-    <%= image_tag "undraw_book_lover_mkck.svg", height: "100" %>
+    <div>
+      <%= image_tag "book_blue.svg", height: "100", class: "guide-img" %>
+    </div>
     <div class="todo-card">
       <h5>my reading list</h5>
       <ul>
         <div class="list">
           <% @reading_todos.each do |todo| %>
-            <div class="">
-              <div class="list-item">
-                <input class="form-check-input position-static mr-3" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                <li><strong><%= todo.title %></strong></li>
+            <div class="todo-hover">
+              <div class="dlt-btn-div">
+                <div class="list-item">
+                  <input class="form-check-input position-static mr-3" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                  <li><strong><%= todo.title %></strong></li>
+                </div>
+                <div class="hide">
+                  <%= link_to "", { action: "destroy", id: todo.id, list_id: @list.id, controller: "todos" }, method: :delete, data: { confirm: "Are you sure?" }, class: "dlt-btn fas fa-minus-circle ml-3" %>
+                </div>
               </div>
-              <li><%= todo.description %></li>
-              <%= link_to "", { action: "destroy", id: todo.id, list_id: @list.id, controller: "todos" }, method: :delete, data: { confirm: "Are you sure?" }, class: "fas fa-minus-circle" %>
+              <li class="guide-description"><%= todo.description %></li>
             </div>
           <% end %>
         </div>
@@ -31,30 +37,42 @@
       <ul>
         <div class="list">
           <% @education_todos.each do |todo| %>
-          <div class="list-item">
-            <input class="form-check-input position-static mr-3" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-            <li><%= todo.title %></li>
-            <%= link_to "", { action: "destroy", id: todo.id, list_id: @list.id, controller: "todos" }, method: :delete, data: { confirm: "Are you sure?" }, class: "fas fa-minus-circle" %>
-          </div>
+          <div class="todo-hover">
+            <div class="list-item">
+              <input class="form-check-input position-static mr-3" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              <li><%= todo.title %></li>
+              <div class="hide">
+                <%= link_to "", { action: "destroy", id: todo.id, list_id: @list.id, controller: "todos" }, method: :delete, data: { confirm: "Are you sure?" }, class: "dlt-btn fas fa-minus-circle ml-3" %>
+              </div>
+            </div>
+           </div>
           <% end %>
           <%= link_to "➕", "/todos/new", class: "todo-btn"%>
         </div>
       </ul>
     </div>
-    <%= image_tag "undraw_Graduation_ktn0.svg", height: "100" %>
+    <div>
+      <%= image_tag "graduation_blue.svg", height: "100", class: "guide-img"%>
+    </div>
   </div>
 
   <div class="online-list">
-    <%= image_tag "undraw_online_articles_79ff.svg", height: "100" %>
+    <div>
+      <%= image_tag "online_content_blue.svg", height: "100", class: "guide-img" %>
+    </div>
     <div class="todo-card">
       <h5>online content</h5>
       <ul>
         <div class="list">
           <% @online_content_todos.each do |todo| %>
-          <div class="list-item">
-            <input class="form-check-input position-static mr-3" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-            <li><%= todo.title %></li>
-            <%= link_to "", { action: "destroy", id: todo.id, list_id: @list.id, controller: "todos" }, method: :delete, data: { confirm: "Are you sure?" }, class: "fas fa-minus-circle" %>
+          <div class="todo-hover">
+            <div class="list-item">
+              <input class="form-check-input position-static mr-3" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+              <li><%= todo.title %></li>
+              <div class="hide">
+                  <%= link_to "", { action: "destroy", id: todo.id, list_id: @list.id, controller: "todos" }, method: :delete, data: { confirm: "Are you sure?" }, class: "dlt-btn fas fa-minus-circle ml-3" %>
+              </div>
+            </div>
           </div>
           <% end %>
         </div>
