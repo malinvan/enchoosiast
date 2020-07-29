@@ -5,7 +5,12 @@ class CareersController < ApplicationController
   before_action :set_career, except: :suggestions
 
   def suggestions
-    @careers = Career.all
+    user_traits = current_user.traits
+    careers_of_traits = []
+    user_traits.each do |trait|
+      careers_of_traits << trait.careers
+    end
+    @careers = careers_of_traits.inject(:&)
   end
 
   def show
