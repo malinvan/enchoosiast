@@ -42,6 +42,8 @@ import { initLandingpageAnimation } from '../components/text-animation';
 
 import { masonry } from '../components/masonry';
 
+import { popupGuide } from '../components/popup-guide';
+
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
@@ -62,4 +64,5 @@ document.addEventListener('turbolinks:load', () => {
   initCarousel();
   initLandingpageAnimation();
   masonry();
+  popupGuide();
 });

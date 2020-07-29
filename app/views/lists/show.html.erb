@@ -1,5 +1,5 @@
+<div class="hide-box-guide"></div>
 <h1 class="guide-header">action plan</h1>
-
 
 <div class="todo">
 
@@ -21,7 +21,9 @@
           <% end %>
         </div>
       </ul>
-      <%= link_to "➕", "/todos/new", class: "todo-btn"%>
+      <div class="btn todo-btn ">
+        ➕
+       </div>
     </div>
   </div>
 
@@ -37,7 +39,6 @@
             <%= link_to "", { action: "destroy", id: todo.id, list_id: @list.id, controller: "todos" }, method: :delete, data: { confirm: "Are you sure?" }, class: "fas fa-minus-circle" %>
           </div>
           <% end %>
-          <%= link_to "➕", "/todos/new", class: "todo-btn"%>
         </div>
       </ul>
     </div>
@@ -58,16 +59,18 @@
           </div>
           <% end %>
         </div>
-        <%= link_to "➕", "/todos/new", class: "todo-btn"%>
       </ul>
     </div>
   </div>
-
-  <%= simple_form_for([@list, @todo]) do |f| %>
-    <%= f.input :category, collection: Todo.categories %>
-    <%= f.input :title %>
-    <%= f.input :description %>
-    <%= f.submit %>
+  <div class="form-container">
+    <div class="form-pop">
+      <%= simple_form_for([@list, @todo]) do |f| %>
+      <%= f.input :category, collection: Todo.categories %>
+      <%= f.input :title %>
+      <%= f.input :description %>
+      <%= f.submit 'Create' %>
+      </div>
+  </div>
   <% end %>
 
 </div>
