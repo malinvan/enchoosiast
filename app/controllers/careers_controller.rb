@@ -5,7 +5,8 @@ class CareersController < ApplicationController
   before_action :set_career, except: :suggestions
 
   def suggestions
-    @careers = Career.all
+    user_traits = current_user.traits
+    @careers = Careers.all
   end
 
   def show

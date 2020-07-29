@@ -11,13 +11,201 @@ puts "Deleting careers..."
 Career.destroy_all
 puts "Deleting questions..."
 Question.destroy_all
-puts "Creating new careers.."
+puts "Deleting traits..."
+Trait.destroy_all
+puts "Deleting trait questions..."
+TraitQuestion.destroy_all
+puts "Creating new careers..."
 
 
 
 
+# DEMO CAREERS
 
-clown= Career.create(title: 'clown', summary:'very funny clown' , detailed_description: 'A clown is a public entertainer who dresses in outlandish
+project_manager = Career.create(
+  title: 'pm',
+  summary:'very funny clown',
+  detailed_description: '??',
+  salary: 23000 ,
+  entry_barriers: 'easy',
+  remote_flexibility: 'none',
+  international_flexibility: 'high',
+  working_hour_flexibility:'very high',
+  next_steps:'???'
+)
+
+entreprneur = Career.create(
+  title: 'clown',
+  summary:'very funny clown',
+  detailed_description: 'A clown is a public entertainer who dresses in outlandish
+                     attire and attempts to please audiences with comical and chaotic behaviour.
+                     Clowns are typically hired to entertain children at events such as birthday parties and public gatherings.
+                     Most, though, choose to freelance, travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.',
+  social_interaction: 'very high',
+  salary: 23000 ,
+  entry_barriers: 'easy',
+  remote_flexibility: 'none',
+  international_flexibility: 'high',
+  working_hour_flexibility:'very high',
+  next_steps:'A clown is a public entertainer who dresses in outlandish attire and attempts to please
+                     audiences with comical and chaotic behaviour. Clowns are typically hired to entertain children at
+                     events such as birthday parties and public gatherings. Most, though, choose to freelance,
+                     travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.'
+)
+
+creative_director= Career.create(
+  title: 'clown',
+  summary:'very funny clown',
+  detailed_description: 'A clown is a public entertainer who dresses in outlandish
+                     attire and attempts to please audiences with comical and chaotic behaviour.
+                     Clowns are typically hired to entertain children at events such as birthday parties and public gatherings.
+                     Most, though, choose to freelance, travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.',
+  social_interaction: 'very high',
+  salary: 23000 ,
+  entry_barriers: 'easy',
+  remote_flexibility: 'none',
+  international_flexibility: 'high',
+  working_hour_flexibility:'very high',
+  next_steps:'A clown is a public entertainer who dresses in outlandish attire and attempts to please
+                     audiences with comical and chaotic behaviour. Clowns are typically hired to entertain children at
+                     events such as birthday parties and public gatherings. Most, though, choose to freelance,
+                     travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.'
+)
+
+sales_manager = Career.create(
+  title: 'clown',
+  summary:'very funny clown',
+  detailed_description: 'A clown is a public entertainer who dresses in outlandish
+                     attire and attempts to please audiences with comical and chaotic behaviour.
+                     Clowns are typically hired to entertain children at events such as birthday parties and public gatherings.
+                     Most, though, choose to freelance, travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.',
+  social_interaction: 'very high',
+  salary: 23000 ,
+  entry_barriers: 'easy',
+  remote_flexibility: 'none',
+  international_flexibility: 'high',
+  working_hour_flexibility:'very high',
+  next_steps:'A clown is a public entertainer who dresses in outlandish attire and attempts to please
+                     audiences with comical and chaotic behaviour. Clowns are typically hired to entertain children at
+                     events such as birthday parties and public gatherings. Most, though, choose to freelance,
+                     travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.'
+)
+
+innovation_consultant = Career.create(
+  title: 'clown',
+  summary:'very funny clown',
+  detailed_description: 'A clown is a public entertainer who dresses in outlandish
+                     attire and attempts to please audiences with comical and chaotic behaviour.
+                     Clowns are typically hired to entertain children at events such as birthday parties and public gatherings.
+                     Most, though, choose to freelance, travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.',
+  social_interaction: 'very high',
+  salary: 23000 ,
+  entry_barriers: 'easy',
+  remote_flexibility: 'none',
+  international_flexibility: 'high',
+  working_hour_flexibility:'very high',
+  next_steps:'A clown is a public entertainer who dresses in outlandish attire and attempts to please
+                     audiences with comical and chaotic behaviour. Clowns are typically hired to entertain children at
+                     events such as birthday parties and public gatherings. Most, though, choose to freelance,
+                     travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.'
+)
+
+paramedic = Career.create(
+  title: 'clown',
+  summary:'very funny clown',
+  detailed_description: 'A clown is a public entertainer who dresses in outlandish
+                     attire and attempts to please audiences with comical and chaotic behaviour.
+                     Clowns are typically hired to entertain children at events such as birthday parties and public gatherings.
+                     Most, though, choose to freelance, travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.',
+  social_interaction: 'very high',
+  salary: 23000 ,
+  entry_barriers: 'easy',
+  remote_flexibility: 'none',
+  international_flexibility: 'high',
+  working_hour_flexibility:'very high',
+  next_steps:'A clown is a public entertainer who dresses in outlandish attire and attempts to please
+                     audiences with comical and chaotic behaviour. Clowns are typically hired to entertain children at
+                     events such as birthday parties and public gatherings. Most, though, choose to freelance,
+                     travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.'
+)
+
+pilot = Career.create(
+  title: 'clown',
+  summary:'very funny clown',
+  detailed_description: 'A clown is a public entertainer who dresses in outlandish
+                     attire and attempts to please audiences with comical and chaotic behaviour.
+                     Clowns are typically hired to entertain children at events such as birthday parties and public gatherings.
+                     Most, though, choose to freelance, travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.',
+  social_interaction: 'very high',
+  salary: 23000 ,
+  entry_barriers: 'easy',
+  remote_flexibility: 'none',
+  international_flexibility: 'high',
+  working_hour_flexibility:'very high',
+  next_steps:'A clown is a public entertainer who dresses in outlandish attire and attempts to please
+                     audiences with comical and chaotic behaviour. Clowns are typically hired to entertain children at
+                     events such as birthday parties and public gatherings. Most, though, choose to freelance,
+                     travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.'
+)
+
+real_estate_broker = Career.create(
+  title: 'clown',
+  summary:'very funny clown',
+  detailed_description: 'A clown is a public entertainer who dresses in outlandish
+                     attire and attempts to please audiences with comical and chaotic behaviour.
+                     Clowns are typically hired to entertain children at events such as birthday parties and public gatherings.
+                     Most, though, choose to freelance, travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.',
+  social_interaction: 'very high',
+  salary: 23000 ,
+  entry_barriers: 'easy',
+  remote_flexibility: 'none',
+  international_flexibility: 'high',
+  working_hour_flexibility:'very high',
+  next_steps:'A clown is a public entertainer who dresses in outlandish attire and attempts to please
+                     audiences with comical and chaotic behaviour. Clowns are typically hired to entertain children at
+                     events such as birthday parties and public gatherings. Most, though, choose to freelance,
+                     travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.'
+)
+
+photographer = Career.create(
+  title: 'clown',
+  summary:'very funny clown',
+  detailed_description: 'A clown is a public entertainer who dresses in outlandish
+                     attire and attempts to please audiences with comical and chaotic behaviour.
+                     Clowns are typically hired to entertain children at events such as birthday parties and public gatherings.
+                     Most, though, choose to freelance, travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.',
+  social_interaction: 'very high',
+  salary: 23000 ,
+  entry_barriers: 'easy',
+  remote_flexibility: 'none',
+  international_flexibility: 'high',
+  working_hour_flexibility:'very high',
+  next_steps:'A clown is a public entertainer who dresses in outlandish attire and attempts to please
+                     audiences with comical and chaotic behaviour. Clowns are typically hired to entertain children at
+                     events such as birthday parties and public gatherings. Most, though, choose to freelance,
+                     travelling wherever the booking may take them. They will tell jokes, stories,
+                     perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.'
+)
+
+
+
+# OTHER CAREERS
+clown = Career.create(title: 'clown', summary:'very funny clown' , detailed_description: 'A clown is a public entertainer who dresses in outlandish
                      attire and attempts to please audiences with comical and chaotic behaviour.
                      Clowns are typically hired to entertain children at events such as birthday parties and public gatherings.
                      Most, though, choose to freelance, travelling wherever the booking may take them. They will tell jokes, stories,
@@ -30,65 +218,45 @@ clown= Career.create(title: 'clown', summary:'very funny clown' , detailed_descr
                      travelling wherever the booking may take them. They will tell jokes, stories,
                      perform slapstick routines and involve the audiences in an attempt to make them laugh and enjoy the performance.')
 
-housekeeping= Career.create(title: 'housekeeping', summary:'clean is your passion' , detailed_description: 'make a living of cleaning',
+housekeeper = Career.create(title: 'housekeeping', summary:'clean is your passion' , detailed_description: 'make a living of cleaning',
                             social_interaction: 'easy', salary: 21000 ,  entry_barriers: 'medium', remote_flexibility: 'none',
                             international_flexibility: 'very high', working_hour_flexibility:'low', next_steps:'1.  , 2. , 3. ')
 
-chef= Career.create(title: 'chef', summary:'Love cooking' , detailed_description: 'make a living of cooking',
+chef = Career.create(title: 'chef', summary:'Love cooking' , detailed_description: 'make a living of cooking',
                     social_interaction: 'high', salary: 27000 ,  entry_barriers: 'medium', remote_flexibility: 'none',
                     international_flexibility: 'high', working_hour_flexibility:'low',
                     next_steps:'1. Take cooking classes , 2. Go to culinary school, 3. Buy your knives')
 
-teacher= Career.create(title: 'teacher', summary:'Transmit knowledge' ,
+teacher = Career.create(title: 'teacher', summary:'Transmit knowledge' ,
                        detailed_description: 'make a living of leading the new generations to a better future',
                        social_interaction: 'very high', salary: 30000 ,  entry_barriers: 'difficult',
                        remote_flexibility: 'medium', international_flexibility: 'medium',
                        working_hour_flexibility:'high',
                        next_steps:'1. Read books about the topic , 2. Go to school, 3. Be patient')
 
-itdeveloper= Career.create(title: 'itdeveloper', summary:'be in the most demanding career of the future' ,
-                           detailed_description: 'make a living in the best tech companies', social_interaction: 'high',
-                           salary: 35000 ,  entry_barriers: 'medium', remote_flexibility: 'high',
-                           international_flexibility: 'high', working_hour_flexibility:'very high',
-                           next_steps:'1. Learn coding , 2. Go to coding school, 3. Buy a good laptop')
-
-
-astronaut= Career.create(title: 'astronaut', summary:'see the stars' ,
+astronaut = Career.create(title: 'astronaut', summary:'see the stars' ,
                          detailed_description: 'you will be on board of a taking samples of Mars surface ',
                          social_interaction: 'high', salary: 60000 ,  entry_barriers: 'really difficult',
                          remote_flexibility: 'none', international_flexibility: 'very high', working_hour_flexibility:'low',
                          next_steps:'1. Learn physics , 2. Go to NASA, 3. Train hard')
 
-pilot= Career.create(title: 'pilot', summary:'Love freedom and travel' , detailed_description: "Professional pilots fly and navigate airplanes, helicopters,
-                     and other types of aircraft. They must have excellent communication and problem-solving skills, and be detail-oriented.
-                     The ability to work as part of a team is also vital. In addition to working with the crew, a pilot also works with air traffic
-                     controllers and flight dispatchers.",
-                     social_interaction: 'very high', salary: 35000 ,  entry_barriers: 'medium', remote_flexibility: 'none',
-                     international_flexibility: 'high', working_hour_flexibility:'very high',
-                     next_steps:"To become a pilot, you will need to satisfy several different requirements, including education, training, and licensing:
-                      Training: Pilots receive their training in the military or by attending U.S. Federal Aviation Administration (FAA)-certified flight schools.
-                      Education: Most employers prefer to hire candidates who have a bachelor's degree, although the minimum education requirement is two years of college.
-                      Coursework should include English, math, physics, and aeronautical engineering.
-                      License: To work as a pilot, you need a commercial pilot's license.
-                      Certification: Airline captains and first officers need a transport pilot certificate. To qualify for one, a pilot must be 23 years old with 1,500 hours of flight time
-                      and pass written and flight exams.")
 
-singer= Career.create(title: 'singer', summary:'show your voice to the world' , detailed_description: 'singing',
+singer = Career.create(title: 'singer', summary:'show your voice to the world' , detailed_description: 'singing',
                       social_interaction: 'very high', salary: 26000 ,  entry_barriers: 'easy', remote_flexibility: 'none',
                       international_flexibility: 'high', working_hour_flexibility:'very high',
                       next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
-actor= Career.create(title: 'actor', summary:'better than clooney?' , detailed_description: 'learn the script and be natural',
+actor = Career.create(title: 'actor', summary:'better than clooney?' , detailed_description: 'learn the script and be natural',
                      social_interaction: 'very high', salary: 50000 ,  entry_barriers: 'easy', remote_flexibility: 'none',
                      international_flexibility: 'high', working_hour_flexibility:'very high',
                      next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
-spy= Career.create(title: 'spy', summary:'hitman' , detailed_description: 'XXXclassified infoXXX',
+spy = Career.create(title: 'spy', summary:'hitman' , detailed_description: 'XXXclassified infoXXX',
                    social_interaction: 'very high', salary: 007 ,  entry_barriers: 'almost impossible',
                    remote_flexibility: 'none', international_flexibility: 'high', working_hour_flexibility:'very high',
                    next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
-consultant= Career.create(title: 'consultant', summary:'make you richer' , detailed_description: 'help others to handle their investing',
+consultant = Career.create(title: 'consultant', summary:'make you richer' , detailed_description: 'help others to handle their investing',
                           social_interaction: 'very high', salary: 56000 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
                           international_flexibility: 'high', working_hour_flexibility:'very high',
                           next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
@@ -140,7 +308,7 @@ traits << Trait.create(title: "submissive")
 traits << Trait.create(title: "structured")
 traits << Trait.create(title: "impulsive")
 
-puts "Connection traits to questions..."
+puts "Connecting traits to questions..."
 
 TraitQuestion.create(question: questions[0], trait: traits[0], answer_value: true)
 TraitQuestion.create(question: questions[0], trait: traits[1], answer_value: false)
@@ -156,6 +324,152 @@ TraitQuestion.create(question: questions[3], trait: traits[7], answer_value: fal
 
 TraitQuestion.create(question: questions[4], trait: traits[8], answer_value: true)
 TraitQuestion.create(question: questions[4], trait: traits[9], answer_value: false)
+
+puts "Connecting traits to careers..."
+
+# PROJECT MANAGER
+CareerTrait.create(career: project_manager, trait: traits[0])
+CareerTrait.create(career: project_manager, trait: traits[3])
+CareerTrait.create(career: project_manager, trait: traits[4])
+CareerTrait.create(career: project_manager, trait: traits[6])
+CareerTrait.create(career: project_manager, trait: traits[8])
+
+# ENTREPRENEUR
+CareerTrait.create(career: entreprneur, trait: traits[0])
+CareerTrait.create(career: entreprneur, trait: traits[3])
+CareerTrait.create(career: entreprneur, trait: traits[4])
+CareerTrait.create(career: entreprneur, trait: traits[6])
+CareerTrait.create(career: entreprneur, trait: traits[8])
+
+# CREATIVE-DIRECTOR
+CareerTrait.create(career: creative_director, trait: traits[0])
+CareerTrait.create(career: creative_director, trait: traits[3])
+CareerTrait.create(career: creative_director, trait: traits[4])
+CareerTrait.create(career: creative_director, trait: traits[6])
+CareerTrait.create(career: creative_director, trait: traits[8])
+
+# SALES-MANAGER
+CareerTrait.create(career: sales_manager, trait: traits[0])
+CareerTrait.create(career: sales_manager, trait: traits[3])
+CareerTrait.create(career: sales_manager, trait: traits[4])
+CareerTrait.create(career: sales_manager, trait: traits[6])
+CareerTrait.create(career: sales_manager, trait: traits[8])
+
+# INNOVATION CONSULTANT
+CareerTrait.create(career: innovation_consultant, trait: traits[0])
+CareerTrait.create(career: innovation_consultant, trait: traits[3])
+CareerTrait.create(career: innovation_consultant, trait: traits[4])
+CareerTrait.create(career: innovation_consultant, trait: traits[6])
+CareerTrait.create(career: innovation_consultant, trait: traits[8])
+
+# PARAMEDIC
+CareerTrait.create(career: paramedic, trait: traits[0])
+CareerTrait.create(career: paramedic, trait: traits[3])
+CareerTrait.create(career: paramedic, trait: traits[4])
+CareerTrait.create(career: paramedic, trait: traits[6])
+CareerTrait.create(career: paramedic, trait: traits[8])
+
+# PILOT
+CareerTrait.create(career: pilot, trait: traits[0])
+CareerTrait.create(career: pilot, trait: traits[3])
+CareerTrait.create(career: pilot, trait: traits[4])
+CareerTrait.create(career: pilot, trait: traits[6])
+CareerTrait.create(career: pilot, trait: traits[8])
+
+# REAL ESTATE BROKER
+CareerTrait.create(career: real_estate_broker, trait: traits[0])
+CareerTrait.create(career: real_estate_broker, trait: traits[3])
+CareerTrait.create(career: real_estate_broker, trait: traits[4])
+CareerTrait.create(career: real_estate_broker, trait: traits[6])
+CareerTrait.create(career: real_estate_broker, trait: traits[8])
+
+# PHOTOGRAPHER
+CareerTrait.create(career: photographer, trait: traits[0])
+CareerTrait.create(career: photographer, trait: traits[3])
+CareerTrait.create(career: photographer, trait: traits[4])
+CareerTrait.create(career: photographer, trait: traits[6])
+CareerTrait.create(career: photographer, trait: traits[8])
+
+#OTHER CAREERS
+
+# clown
+CareerTrait.create(career: clown, trait: traits[0])
+CareerTrait.create(career: clown, trait: traits[2])
+CareerTrait.create(career: clown, trait: traits[4])
+CareerTrait.create(career: clown, trait: traits[6])
+CareerTrait.create(career: clown, trait: traits[9])
+
+# housekeeper
+CareerTrait.create(career: housekeeper, trait: traits[1])
+CareerTrait.create(career: housekeeper, trait: traits[2])
+CareerTrait.create(career: housekeeper, trait: traits[4])
+CareerTrait.create(career: housekeeper, trait: traits[7])
+CareerTrait.create(career: housekeeper, trait: traits[8])
+
+# chef
+CareerTrait.create(career: chef, trait: traits[0])
+CareerTrait.create(career: chef, trait: traits[2])
+CareerTrait.create(career: chef, trait: traits[4])
+CareerTrait.create(career: chef, trait: traits[7])
+CareerTrait.create(career: chef, trait: traits[8])
+
+# teacher
+CareerTrait.create(career: teacher, trait: traits[1])
+CareerTrait.create(career: teacher, trait: traits[2])
+CareerTrait.create(career: teacher, trait: traits[4])
+CareerTrait.create(career: teacher, trait: traits[6])
+CareerTrait.create(career: teacher, trait: traits[8])
+
+# astronaut
+CareerTrait.create(career: astronaut, trait: traits[1])
+CareerTrait.create(career: astronaut, trait: traits[2])
+CareerTrait.create(career: astronaut, trait: traits[5])
+CareerTrait.create(career: astronaut, trait: traits[7])
+CareerTrait.create(career: astronaut, trait: traits[8])
+
+# singer
+CareerTrait.create(career: singer, trait: traits[0])
+CareerTrait.create(career: singer, trait: traits[3])
+CareerTrait.create(career: singer, trait: traits[5])
+CareerTrait.create(career: singer, trait: traits[7])
+CareerTrait.create(career: singer, trait: traits[9])
+
+# actor
+CareerTrait.create(career: actor, trait: traits[0])
+CareerTrait.create(career: actor, trait: traits[2])
+CareerTrait.create(career: actor, trait: traits[4])
+CareerTrait.create(career: actor, trait: traits[7])
+CareerTrait.create(career: actor, trait: traits[9])
+
+# spy
+CareerTrait.create(career: spy, trait: traits[1])
+CareerTrait.create(career: spy, trait: traits[2])
+CareerTrait.create(career: spy, trait: traits[4])
+CareerTrait.create(career: spy, trait: traits[7])
+CareerTrait.create(career: spy, trait: traits[8])
+
+# consultant
+CareerTrait.create(career: consultant, trait: traits[0])
+CareerTrait.create(career: consultant, trait: traits[2])
+CareerTrait.create(career: consultant, trait: traits[4])
+CareerTrait.create(career: consultant, trait: traits[6])
+CareerTrait.create(career: consultant, trait: traits[8])
+
+# banker
+CareerTrait.create(career: banker, trait: traits[1])
+CareerTrait.create(career: banker, trait: traits[3])
+CareerTrait.create(career: banker, trait: traits[5])
+CareerTrait.create(career: banker, trait: traits[7])
+CareerTrait.create(career: banker, trait: traits[8])
+
+# lawyer
+CareerTrait.create(career: lawyer, trait: traits[1])
+CareerTrait.create(career: lawyer, trait: traits[3])
+CareerTrait.create(career: lawyer, trait: traits[5])
+CareerTrait.create(career: lawyer, trait: traits[6])
+CareerTrait.create(career: lawyer, trait: traits[8])
+
+
 
 puts "Attaching images to careers"
 
