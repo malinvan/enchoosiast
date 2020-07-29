@@ -7,7 +7,7 @@
 
 .todo {
   margin: 50px 50px;
-  width: 800px;
+  // width: 800px;
   display: inline-block;
 }
 
@@ -68,21 +68,19 @@
 
 }
 
-
 .simple_form {
   width: 60%;
 }
 
-
-
 .todo-card {
   display: flex;
   flex-direction: column;
-  margin: 20px 70px 20px 70px;
+  // margin: 20px 70px 20px 70px;
   color: #393e46;
 
-    h5 {
+    .third-title {
       font-weight: bold;
+      margin: 0 auto;
     }
 
     li {
@@ -90,24 +88,28 @@
     }
 }
 
-.reading-list, .edu-list, .online-list {
- display: flex;
- flex-direction: row;
- margin-left: 40px;
- margin: 30px 30px;
- align-items: center;
+.third-img {
+  flex-grow: 1;
 }
 
-.online-list {
-  align-items: left;
-
-  .guide-img {
-    margin-left: 100px;
-  }
+.reading-list {
+ display: flex;
+ flex-direction: row;
+ // margin-left: 40px;
+ // margin: 30px 30px;
+ align-items: center;
+ // width: 100%;
 }
 
 .edu-list {
-  margin-left: 70px;
+  display: flex;
+}
+
+.online-list {
+  display: flex;
+  .guide-img {
+    // width: 70%;
+  }
 }
 
 .list {
@@ -139,4 +141,27 @@
   color: red;
 }
 
+.left-card {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
 
+.left-card-2 {
+  width: 46%;
+  text-align: center;
+}
+
+.left-card-3 {
+  width: 41%;
+  display: flex;
+  justify-content: center;
+}
+
+.edu-todos {
+  padding: 0px 0 0 38%;
+}
+
+.reading-todo {
+  width: 75%;
+}

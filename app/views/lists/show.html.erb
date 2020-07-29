@@ -3,13 +3,13 @@
 
 <div class="todo">
 
-  <div class="reading-list">
-    <div>
-      <%= image_tag "book_blue.svg", height: "100", class: "guide-img" %>
+  <div class="reading-list list-div">
+    <div class="left-card">
+      <%= image_tag "book_blue.svg", height: "150", class: "guide-img" %>
     </div>
     <div class="todo-card">
       <h5>my reading list</h5>
-      <ul>
+      <ul class="reading-todo">
         <div class="list">
           <% @reading_todos.each do |todo| %>
             <div class="todo-hover">
@@ -33,10 +33,10 @@
     </div>
   </div>
 
-  <div class="edu-list">
-    <div class="todo-card">
+  <div class="edu-list list-div my-5">
+    <div class="todo-card left-card-2">
       <h5>education & practice</h5>
-      <ul>
+      <ul class="edu-todos">
         <div class="list">
           <% @education_todos.each do |todo| %>
           <div class="todo-hover">
@@ -53,15 +53,15 @@
       </ul>
     </div>
     <div>
-      <%= image_tag "graduation_blue.svg", height: "100", class: "guide-img"%>
+      <%= image_tag "graduation_blue.svg", height: "150", class: "guide-img"%>
     </div>
   </div>
 
-  <div class="online-list">
-    <div>
-      <%= image_tag "online_content_blue.svg", height: "100", class: "guide-img" %>
+  <div class="online-list list-div">
+    <div class="left-card-3">
+      <%= image_tag "online_content_blue.svg", height: "200", class: "guide-img" %>
     </div>
-    <div class="todo-card">
+    <div class="todo-card third-img">
       <h5>online content</h5>
       <ul>
         <div class="list">
@@ -93,6 +93,6 @@
 
 </div>
 
-<div class="progress mx-5 my-5">
+<!-- <div class="progress mx-5 my-5">
   <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-</div>
+</div> -->
