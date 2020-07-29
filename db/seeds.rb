@@ -457,3 +457,73 @@ file = URI.open('https://mk0aanmclgjj7059fc.kinstacdn.com/wp-content/uploads/201
 doctor.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://images05.military.com/sites/default/files/styles/full/public/2018-10/legal_court_justice_lawyer_18x12.png.jpg?itok=ebyoFLGm')
 lawyer.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+
+book1 = Todo.create(
+  title: 'Coding For Dummies, (9781119293323)',
+  description: 'Hands-on exercises help you learn to code like a pro No coding experience is required for Coding For Dummies, your one-stop guide to building a foundation of knowledge in writing computer code for web, application, and software development.',
+  completed: false,
+  category: 'reading'
+  )
+
+book2 = Todo.create(
+  title: 'Comprehensive Ruby Programming, (9781787280649)',
+  description: 'This book will provide you with all of the tools you need to be a professional Ruby developer. Starting with the core principles, such as syntax and best practices, and up to advanced topics like metaprogramming and big data analysis.',
+  completed: false,
+  category: 'reading'
+)
+
+book3 = Todo.create(
+  title: 'Beginning Ethical Hacking with Python, (9781484225400)',
+  description: 'Learn the basics of ethical hacking and gain insights into the logic, algorithms, and syntax of Python. This book will set you up with a foundation that will help you understand the advanced concepts of hacking in the future.',
+  completed: false,
+  category: 'reading'
+)
+
+edu1 = Todo.create(
+  title: 'LeWagon',
+  description: '',
+  completed: false,
+  category: 'education'
+  )
+
+edu2 = Todo.create(
+  title: 'CodeCademy',
+  description: '',
+  completed: false,
+  category: 'education'
+  )
+
+edu3 = Todo.create(
+  title: 'Udemy',
+  description: '',
+  completed: false,
+  category: 'education'
+  )
+
+edu4 = Todo.create(
+  title: 'LinkedIn Learning',
+  description: '',
+  completed: false,
+  category: 'education'
+  )
+
+online1 = Todo.create(
+  title: 'Code Wars',
+  description: '',
+  completed: false,
+  category: 'online content'
+  )
+
+online2 = Todo.create(
+  title: 'Gorails.com',
+  description: '',
+  completed: false,
+  category: 'online content'
+  )
+
+online3 = Todo.create(
+  title: 'github.com/rails/rails',
+  description: '',
+  completed: false,
+  category: 'online content'
+  )
