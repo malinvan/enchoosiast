@@ -11,49 +11,35 @@
         box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     }
 }
-
 .card-career-suggestion {
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
 }
-
 .card-career-suggestion .career {
   position: relative;
-
-
   h3 {
     position: absolute;
-    left: 50%;
-    margin-left: -50px;
+    // left: 50%;
+    // margin: 0 auto;
     top: 50%;
-    margin-top: -50px;
-    margin: 0 auto;
-    padding: 20px;
+    // margin-top: -50px;
+    // padding: 20px;
     border-radius: 5px;
     overflow: hidden;
     color: white;
-    backdrop-filter: blur(2px);
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-    background-color: rgba(0,0,0,0.1);
-    text: right;
-
+    text-align:center;
   }
 }
-
 .card-suggestion {
   @include material-shadow(1);
   transition: all .3s;
 }
-
 .card-suggestion:hover {
   @include material-shadow(3);
   transition: all .3s;
-
 }
-
 .card-suggestion {
   width: 400px;
   height: 200px;
@@ -63,80 +49,64 @@
     &:hover {
       text-decoration: none;
       color:black;
-
     }
     h3{
       padding: 15px 15px 0 15px;
       margin: 0px;
     }
-
     p {
        padding: 0px 15px;
     }
-
 }
-
-
 .row h2{
   margin-top: 40px;
   margin-bottom: 20px;
   color: #003066;
 }
-
-
-
 // <----------GRID--------->
-
-
 .suggestion-card{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5rem;
 }
-
 .card-pack{
-  color: grey;
-  @include material-shadow(1);
-  transition: all .3s;
+  color: white;
+  // @include material-shadow(1);
+  // transition: all .3s;
   cursor: pointer;
   border-radius: 4px;
   &:hover {
       text-decoration: none;
       color:grey;
-      @include material-shadow(3);
+      @include material-shadow(2);
       transition: all .3s;
     }
 }
-
 .card-back-img{
+  color: white;
   width: 100%;
-  height: 200px;
+  height: 100%;
   border-radius: 4px;
   opacity: 0.9;
+  background-size: cover;
+  background-position: center;
 }
-
 .grid-container{
   overflow: scroll;
   height: 550px;
 }
-
 .card-text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
   padding-top: 8px;
-
   h3{
     padding-left: 8px;
     text-align: left;
-    font-size: 20px;
+    font-size: 24px;
   }
-
-
 }
-
-
 a.like-toggle[data-liked="true"] {
   .star.like {
     display: none;
@@ -145,8 +115,6 @@ a.like-toggle[data-liked="true"] {
     display: inline-block;
   }
 }
-
-
 a.like-toggle[data-liked="false"] {
   .star.like {
     display: inline-block;
@@ -155,46 +123,15 @@ a.like-toggle[data-liked="false"] {
     display: none;
   }
 }
-
 .star {
     margin: 0px;
     padding: 0px 5px 0px 0px !important;
-    font-size: 20px !important;
+    font-size: 23px !important;
+    color: #D1495B;
   }
-
-
 .star.far{
   padding: 0px 5px 0px 0px !important;
 }
-
-
 .star.fas{
   padding: 0px 5px 0px 0px !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

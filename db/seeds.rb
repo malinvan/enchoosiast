@@ -437,7 +437,7 @@ file = URI.open('https://homemaidbetter.com/wp-content/uploads/2019/07/shutterst
 housekeeper.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://blackbarnrestaurant.com/wp-content/uploads/2017/01/BR_ChefsTable-01.jpg')
 chef.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://img2.chinadaily.com.cn/images/201911/23/5dd88492a310cf3e97a7eee3.jpeg')
+file = URI.open('https://images.barrons.com/im-182667?width=620&size=1.5')
 teacher.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://inteng-storage.s3.amazonaws.com/img/iea/9lwjAVnM6E/sizes/ocde_resize_md.jpg')
 astronaut.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
