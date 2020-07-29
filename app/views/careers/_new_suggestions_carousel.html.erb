@@ -3,7 +3,7 @@
   <div class="grid">
     <% @careers.each do |threeCard|  %>
       <div class="card-pack career-clickable grid-item" data-url="<%= career_path(threeCard) %>">
-        <div class="card-back-img" style="background-image: url('<%= cl_image_path threeCard.photo.key, height: 200, width: 400 , crop: :fill %>')"></div>
+        <div class="card-back-img" style="background-image: url('<%#= cl_image_path threeCard.photo.key, height: 200, width: 400 , crop: :fill %>')"></div>
         <div class="card-text">
           <h3><%= threeCard.title  %></h3>
           <div class="card-symbols">

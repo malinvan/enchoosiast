@@ -6,7 +6,11 @@ class CareersController < ApplicationController
 
   def suggestions
     user_traits = current_user.traits
-    @careers = Careers.all
+    careers_of_traits = []
+    user_traits.each do |trait|
+      careers_of_traits << trait.careers
+    end
+    @careers = careers_of_traits.inject(:&)
   end
 
   def show
