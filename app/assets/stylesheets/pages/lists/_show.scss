@@ -35,7 +35,15 @@
 }
 
 .online-list {
-  align-items: right;
+  align-items: left;
+
+  .guide-img {
+    margin-left: 100px;
+  }
+}
+
+.edu-list {
+  margin-left: 70px;
 }
 
 .list {
