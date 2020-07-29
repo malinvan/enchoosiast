@@ -2,10 +2,13 @@
   width: 200px;
   margin: 0 auto;
   color: #393e46;
+  margin-top: 30px;
 }
 
 .todo {
   margin: 50px 50px;
+  width: 800px;
+  display: inline-block;
 }
 
 .todo-card {
@@ -28,6 +31,11 @@
  flex-direction: row;
  margin-left: 40px;
  margin: 30px 30px;
+ align-items: center;
+}
+
+.online-list {
+  align-items: right;
 }
 
 .list {
@@ -36,4 +44,25 @@
   .list-item {
     display: flex;
   }
+
+  .guide-description {
+    font-size: 12px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.todo-hover:hover .hide {
+  display: inline-block;
+}
+
+.dlt-btn-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.dlt-btn {
+  color: red;
 }
