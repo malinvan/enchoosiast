@@ -268,12 +268,12 @@ TraitQuestion.create(question: questions[4], trait: traits[9], answer_value: fal
 
 puts "Connecting traits to careers..."
 
-# PROJECT MANAGER
-CareerTrait.create(career: project_manager, trait: traits[0])
-CareerTrait.create(career: project_manager, trait: traits[3])
-CareerTrait.create(career: project_manager, trait: traits[4])
-CareerTrait.create(career: project_manager, trait: traits[6])
-CareerTrait.create(career: project_manager, trait: traits[8])
+# PRODUCT MANAGER
+CareerTrait.create(career: product_manager, trait: traits[0])
+CareerTrait.create(career: product_manager, trait: traits[3])
+CareerTrait.create(career: product_manager, trait: traits[4])
+CareerTrait.create(career: product_manager, trait: traits[6])
+CareerTrait.create(career: product_manager, trait: traits[8])
 
 # ENTREPRENEUR
 CareerTrait.create(career: entreprneur, trait: traits[0])
