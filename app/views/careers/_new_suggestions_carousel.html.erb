@@ -1,29 +1,33 @@
 <h2>career suggestions that fit your personality:</h2>
 <div class="grid-container">
   <div class="grid">
-    <% @careers.each do |threeCard|  %>
-      <% fifty_fifty = [true, false, true].sample %>
-      <% width_two = nil %>
-      <% if fifty_fifty %>
-        <% number = rand(2..4) %>
-        <% width_two = "grid-item--height#{number}" %>
-      <% end %>
-      <div class="card-pack career-clickable grid-item <%= width_two %>" data-url="<%= career_path(threeCard) %>">
-        <div class="card-back-img" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url('<%= cl_image_path threeCard.photo.key, height: 200, width: 400 , crop: :fill %>')">
-          <div class="card-text">
-            <h3><%= threeCard.title  %></h3>
-            <div class="card-symbols">
-              <%= link_to career_toggle_like_path(threeCard), class: "like-toggle",
-                          remote: true, data: {
-                          liked: threeCard.liked_by?(current_user),
-                          :"career-id" => threeCard.id } do %>
-                <i class="star like far fa-heart" data-career-id="<%= threeCard.id %>"></i>
-                <i class="star unlike fas fa-heart" data-career-id="<%= threeCard.id %>"></i>
-              <% end %>
+    <% if @careers.nil? || @careers.empty? %>
+    <h3>Sorry, we don't have any suggestions for you yet.</h3>
+    <% else %>
+      <% @careers.each do |threeCard|  %>
+        <% fifty_fifty = [true, false, true].sample %>
+        <% width_two = nil %>
+        <% if fifty_fifty %>
+          <% number = rand(2..4) %>
+          <% width_two = "grid-item--height#{number}" %>
+        <% end %>
+        <div class="card-pack career-clickable grid-item <%= width_two %>" data-url="<%= career_path(threeCard) %>">
+          <div class="card-back-img" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url('<%= cl_image_path threeCard.photo.key, height: 200, width: 400 , crop: :fill %>')">
+            <div class="card-text">
+              <h3><%= threeCard.title  %></h3>
+              <div class="card-symbols">
+                <%= link_to career_toggle_like_path(threeCard), class: "like-toggle",
+                            remote: true, data: {
+                            liked: threeCard.liked_by?(current_user),
+                            :"career-id" => threeCard.id } do %>
+                  <i class="star like far fa-heart" data-career-id="<%= threeCard.id %>"></i>
+                  <i class="star unlike fas fa-heart" data-career-id="<%= threeCard.id %>"></i>
+                <% end %>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      <% end %>
     <% end %>
   </div>
 </div>
