@@ -1,46 +1,46 @@
-<% content_for :navbar do %>
-     <div class="empty"></div>
-<% end %>
+<%# content_for :navbar do %>
+     <!-- <div class="empty"></div> -->
+<%# end %>
 
 <div class="results-background">
   <div id="results-title">
     <h1>We have analyzed your fascinating personality! </h1>
-    <p>Based on your test results, we have career suggestions for you ...</p>
+    <p>Based on your test results, these are your strongest attributes</p>
   </div>
   <div class= flexbox-results>
-    <div class="test-results-container" style="background-color:  rgba(151, 232, 250, 0.3); padding: 20px; border-radius: 4px;">
+    <div class="test-results-container" style="background-color: rgba(151, 232, 250, 0.3); padding: 20px; border-radius: 4px;">
       <div class="test-results ">
         <div class="creativity trait-flexbox">
           <i class="far fa-lightbulb trait-icon"></i>
-          <div class="trait-text">
+          <div class="trait-text-1">
           <h4 class="trait-title"> creativity</h4>
           <p><%= @creativity %></p>
           </div>
         </div>
         <div class="flexibility trait-flexbox">
           <i class="fas fa-arrows-alt trait-icon"></i>
-          <div class="trait-text">
+          <div class="trait-text-2">
           <h4 class="trait-title"> flexibility</h4>
           <p><%= @flexibility %></p>
           </div>
         </div>
         <div class="sociality trait-flexbox">
           <i class="fas fa-people-arrows trait-icon"></i>
-          <div class="trait-text">
+          <div class="trait-text-3">
           <h4 class="trait-title"> teamwork</h4>
           <p><%= @sociality %></p>
           </div>
         </div>
         <div class="dominance trait-flexbox">
           <i class="fas fa-users-cog trait-icon"></i>
-          <div class="trait-text">
+          <div class="trait-text-4">
           <h4 class="trait-title"> leadership</h4>
           <p><%= @dominance %></p>
           </div>
         </div>
         <div class="structuredness trait-flexbox">
           <i class="fas fa-tasks trait-icon"></i>
-          <div class="trait-text">
+          <div class="trait-text-5">
           <h4 class="trait-title"> structuredness</h4>
           <p><%= @structuredness %></p>
           </div>
@@ -50,7 +50,7 @@
           <%= link_to "suggested careers", "/careers/suggestions", class: "dark-button suggestions-button" %>
       </div>
     </div>
-    <div class="picture-success" style="height:250px"></div>
+    <%= image_tag "illustration_one.png", height: "250", class: "results-img" %>
   </div>
 </div>
 

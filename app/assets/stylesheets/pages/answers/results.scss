@@ -6,7 +6,7 @@
   background-position: left;
 }
 
-.picture-success{
+.picture-success {
   background-size: cover;
   background-position: center;
   text-align:center;
@@ -16,19 +16,22 @@
   background-image: asset-url("illustration_two.png");
 }
 
-#results-title{
+#results-title {
   color: #003066;
   padding-top: 80px;
   padding-left: 150px;
 
-  h1{
+  h1 {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
   }
-  p{
+
+  p {
     font-size: 18px;
+    margin-bottom: 40px;
   }
 }
-.test-results-container{
+.test-results-container {
   display: flex;
   align-items: flex-end;
   margin: 0px 150px;
@@ -36,20 +39,20 @@
   max-width: 800px;
 }
 
-#result-text{
+#result-text {
   position: absolute;
   bottom: 70px;
   right: 100px;
   font-size: 20px;
   max-width: 600px;
 }
-.button-flex{
+.button-flex {
   text-align: right;
    //justify-content: right;
   margin-top: 10px;
 }
 
-.trait-flexbox{
+.trait-flexbox {
   display: flex;
   flex-direction: row;
   margin: 10px 30px;
@@ -57,37 +60,58 @@
 
 }
 
-.test-results{
+.test-results {
   display: flex;
   flex-direction: column;
   margin: 0;
 
 }
 
-.trait-icon{
+.trait-icon {
   font-size: 35px;
 }
 
-.trait-text{
-  margin-left: 20px;
+.trait-text {
 
-  h4{
+  h4 {
     font-size: 18px;
     font-weight: 700;
   }
 
-  p{
+  p {
     font-size: 15px;
     margin: 0px;
   }
 }
 
-.flexbox-results{
+.trait-text-1 {
+  margin-left: 42px;
+}
+
+.trait-text-2 {
+  margin-left: 32px;
+}
+
+.trait-text-3 {
+  margin-left: 30px;
+}
+
+.trait-text-4 {
+  margin-left: 28px;
+}
+
+.trait-text-5 {
+  margin-left: 37px;
+}
+
+.flexbox-results {
   display:flex;
   justify-content: space-between;
   align-items: center;
 }
 
-
+.results-img {
+  align-items: center;
+}
 
 

@@ -5,10 +5,10 @@
 
   <div class="reading-list list-div">
     <div class="left-card">
-      <%= image_tag "book_blue.svg", height: "150", class: "guide-img" %>
+      <%= image_tag "illustration_nine.png", height: "250", class: "guide-img" %>
     </div>
     <div class="todo-card">
-      <h5>my reading list</h5>
+      <h5 class="headline-guide">my reading list</h5>
       <ul class="reading-todo">
         <div class="list">
           <% @reading_todos.each do |todo| %>
@@ -35,7 +35,7 @@
 
   <div class="edu-list list-div my-5">
     <div class="todo-card left-card-2">
-      <h5>education & practice</h5>
+      <h5 class="headline-guide">education & practice</h5>
       <ul class="edu-todos">
         <div class="list">
           <% @education_todos.each do |todo| %>
@@ -53,16 +53,16 @@
       </ul>
     </div>
     <div>
-      <%= image_tag "graduation_blue.svg", height: "150", class: "guide-img"%>
+      <%= image_tag "illustration_two.png", height: "250", class: "guide-img"%>
     </div>
   </div>
 
   <div class="online-list list-div">
     <div class="left-card-3">
-      <%= image_tag "online_content_blue.svg", height: "200", class: "guide-img" %>
+      <%= image_tag "illustration_five.png", height: "250", class: "guide-img" %>
     </div>
     <div class="todo-card third-img">
-      <h5>online content</h5>
+      <h5 class="headline-guide">online content</h5>
       <ul>
         <div class="list">
           <% @online_content_todos.each do |todo| %>
