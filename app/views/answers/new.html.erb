@@ -9,7 +9,7 @@
     </div>
   <div class="card-icons-test">
     <%= image_tag "illustration_eight.png", width: "200", height: "140", class: "guide-img" %>
-    <h4>don't try and game the test</h4>
+    <h4>don't try to trick the test</h4>
   </div>
 </div>
 
@@ -18,7 +18,7 @@
     <%= render "questions_carousel", questions: @questions %>
       <div class="test-buttons">
         <button type="button" id="btn-prev" class="btn"><i class="fas fa-angle-left"></i></button>
-        <%= submit_tag "Submit", class: "questions-submit"  %>
+        <%= submit_tag "Submit", class: "questions-submit dark-button"  %>
         <button type="button" id="btn-next" class="btn"><i class="fas fa-angle-right"></i></button>
       </div>
   <% end %>
