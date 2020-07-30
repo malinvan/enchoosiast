@@ -10,7 +10,8 @@ class CareersController < ApplicationController
     user_traits.each do |trait|
       careers_of_traits << trait.careers
     end
-    @careers = careers_of_traits.inject(:&)
+    @careers = Career.all
+    # @careers = careers_of_traits
   end
 
   def show
