@@ -1,13 +1,15 @@
 <div class="question">
   <h3 class="animate__animated animate__pulse"> <%= question.question %> </h3>
-  <div class="test-scale">
+  <div class="test-answer-container">
     <label class="agree">disagree</label>
-    <input type="radio" id="question-<%= question.id %>-1" name="question-<%= question.id %>" value="1" class="one"></input>
-    <input type="radio" id="question-<%= question.id %>-2" name="question-<%= question.id %>" value="2" class="two"></input>
-    <input type="radio" id="question-<%= question.id %>-3" name="question-<%= question.id %>" value="3" class="three"></input>
-    <input type="radio" id="question-<%= question.id %>-4" name="question-<%= question.id %>" value="4" class="four"></input>
-    <input type="radio" id="question-<%= question.id %>-5" name="question-<%= question.id %>" value="5" class="five"></input>
-    <input type="radio" id="question-<%= question.id %>-6" name="question-<%= question.id %>" value="6" class="six"></input>
+    <div class="test-scale">
+      <input type="radio" id="question-<%= question.id %>-1" name="question-<%= question.id %>" value="1" class="one"></input>
+      <input type="radio" id="question-<%= question.id %>-2" name="question-<%= question.id %>" value="2" class="two"></input>
+      <input type="radio" id="question-<%= question.id %>-3" name="question-<%= question.id %>" value="3" class="three"></input>
+      <input type="radio" id="question-<%= question.id %>-4" name="question-<%= question.id %>" value="4" class="four"></input>
+      <input type="radio" id="question-<%= question.id %>-5" name="question-<%= question.id %>" value="5" class="five"></input>
+      <input type="radio" id="question-<%= question.id %>-6" name="question-<%= question.id %>" value="6" class="six"></input>
+    </div>
     <label class="agree">agree</label>
   </div>
 </div>
