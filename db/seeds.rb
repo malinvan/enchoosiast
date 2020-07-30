@@ -41,7 +41,7 @@ product_manager = Career.create(
   next_steps:''
 )
 
-entreprneur = Career.create(
+entrepreneur = Career.create(
   title: 'entreprneur',
   summary:'Entrepreneurship is the creation or extraction of value. With this definition, entrepreneurship is viewed as change, which may include other values than simply economic ones.',
   detailed_description: 'Some more narrow definitions has described entrepreneurship as the process of designing, launching and running a new business, which is often initially a small business, or as the "capacity and willingness to develop, organize and manage a business venture along with any of its risks to make a profit." The people who create these businesses are often referred to as entrepreneurs. While definitions of entrepreneurship typically focus on the launching and running of businesses, due to the high risks involved in launching a start-up, a significant proportion of start-up businesses have to close due to "lack of funding, bad business decisions, an economic crisis, lack of market demand, or a combination of all of these."',
@@ -276,11 +276,11 @@ CareerTrait.create(career: product_manager, trait: traits[6])
 CareerTrait.create(career: product_manager, trait: traits[8])
 
 # ENTREPRENEUR
-CareerTrait.create(career: entreprneur, trait: traits[0])
-CareerTrait.create(career: entreprneur, trait: traits[3])
-CareerTrait.create(career: entreprneur, trait: traits[4])
-CareerTrait.create(career: entreprneur, trait: traits[6])
-CareerTrait.create(career: entreprneur, trait: traits[8])
+CareerTrait.create(career: entrepreneur, trait: traits[0])
+CareerTrait.create(career: entrepreneur, trait: traits[3])
+CareerTrait.create(career: entrepreneur, trait: traits[4])
+CareerTrait.create(career: entrepreneur, trait: traits[6])
+CareerTrait.create(career: entrepreneur, trait: traits[8])
 
 # CREATIVE-DIRECTOR
 CareerTrait.create(career: creative_director, trait: traits[0])
@@ -415,23 +415,24 @@ CareerTrait.create(career: lawyer, trait: traits[8])
 puts "Attaching images to careers"
 file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
 product_manager.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
-entreprneur.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
+file = URI.open('https://images.squarespace-cdn.com/content/v1/553a90b2e4b03db4a9dfb89d/1551825383849-U6YLW1LHD865LLWWCK4F/ke17ZwdGBToddI8pDm48kDlHtcb-ESkz-WoN5o2L505Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIMnv_jHmWLoU7MZFDzK1Gu4hK3J2YO4C0XxLxbwxJD00KMshLAGzx4R3EDFOm1kBS/Product+Focused+team3.jpg?fsormat=750w')
+entrepreneur.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open('https://www.thebalancecareers.com/thmb/oBz_nX6Gm7Ktrg6Mi2-7NJuY098=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/life-insurance-guide-640229476-5ada7d6dba61770036779c2c.jpg')
 creative_director.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
+file = URI.open('https://www.thebalancecareers.com/thmb/oBz_nX6Gm7Ktrg6Mi2-7NJuY098=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/life-insurance-guide-640229476-5ada7d6dba61770036779c2c.jpg')
 sales_manager.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
+file = URI.open('https://www.thebalancecareers.com/thmb/oBz_nX6Gm7Ktrg6Mi2-7NJuY098=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/life-insurance-guide-640229476-5ada7d6dba61770036779c2c.jpg')
 innovation_consultant.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
+file = URI.open('https://img.etimg.com/thumb/width-640,height-480,imgsize-163489,resizemode-1,msid-73576337/small-biz/startups/newsbuzz/from-budget-2019-to-2020-how-to-sustain-a-culture-of-innovation/istock-1196691897.jpg')
 paramedic.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
+file = URI.open('https://www.priorityambulance.com/puckett/wp-content/uploads/sites/15/2018/10/DSC_1053-98-of-580.jpg')
 pilot.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
+file = URI.open('https://blog.aviationjobsearch.com/wp-content/uploads/2018/07/man-pilot-602659.jpg')
 real_estate_broker.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
+file = URI.open('https://www.boyastar.com/fileadmin/_processed_/csm_real-estate-agent_a143824cba.jpg')
 photographer.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
+file = URI.open('http://www.evangeline-rose.co.uk/wp-content/uploads/2020/05/Study-Photography-.jpeg')
+
 clown.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://homemaidbetter.com/wp-content/uploads/2019/07/shutterstock_395889778.jpg')
 housekeeper.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
