@@ -1,6 +1,5 @@
 .results-background {
   width: 100%;
-  height: 100vh;
   background-color: white;
   background-size: cover;
   background-position: left;
@@ -32,12 +31,7 @@
   }
 }
 .test-results-container {
-  display: flex;
-  align-items: flex-end;
-  margin: 0px 100px;
   margin-left: 150px;
-  justify-content: space-between;
-  max-width: 800px;
 }
 
 #result-text {
@@ -55,17 +49,13 @@
 
 .trait-flexbox {
   display: flex;
-  flex-direction: row;
   margin: 10px 30px;
   align-items: center;
-
+  color: #003066;
 }
 
 .test-results {
-  display: flex;
-  flex-direction: column;
   margin: 0;
-
 }
 
 .trait-icon {

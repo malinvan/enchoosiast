@@ -17,8 +17,6 @@
                           remote: true, data: {
                           liked: threeCard.liked_by?(current_user),
                           :"career-id" => threeCard.id } do %>
-                <i class="star like far fa-heart" data-career-id="<%= threeCard.id %>"></i>
-                <i class="star unlike fas fa-heart" data-career-id="<%= threeCard.id %>"></i>
               <% end %>
             </div>
           </div>

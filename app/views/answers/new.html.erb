@@ -1,26 +1,28 @@
-<div class="flexbox-icon-cards-test">
-  <div class="card-icons-test">
-    <%= image_tag "illustration_nine.png", width: "200", height: "140", class: "guide-img" %>
-    <h4>take your time</h4>
-  </div>
-  <div class="card-icons-test">
-    <%= image_tag "illustration_three.png", width: "200", height: "140", class: "guide-img" %>
-    <h4>be honest with yourself</h4>
+<div>
+  <div class="flexbox-icon-cards-test">
+    <div class="card-icons-test">
+      <%= image_tag "illustration_nine.png", width: "200", height: "140", class: "guide-img" %>
+      <h4>take your time</h4>
     </div>
-  <div class="card-icons-test">
-    <%= image_tag "illustration_eight.png", width: "200", height: "140", class: "guide-img" %>
-    <h4>don't try to trick the test</h4>
-  </div>
-</div>
-
-<div class="test-container">
-  <%= form_with url: answers_path, scope: :questions, local: true, class: "test" do |f| %>
-    <%= render "questions_carousel", questions: @questions %>
-      <div class="test-buttons">
-        <button type="button" id="btn-prev" class="btn"><i class="fas fa-angle-left"></i></button>
-        <%= submit_tag "Submit", class: "questions-submit submit-button"  %>
-        <button type="button" id="btn-next" class="btn"><i class="fas fa-angle-right"></i></button>
+    <div class="card-icons-test">
+      <%= image_tag "illustration_three.png", width: "200", height: "140", class: "guide-img" %>
+      <h4>be honest with yourself</h4>
       </div>
-  <% end %>
+    <div class="card-icons-test">
+      <%= image_tag "illustration_eight.png", width: "200", height: "140", class: "guide-img" %>
+      <h4>don't try to trick the test</h4>
+    </div>
+  </div>
+
+  <div class="test-container">
+    <%= form_with url: answers_path, scope: :questions, local: true, class: "test" do |f| %>
+      <%= render "questions_carousel", questions: @questions %>
+        <div class="test-buttons">
+          <button type="button" id="btn-prev" class="btn"><i class="fas fa-angle-left"></i></button>
+          <%= submit_tag "Submit", class: "questions-submit submit-button"  %>
+          <button type="button" id="btn-next" class="btn"><i class="fas fa-angle-right"></i></button>
+        </div>
+    <% end %>
+  </div>
 </div>
 

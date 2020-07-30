@@ -80,18 +80,6 @@ creative_director = Career.create(
   next_steps:''
 )
 
-sales_manager = Career.create(
-  title: 'sales manager',
-  summary:'Sales management is a business discipline which is focused on the practical application of sales techniques and the management of a firm\'s sales operations. It is an important business function as net sales through the sale of products and services and resulting profit drive most commercial business. These are also typically the goals and performance indicators of sales management.Sales manager is the typical title of someone whose role is sales management. The role typically involves talent development.',
-  detailed_description: 'Sales management is the process of developing a sales force, coordinating sales operations, and implementing sales techniques that allow a business to consistently hit, and even surpass, its sales targets. If your business brings in any revenue at all, a sales management strategy is an absolute must. When it comes to boosting sales performance for any size of operation, no matter the industry, the secret to success is always precise sales management processes.',
-  social_interaction: 'high',
-  salary: 70000 ,
-  entry_barriers: 'medium',
-  remote_flexibility: 'medium',
-  international_flexibility: 'high',
-  working_hour_flexibility:'low',
-  next_steps:''
-)
 
 innovation_consultant = Career.create(
   title: 'innovation consultant',
@@ -103,6 +91,19 @@ innovation_consultant = Career.create(
   remote_flexibility: 'high',
   international_flexibility: 'high',
   working_hour_flexibility:'medium',
+  next_steps:''
+)
+
+sales_manager = Career.create(
+  title: 'sales manager',
+  summary:'Sales management is a business discipline which is focused on the practical application of sales techniques and the management of a firm\'s sales operations. It is an important business function as net sales through the sale of products and services and resulting profit drive most commercial business. These are also typically the goals and performance indicators of sales management.Sales manager is the typical title of someone whose role is sales management. The role typically involves talent development.',
+  detailed_description: 'Sales management is the process of developing a sales force, coordinating sales operations, and implementing sales techniques that allow a business to consistently hit, and even surpass, its sales targets. If your business brings in any revenue at all, a sales management strategy is an absolute must. When it comes to boosting sales performance for any size of operation, no matter the industry, the secret to success is always precise sales management processes.',
+  social_interaction: 'high',
+  salary: 70000 ,
+  entry_barriers: 'medium',
+  remote_flexibility: 'medium',
+  international_flexibility: 'high',
+  working_hour_flexibility:'low',
   next_steps:''
 )
 
@@ -132,6 +133,19 @@ paramedic = Career.create(
   next_steps:''
 )
 
+music_producer = Career.create(
+  title: 'music producer',
+  summary:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique officiis eveniet repellat, necessitatibus natus dolorem laborum provident quaerat itaque. Reprehenderit tenetur in itaque eum dignissimos. Ipsa reprehenderit molestias ut aspernatur!',
+  detailed_description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus reprehenderit blanditiis dolore mollitia porro facere distinctio natus voluptatum iusto cupiditate deleniti, unde dolor, praesentium culpa vel illo eos sunt magnam!',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
+
 pilot = Career.create(
   title: 'pilot',
   summary:'An aircraft pilot or aviator is a person who controls the flight of an aircraft by operating its directional flight controls. Some other aircrew members, such as navigators or flight engineers, are also considered aviators, because they are involved in operating the aircraft\'s navigation and engine systems. Other aircrew members, such as flight attendants, mechanics and ground crew, are not classified as aviators.',
@@ -145,18 +159,6 @@ pilot = Career.create(
   next_steps:''
 )
 
-music_producer = Career.create(
-  title: 'music producer',
-  summary:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique officiis eveniet repellat, necessitatibus natus dolorem laborum provident quaerat itaque. Reprehenderit tenetur in itaque eum dignissimos. Ipsa reprehenderit molestias ut aspernatur!',
-  detailed_description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus reprehenderit blanditiis dolore mollitia porro facere distinctio natus voluptatum iusto cupiditate deleniti, unde dolor, praesentium culpa vel illo eos sunt magnam!',
-  social_interaction: 'low',
-  salary: 25000 ,
-  entry_barriers: 'low',
-  remote_flexibility: 'low',
-  international_flexibility: 'high',
-  working_hour_flexibility:'medium',
-  next_steps:''
-)
 
 chef = Career.create(
   title: 'chef',
@@ -501,7 +503,7 @@ file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596103696/z
 paramedic.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596103486/kelvin-zhang-2zOK5j-13MA-unsplash_gm3b02.jpg")
 pilot.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596111575/shadan-arab-6SXVYTrNb-8-unsplash_xq5ujv.jpg")
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596120855/real_estate_jguwiu.png")
 real_estate_broker.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596115254/daniel-schludi-mbGxz7pt0jM-unsplash_yfuiak.jpg")
 music_producer.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
@@ -509,7 +511,7 @@ file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596115240/a
 chef.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596115387/sven-mieke-A-btl_OPYWA-unsplash_lntqry.jpg")
 architect.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596115253/bas-josten-FUbR70yeVUE-unsplash_iddwbd.jpg")
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596120679/austrian-national-library-nS0CjPmK-cY-unsplash_jd1z31.jpg")
 conductor.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
 file = URI.open('https://homemaidbetter.com/wp-content/uploads/2019/07/shutterstock_395889778.jpg')
