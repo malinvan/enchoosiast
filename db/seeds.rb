@@ -147,34 +147,8 @@ pilot = Career.create(
 
 music_producer = Career.create(
   title: 'music producer',
-  summary:'',
-  detailed_description: '',
-  social_interaction: 'low',
-  salary: 25000 ,
-  entry_barriers: 'low',
-  remote_flexibility: 'low',
-  international_flexibility: 'high',
-  working_hour_flexibility:'medium',
-  next_steps:''
-)
-
-real_estate_broker = Career.create(
-  title: 'real estate broker',
-  summary:'A real estate broker, real estate agent or realtor is a person who represents sellers or buyers of real estate or real property. While a broker may work independently, an agent usually works under a licensed broker to represent clients. Brokers and agents are licensed by the state to negotiate sales agreements and manage the documentation required for closing real estate transactions. In North America, some brokers and agents are members of the National Association of Realtors (NAR), the largest trade association for the industry. NAR members are obligated by a code of ethics that go above and beyond state legal requirements to work in the best interest of the client. Buyers and sellers are generally advised to consult a licensed real estate professional for a written definition of an individual state\'s laws of agency, and many states require written disclosures to be signed by all parties outlining the duties and obligations.',
-  detailed_description: 'A real estate broker typically receives a real estate commission for successfully completing a sale. Across the U.S. this commission can generally range between 5-6% of the property\'s sale price for a full service broker but this percentage varies by state and even region. This commission can be divided up with other participating real estate brokers or agents. Flat-fee brokers and Fee-for-Service brokers can charge significantly less depending on the type of services offered.',
-  social_interaction: 'high',
-  salary: 40000 ,
-  entry_barriers: 'low',
-  remote_flexibility: 'low',
-  international_flexibility: 'medium',
-  working_hour_flexibility:'low',
-  next_steps:''
-)
-
-conductor = Career.create(
-  title: 'conductor',
-  summary:'',
-  detailed_description: '',
+  summary:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique officiis eveniet repellat, necessitatibus natus dolorem laborum provident quaerat itaque. Reprehenderit tenetur in itaque eum dignissimos. Ipsa reprehenderit molestias ut aspernatur!',
+  detailed_description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus reprehenderit blanditiis dolore mollitia porro facere distinctio natus voluptatum iusto cupiditate deleniti, unde dolor, praesentium culpa vel illo eos sunt magnam!',
   social_interaction: 'low',
   salary: 25000 ,
   entry_barriers: 'low',
@@ -186,8 +160,21 @@ conductor = Career.create(
 
 chef = Career.create(
   title: 'chef',
-  summary:'',
-  detailed_description: '',
+  summary:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse itaque voluptates vitae ipsum natus magnam omnis consequuntur! Quas ea nulla dolor similique, unde, nam quia officia obcaecati amet maxime consectetur.',
+  detailed_description: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo asperiores, reprehenderit molestias obcaecati voluptatum aspernatur facere nulla, nihil at quos maxime distinctio iste odit itaque aperiam dicta, consequuntur autem quod!',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
+
+conductor = Career.create(
+  title: 'conductor',
+  summary:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non iure harum doloribus, minus aliquid id quibusdam, odio accusantium quasi dicta laborum officia corporis quia. Veritatis officiis necessitatibus exercitationem hic debitis!',
+  detailed_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem maxime aspernatur, dolor consequatur dolorem unde sit explicabo dolores libero inventore harum tenetur totam asperiores, consectetur odio quae! Reiciendis veniam, voluptas!',
   social_interaction: 'low',
   salary: 25000 ,
   entry_barriers: 'low',
@@ -198,9 +185,9 @@ chef = Career.create(
 )
 
 architect = Career.create(
-  title: 'chef',
-  summary:'',
-  detailed_description: '',
+  title: 'architect',
+  summary:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi perferendis natus aut. Corrupti iste impedit fuga, ut? Aspernatur pariatur quae quo unde molestias, qui magni veniam voluptates facilis dolor officiis!',
+  detailed_description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi ullam nulla, repellendus sequi, exercitationem expedita provident quia similique dolores consequatur inventore maxime ea placeat, unde suscipit sed, temporibus quibusdam aspernatur!',
   social_interaction: 'low',
   salary: 25000 ,
   entry_barriers: 'low',
@@ -516,13 +503,19 @@ file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596103486/k
 pilot.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596111575/shadan-arab-6SXVYTrNb-8-unsplash_xq5ujv.jpg")
 real_estate_broker.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596115254/daniel-schludi-mbGxz7pt0jM-unsplash_yfuiak.jpg")
+music_producer.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596115240/austin-ban-IS6RwpuEJpY-unsplash_ormspm.jpg")
+chef.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596115387/sven-mieke-A-btl_OPYWA-unsplash_lntqry.jpg")
+architect.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596115253/bas-josten-FUbR70yeVUE-unsplash_iddwbd.jpg")
+conductor.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
 file = URI.open('https://homemaidbetter.com/wp-content/uploads/2019/07/shutterstock_395889778.jpg')
 clown.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://homemaidbetter.com/wp-content/uploads/2019/07/shutterstock_395889778.jpg')
 housekeeper.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://blackbarnrestaurant.com/wp-content/uploads/2017/01/BR_ChefsTable-01.jpg')
-chef.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://images.barrons.com/im-182667?width=620&size=1.5')
 teacher.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://inteng-storage.s3.amazonaws.com/img/iea/9lwjAVnM6E/sizes/ocde_resize_md.jpg')
