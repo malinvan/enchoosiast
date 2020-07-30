@@ -34,7 +34,8 @@
 .test-results-container {
   display: flex;
   align-items: flex-end;
-  margin: 0px 150px;
+  margin: 0px 100px;
+  margin-left: 150px;
   justify-content: space-between;
   max-width: 800px;
 }
@@ -109,6 +110,7 @@
   // justify-content: space-evenly;
   align-items: center;
   margin-right: 30px;
+  position: relative;
 }
 
 .results-img {
