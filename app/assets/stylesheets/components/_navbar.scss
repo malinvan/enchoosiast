@@ -2,7 +2,7 @@
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   top: 0;
   right: 0;
   background-color: #003066;
@@ -72,6 +72,10 @@
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
   background:#003066;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
 
   a {
     text-decoration:none;
@@ -84,7 +88,7 @@
 
 .hide-box {
   display: none;
-  z-index: 1;
+  z-index: 3;
   height: 100%;
   width: 100%;
   background-color: rgba(0,0,0,0.5);
