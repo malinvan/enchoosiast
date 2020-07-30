@@ -119,6 +119,19 @@ pilot = Career.create(
   next_steps:''
 )
 
+music_producer = Career.create(
+  title: 'music producer',
+  summary:'',
+  detailed_description: '',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
+
 real_estate_broker = Career.create(
   title: 'real estate broker',
   summary:'A real estate broker, real estate agent or realtor is a person who represents sellers or buyers of real estate or real property. While a broker may work independently, an agent usually works under a licensed broker to represent clients. Brokers and agents are licensed by the state to negotiate sales agreements and manage the documentation required for closing real estate transactions. In North America, some brokers and agents are members of the National Association of Realtors (NAR), the largest trade association for the industry. NAR members are obligated by a code of ethics that go above and beyond state legal requirements to work in the best interest of the client. Buyers and sellers are generally advised to consult a licensed real estate professional for a written definition of an individual state\'s laws of agency, and many states require written disclosures to be signed by all parties outlining the duties and obligations.',
@@ -145,6 +158,51 @@ photographer = Career.create(
   next_steps:''
 )
 
+conductor = Career.create(
+  title: 'conductor',
+  summary:'',
+  detailed_description: '',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
+
+chef = Career.create(
+  title: 'chef',
+  summary:'',
+  detailed_description: '',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
+
+architect = Career.create(
+  title: 'chef',
+  summary:'',
+  detailed_description: '',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
+
+
+
+
+
+
+
 # OTHER CAREERS
 clown = Career.create(title: 'clown', summary:'very funny clown' , detailed_description: 'A clown is a public entertainer who dresses in outlandish
                      attire and attempts to please audiences with comical and chaotic behaviour.
@@ -162,11 +220,6 @@ clown = Career.create(title: 'clown', summary:'very funny clown' , detailed_desc
 housekeeper = Career.create(title: 'housekeeping', summary:'clean is your passion' , detailed_description: 'make a living of cleaning',
                             social_interaction: 'easy', salary: 21000 ,  entry_barriers: 'medium', remote_flexibility: 'none',
                             international_flexibility: 'very high', working_hour_flexibility:'low', next_steps:'1.  , 2. , 3. ')
-
-chef = Career.create(title: 'chef', summary:'Love cooking' , detailed_description: 'make a living of cooking',
-                    social_interaction: 'high', salary: 27000 ,  entry_barriers: 'medium', remote_flexibility: 'none',
-                    international_flexibility: 'high', working_hour_flexibility:'low',
-                    next_steps:'1. Take cooking classes , 2. Go to culinary school, 3. Buy your knives')
 
 teacher = Career.create(title: 'teacher', summary:'Transmit knowledge' ,
                        detailed_description: 'make a living of leading the new generations to a better future',
@@ -330,6 +383,31 @@ CareerTrait.create(career: photographer, trait: traits[3])
 CareerTrait.create(career: photographer, trait: traits[4])
 CareerTrait.create(career: photographer, trait: traits[6])
 CareerTrait.create(career: photographer, trait: traits[8])
+
+# CONDUCTOR
+CareerTrait.create(career: conductor, trait: traits[0])
+CareerTrait.create(career: conductor, trait: traits[3])
+CareerTrait.create(career: conductor, trait: traits[4])
+CareerTrait.create(career: conductor, trait: traits[6])
+CareerTrait.create(career: conductor, trait: traits[8])
+# ARCHITECT
+CareerTrait.create(career: architect, trait: traits[0])
+CareerTrait.create(career: architect, trait: traits[3])
+CareerTrait.create(career: architect, trait: traits[4])
+CareerTrait.create(career: architect, trait: traits[6])
+CareerTrait.create(career: architect, trait: traits[8])
+# MUSICPRODUCER
+CareerTrait.create(career: music_producer, trait: traits[0])
+CareerTrait.create(career: music_producer, trait: traits[3])
+CareerTrait.create(career: music_producer, trait: traits[4])
+CareerTrait.create(career: music_producer, trait: traits[6])
+CareerTrait.create(career: music_producer, trait: traits[8])
+# CHEF
+CareerTrait.create(career: chef, trait: traits[0])
+CareerTrait.create(career: chef, trait: traits[3])
+CareerTrait.create(career: chef, trait: traits[4])
+CareerTrait.create(career: chef, trait: traits[6])
+CareerTrait.create(career: chef, trait: traits[8])
 
 #OTHER CAREERS
 
