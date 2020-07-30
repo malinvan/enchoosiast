@@ -243,7 +243,7 @@ traits << Trait.create(title: "inflexible")
 traits << Trait.create(title: "social")
 traits << Trait.create(title: "insocial")
 
-traits << Trait.create(title: "leadering")
+traits << Trait.create(title: "leading")
 traits << Trait.create(title: "submissive")
 
 traits << Trait.create(title: "structured")
