@@ -11,7 +11,7 @@ class CareersController < ApplicationController
       careers_of_traits << trait.careers
     end
     @careers = Career.all
-    # @careers = careers_of_traits
+    @careers = careers_of_traits.inject(:&)
   end
 
   def show

@@ -1,4 +1,4 @@
-<h2>career suggestions that fit your personality:</h2>
+<h2 style="margin: 40px">your career suggestions:</h2>
 <div class="grid-container">
   <div class="grid">
     <% @careers.each do |threeCard|  %>
@@ -9,7 +9,7 @@
         <% width_two = "grid-item--height#{number}" %>
       <% end %>
       <div class="card-pack career-clickable grid-item <%= width_two %>" data-url="<%= career_path(threeCard) %>">
-        <div class="card-back-img" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url('<%= cl_image_path threeCard.photo.key, height: 200, width: 400 , crop: :fill %>')">
+        <div class="card-back-img" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),url('<%= cl_image_path threeCard.photo.key, height: 800, width: 800 , crop: :fill %>')">
           <div class="card-text">
             <h3><%= threeCard.title  %></h3>
             <div class="card-symbols">

@@ -28,6 +28,19 @@ puts "Creating new careers..."
 
 # DEMO CAREERS
 
+photographer = Career.create(
+  title: 'photographer',
+  summary:'A professional photographer is likely to take photographs for a session and image purchase fee, by salary or through the display, resale or use of those photographs.',
+  detailed_description: 'A professional photographer may be an employee, for example of a newspaper, or may contract to cover a particular planned event such as a wedding or graduation, or to illustrate an advertisement. Others, like fine art photographers, are freelancers, first making an image and then licensing or making printed copies of it for sale or display. Some workers, such as crime scene photographers, estate agents, journalists and scientists, make photographs as part of other work. Photographers who produce moving rather than still pictures are often called cinematographers, videographers or camera operators, depending on the commercial context.',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
+
 product_manager = Career.create(
   title: 'product manager',
   summary:'A product manager is a professional role that is responsible for the development of products for an organization, known as the practice of product management. Product managers own the business strategy behind a product (both physical and digital products), specify its functional requirements, and generally manage the launch of features. They coordinate work done by many other functions (like software engineers, data scientists, and product designers) and are ultimately responsible for the business success of the product.',
@@ -42,7 +55,7 @@ product_manager = Career.create(
 )
 
 entrepreneur = Career.create(
-  title: 'entreprneur',
+  title: 'entrepreneur',
   summary:'Entrepreneurship is the creation or extraction of value. With this definition, entrepreneurship is viewed as change, which may include other values than simply economic ones.',
   detailed_description: 'Some more narrow definitions has described entrepreneurship as the process of designing, launching and running a new business, which is often initially a small business, or as the "capacity and willingness to develop, organize and manage a business venture along with any of its risks to make a profit." The people who create these businesses are often referred to as entrepreneurs. While definitions of entrepreneurship typically focus on the launching and running of businesses, due to the high risks involved in launching a start-up, a significant proportion of start-up businesses have to close due to "lack of funding, bad business decisions, an economic crisis, lack of market demand, or a combination of all of these."',
   social_interaction: 'high',
@@ -93,6 +106,19 @@ innovation_consultant = Career.create(
   next_steps:''
 )
 
+real_estate_broker = Career.create(
+  title: 'real estate broker',
+  summary:'A real estate broker, real estate agent or realtor is a person who represents sellers or buyers of real estate or real property. While a broker may work independently, an agent usually works under a licensed broker to represent clients. Brokers and agents are licensed by the state to negotiate sales agreements and manage the documentation required for closing real estate transactions. In North America, some brokers and agents are members of the National Association of Realtors (NAR), the largest trade association for the industry. NAR members are obligated by a code of ethics that go above and beyond state legal requirements to work in the best interest of the client. Buyers and sellers are generally advised to consult a licensed real estate professional for a written definition of an individual state\'s laws of agency, and many states require written disclosures to be signed by all parties outlining the duties and obligations.',
+  detailed_description: 'A real estate broker typically receives a real estate commission for successfully completing a sale. Across the U.S. this commission can generally range between 5-6% of the property\'s sale price for a full service broker but this percentage varies by state and even region. This commission can be divided up with other participating real estate brokers or agents. Flat-fee brokers and Fee-for-Service brokers can charge significantly less depending on the type of services offered.',
+  social_interaction: 'high',
+  salary: 40000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'medium',
+  working_hour_flexibility:'low',
+  next_steps:''
+)
+
 paramedic = Career.create(
   title: 'paramedic',
   summary:'A paramedic is a healthcare professional who responds to emergency calls for medical help outside of a hospital. Paramedics mainly work as part of the emergency medical services (EMS), most often in ambulances. The scope of practice of a paramedic varies among countries, but generally includes autonomous decision making around the emergency care of patients.',
@@ -119,31 +145,7 @@ pilot = Career.create(
   next_steps:''
 )
 
-real_estate_broker = Career.create(
-  title: 'real estate broker',
-  summary:'A real estate broker, real estate agent or realtor is a person who represents sellers or buyers of real estate or real property. While a broker may work independently, an agent usually works under a licensed broker to represent clients. Brokers and agents are licensed by the state to negotiate sales agreements and manage the documentation required for closing real estate transactions. In North America, some brokers and agents are members of the National Association of Realtors (NAR), the largest trade association for the industry. NAR members are obligated by a code of ethics that go above and beyond state legal requirements to work in the best interest of the client. Buyers and sellers are generally advised to consult a licensed real estate professional for a written definition of an individual state\'s laws of agency, and many states require written disclosures to be signed by all parties outlining the duties and obligations.',
-  detailed_description: 'A real estate broker typically receives a real estate commission for successfully completing a sale. Across the U.S. this commission can generally range between 5-6% of the property\'s sale price for a full service broker but this percentage varies by state and even region. This commission can be divided up with other participating real estate brokers or agents. Flat-fee brokers and Fee-for-Service brokers can charge significantly less depending on the type of services offered.',
-  social_interaction: 'high',
-  salary: 40000 ,
-  entry_barriers: 'low',
-  remote_flexibility: 'low',
-  international_flexibility: 'medium',
-  working_hour_flexibility:'low',
-  next_steps:''
-)
 
-photographer = Career.create(
-  title: 'photographer',
-  summary:'A professional photographer is likely to take photographs for a session and image purchase fee, by salary or through the display, resale or use of those photographs.',
-  detailed_description: 'A professional photographer may be an employee, for example of a newspaper, or may contract to cover a particular planned event such as a wedding or graduation, or to illustrate an advertisement. Others, like fine art photographers, are freelancers, first making an image and then licensing or making printed copies of it for sale or display. Some workers, such as crime scene photographers, estate agents, journalists and scientists, make photographs as part of other work. Photographers who produce moving rather than still pictures are often called cinematographers, videographers or camera operators, depending on the commercial context.',
-  social_interaction: 'low',
-  salary: 25000 ,
-  entry_barriers: 'low',
-  remote_flexibility: 'low',
-  international_flexibility: 'high',
-  working_hour_flexibility:'medium',
-  next_steps:''
-)
 
 # OTHER CAREERS
 clown = Career.create(title: 'clown', summary:'very funny clown' , detailed_description: 'A clown is a public entertainer who dresses in outlandish
@@ -413,26 +415,26 @@ CareerTrait.create(career: lawyer, trait: traits[8])
 
 
 puts "Attaching images to careers"
-file = URI.open('https://static8.depositphotos.com/1051435/932/i/450/depositphotos_9327706-stock-photo-happy-clown.jpg')
-product_manager.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://images.squarespace-cdn.com/content/v1/553a90b2e4b03db4a9dfb89d/1551825383849-U6YLW1LHD865LLWWCK4F/ke17ZwdGBToddI8pDm48kDlHtcb-ESkz-WoN5o2L505Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIMnv_jHmWLoU7MZFDzK1Gu4hK3J2YO4C0XxLxbwxJD00KMshLAGzx4R3EDFOm1kBS/Product+Focused+team3.jpg?fsormat=750w')
-entrepreneur.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://www.thebalancecareers.com/thmb/oBz_nX6Gm7Ktrg6Mi2-7NJuY098=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/life-insurance-guide-640229476-5ada7d6dba61770036779c2c.jpg')
-creative_director.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://www.thebalancecareers.com/thmb/oBz_nX6Gm7Ktrg6Mi2-7NJuY098=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/life-insurance-guide-640229476-5ada7d6dba61770036779c2c.jpg')
-sales_manager.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://www.thebalancecareers.com/thmb/oBz_nX6Gm7Ktrg6Mi2-7NJuY098=/800x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/life-insurance-guide-640229476-5ada7d6dba61770036779c2c.jpg')
-innovation_consultant.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://img.etimg.com/thumb/width-640,height-480,imgsize-163489,resizemode-1,msid-73576337/small-biz/startups/newsbuzz/from-budget-2019-to-2020-how-to-sustain-a-culture-of-innovation/istock-1196691897.jpg')
-paramedic.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://www.priorityambulance.com/puckett/wp-content/uploads/sites/15/2018/10/DSC_1053-98-of-580.jpg')
-pilot.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://blog.aviationjobsearch.com/wp-content/uploads/2018/07/man-pilot-602659.jpg')
-real_estate_broker.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://www.boyastar.com/fileadmin/_processed_/csm_real-estate-agent_a143824cba.jpg')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596101323/jordan-whitfield-qODM8pfwRO4-unsplash_scoaz2.jpg")
 photographer.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('http://www.evangeline-rose.co.uk/wp-content/uploads/2020/05/Study-Photography-.jpeg')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596113243/product_manager_cm7wbh.png")
+product_manager.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596103654/ben-rosett-WdJkXFQ4VHY-unsplash_lvff6q.jpg")
+entrepreneur.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596111003/daniele-franchi-dt0yhDQmJ4k-unsplash_goom74.jpg")
+creative_director.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596100896/sales_p2df7p.jpg")
+sales_manager.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596111205/ying-ge-D6AYkHWLR9o-unsplash_icnvss.jpg")
+innovation_consultant.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596103696/zhen-hu-Xruf17OrkwM-unsplash_fgeyll.jpg")
+paramedic.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596103486/kelvin-zhang-2zOK5j-13MA-unsplash_gm3b02.jpg")
+pilot.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+file = URI.open("https://res.cloudinary.com/dcxnu8gpn/image/upload/v1596111575/shadan-arab-6SXVYTrNb-8-unsplash_xq5ujv.jpg")
+real_estate_broker.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 
+file = URI.open('https://homemaidbetter.com/wp-content/uploads/2019/07/shutterstock_395889778.jpg')
 clown.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://homemaidbetter.com/wp-content/uploads/2019/07/shutterstock_395889778.jpg')
 housekeeper.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
@@ -442,8 +444,6 @@ file = URI.open('https://images.barrons.com/im-182667?width=620&size=1.5')
 teacher.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://inteng-storage.s3.amazonaws.com/img/iea/9lwjAVnM6E/sizes/ocde_resize_md.jpg')
 astronaut.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-file = URI.open('https://www.pilots.nu/wp-content/uploads/piloter.jpg')
-pilot.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://www.musictoyourhome.com/wp-content/uploads/2019/06/How-to-be-a-Versatile-Singer-notes-from-a-Pro.-720x376.png')
 singer.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 file = URI.open('https://businessfirstfamily.com/wp-content/uploads/2016/09/how-to-become-an-actor-job-seekers-guide.jpg')
