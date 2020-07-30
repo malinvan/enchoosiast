@@ -33,7 +33,7 @@ product_manager = Career.create(
   summary:'A product manager is a professional role that is responsible for the development of products for an organization, known as the practice of product management. Product managers own the business strategy behind a product (both physical and digital products), specify its functional requirements, and generally manage the launch of features. They coordinate work done by many other functions (like software engineers, data scientists, and product designers) and are ultimately responsible for the business success of the product.',
   detailed_description: 'A product manager considers numerous factors such as intended customer or user of a product, the products offered by the competition, and how well the product fits with the company\'s business model. The scope of a product manager varies greatly, some may manage one or more product lines and others (especially in large companies) may manage small components or features of a product. In the financial services industry (banking, insurance etc.), product managers manage products (for example, credit card portfolios), their profit and loss, and also determine the business development strategy.',
   social_interaction: 'high',
-  salary: 80000 ,
+  salary: 80000,
   entry_barriers: 'medium',
   remote_flexibility: 'high',
   international_flexibility: 'high',
@@ -42,7 +42,7 @@ product_manager = Career.create(
 )
 
 entrepreneur = Career.create(
-  title: 'entreprneur',
+  title: 'entrepreneur',
   summary:'Entrepreneurship is the creation or extraction of value. With this definition, entrepreneurship is viewed as change, which may include other values than simply economic ones.',
   detailed_description: 'Some more narrow definitions has described entrepreneurship as the process of designing, launching and running a new business, which is often initially a small business, or as the "capacity and willingness to develop, organize and manage a business venture along with any of its risks to make a profit." The people who create these businesses are often referred to as entrepreneurs. While definitions of entrepreneurship typically focus on the launching and running of businesses, due to the high risks involved in launching a start-up, a significant proportion of start-up businesses have to close due to "lack of funding, bad business decisions, an economic crisis, lack of market demand, or a combination of all of these."',
   social_interaction: 'high',
@@ -202,17 +202,17 @@ consultant = Career.create(title: 'consultant', summary:'make you richer' , deta
                           international_flexibility: 'high', working_hour_flexibility:'very high',
                           next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
-banker= Career.create(title: 'banker', summary:'money is all for you' , detailed_description: 'make a living in a groing sector',
+banker = Career.create(title: 'banker', summary:'money is all for you' , detailed_description: 'make a living in a groing sector',
                       social_interaction: 'high', salary: 45000 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
                       international_flexibility: 'high', working_hour_flexibility:'very high',
                       next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
-doctor= Career.create(title: 'doctor', summary:'help others and cure cancer' , detailed_description: 'basic knowledge of medicine',
+doctor = Career.create(title: 'doctor', summary:'help others and cure cancer' , detailed_description: 'basic knowledge of medicine',
                       social_interaction: 'very high', salary: 52000 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
                       international_flexibility: 'high', working_hour_flexibility:'very high',
                       next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
-lawyer= Career.create(title: 'lawyer', summary:'Perform legal work for individuals or businesses.',
+lawyer = Career.create(title: 'lawyer', summary:'Perform legal work for individuals or businesses.',
                       detailed_description: 'As advocates, they represent one of the parties in a criminal or civil trial by presenting evidence and arguing in support of their client.
                                             As advisors, lawyers counsel their clients about their legal rights and obligations and suggest courses of action in business and personal matters.
                                             All attorneys research the intent of laws and judicial decisions and apply the laws to the specific circumstances that their clients face.',
@@ -225,11 +225,11 @@ lawyer= Career.create(title: 'lawyer', summary:'Perform legal work for individua
 puts "Creating questions..."
 
 questions = []
-questions << Question.create(question: 'I often spend time exploring unrealistic yet intriguing ideas')
-questions << Question.create(question: 'I prefer variety to routine')
-questions << Question.create(question: 'When I face a problem, I prefer talking to others about it and involve them in my problem solving process.')
-questions << Question.create(question: 'When working in teams, I usually take the initiative and the other team members follow my lead.')
-questions << Question.create(question: 'When making a decision, I rather analise the situation than trust my gut feeling.')
+questions << Question.create(question: 'I often spend time exploring unrealistic yet intriguing ideas.')
+questions << Question.create(question: 'I prefer variety to routine.')
+questions << Question.create(question: 'When I face a problem I prefer talking to others about it and involve them in my problem solving process.')
+questions << Question.create(question: 'When working in teams I usually take the initiative and the other team members follow my lead.')
+questions << Question.create(question: 'When making a decision I rather analyze the situation than trust my gut feeling.')
 
 puts "Creating traits..."
 
