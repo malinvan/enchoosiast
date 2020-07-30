@@ -100,7 +100,6 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
 
 }
 
-
 .card-icons{
   background-color:white;
   display:flex;
@@ -155,21 +154,17 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
   }
 }
 
-
-
-.card-testimonial{
+.card-testimonial {
   margin: 25px;
   width: 100%;
 }
 
-
 .middle-avatar {
   display: flex;
   flex-direction: row-reverse;
-
 }
 
-.middle-user-name{
+.middle-user-name {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -178,7 +173,6 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
 .top-bottom-avatar {
   display: flex;
   flex-direction: row;
-
 }
 
 .text-avatar {
@@ -186,20 +180,16 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
   border-radius: 5px;
   background-color:  rgba(151, 232, 250, 0.3);
   position: relative;
-
 }
 
 .text-avatar p {
   padding: 20px;
   width: 500px;
   font-size: 25px;
-
 }
 
 .text-avatar h4{
   padding-left: 20px;
-
-
 }
 
 .middle-text-avatar {
@@ -234,7 +224,6 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
   left: 6px;
 }
 
-
 .ilustration img {
   display: flex;
   flex-direction: row;
@@ -242,5 +231,10 @@ background: linear-gradient(90deg, rgba(0,48,102,1) 14%, rgba(18,119,197,1) 51%,
   margin-left: 20px;
 }
 
+.logo-img {
+  margin-left: 212px
+}
 
-
+#home-animation {
+  margin-top: -55px;
+}
