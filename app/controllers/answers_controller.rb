@@ -49,7 +49,7 @@ class AnswersController < ApplicationController
     if @user_traits.include? creative
       @creativity = "You are a very creative mind!"
     elsif @user_traits.include? practical
-      @creativity = "You are a rather practical person."
+      @creativity = "You are a practical person."
     else
       @creativity = "Unfortunately, you did not answer the questions about creativity..."
     end
@@ -58,7 +58,7 @@ class AnswersController < ApplicationController
     if @user_traits.include? flexible
       @flexibility = "Flexibility is your strength!"
     elsif @user_traits.include? inflexible
-      @flexibility = "You prefer a familiar environment."
+      @flexibility = "You prefer routine to variety."
     else
       @flexibility = "Unfortunately, you did not answer the questions about flexibility..."
     end
@@ -76,7 +76,7 @@ class AnswersController < ApplicationController
     if @user_traits.include? leading
       @dominance = "You are a born leader!"
     elsif @user_traits.include? submissive
-      @dominance = "You diligently follow orders. You prefer not carrry responsibility for other workers."
+      @dominance = "You diligently follow orders. You prefer to not carry responsibility for other workers."
     else
       @dominance = "Unfortunately, you did not answer the questions about leadership..."
     end
