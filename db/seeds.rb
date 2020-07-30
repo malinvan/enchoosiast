@@ -46,7 +46,7 @@ product_manager = Career.create(
   summary:'A product manager is a professional role that is responsible for the development of products for an organization, known as the practice of product management. Product managers own the business strategy behind a product (both physical and digital products), specify its functional requirements, and generally manage the launch of features. They coordinate work done by many other functions (like software engineers, data scientists, and product designers) and are ultimately responsible for the business success of the product.',
   detailed_description: 'A product manager considers numerous factors such as intended customer or user of a product, the products offered by the competition, and how well the product fits with the company\'s business model. The scope of a product manager varies greatly, some may manage one or more product lines and others (especially in large companies) may manage small components or features of a product. In the financial services industry (banking, insurance etc.), product managers manage products (for example, credit card portfolios), their profit and loss, and also determine the business development strategy.',
   social_interaction: 'high',
-  salary: 80000 ,
+  salary: 80000,
   entry_barriers: 'medium',
   remote_flexibility: 'high',
   international_flexibility: 'high',
@@ -145,7 +145,70 @@ pilot = Career.create(
   next_steps:''
 )
 
+music_producer = Career.create(
+  title: 'music producer',
+  summary:'',
+  detailed_description: '',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
 
+real_estate_broker = Career.create(
+  title: 'real estate broker',
+  summary:'A real estate broker, real estate agent or realtor is a person who represents sellers or buyers of real estate or real property. While a broker may work independently, an agent usually works under a licensed broker to represent clients. Brokers and agents are licensed by the state to negotiate sales agreements and manage the documentation required for closing real estate transactions. In North America, some brokers and agents are members of the National Association of Realtors (NAR), the largest trade association for the industry. NAR members are obligated by a code of ethics that go above and beyond state legal requirements to work in the best interest of the client. Buyers and sellers are generally advised to consult a licensed real estate professional for a written definition of an individual state\'s laws of agency, and many states require written disclosures to be signed by all parties outlining the duties and obligations.',
+  detailed_description: 'A real estate broker typically receives a real estate commission for successfully completing a sale. Across the U.S. this commission can generally range between 5-6% of the property\'s sale price for a full service broker but this percentage varies by state and even region. This commission can be divided up with other participating real estate brokers or agents. Flat-fee brokers and Fee-for-Service brokers can charge significantly less depending on the type of services offered.',
+  social_interaction: 'high',
+  salary: 40000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'medium',
+  working_hour_flexibility:'low',
+  next_steps:''
+)
+
+conductor = Career.create(
+  title: 'conductor',
+  summary:'',
+  detailed_description: '',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
+
+chef = Career.create(
+  title: 'chef',
+  summary:'',
+  detailed_description: '',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
+
+architect = Career.create(
+  title: 'chef',
+  summary:'',
+  detailed_description: '',
+  social_interaction: 'low',
+  salary: 25000 ,
+  entry_barriers: 'low',
+  remote_flexibility: 'low',
+  international_flexibility: 'high',
+  working_hour_flexibility:'medium',
+  next_steps:''
+)
 
 # OTHER CAREERS
 clown = Career.create(title: 'clown', summary:'very funny clown' , detailed_description: 'A clown is a public entertainer who dresses in outlandish
@@ -164,11 +227,6 @@ clown = Career.create(title: 'clown', summary:'very funny clown' , detailed_desc
 housekeeper = Career.create(title: 'housekeeping', summary:'clean is your passion' , detailed_description: 'make a living of cleaning',
                             social_interaction: 'easy', salary: 21000 ,  entry_barriers: 'medium', remote_flexibility: 'none',
                             international_flexibility: 'very high', working_hour_flexibility:'low', next_steps:'1.  , 2. , 3. ')
-
-chef = Career.create(title: 'chef', summary:'Love cooking' , detailed_description: 'make a living of cooking',
-                    social_interaction: 'high', salary: 27000 ,  entry_barriers: 'medium', remote_flexibility: 'none',
-                    international_flexibility: 'high', working_hour_flexibility:'low',
-                    next_steps:'1. Take cooking classes , 2. Go to culinary school, 3. Buy your knives')
 
 teacher = Career.create(title: 'teacher', summary:'Transmit knowledge' ,
                        detailed_description: 'make a living of leading the new generations to a better future',
@@ -204,17 +262,17 @@ consultant = Career.create(title: 'consultant', summary:'make you richer' , deta
                           international_flexibility: 'high', working_hour_flexibility:'very high',
                           next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
-banker= Career.create(title: 'banker', summary:'money is all for you' , detailed_description: 'make a living in a groing sector',
+banker = Career.create(title: 'banker', summary:'money is all for you' , detailed_description: 'make a living in a groing sector',
                       social_interaction: 'high', salary: 45000 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
                       international_flexibility: 'high', working_hour_flexibility:'very high',
                       next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
-doctor= Career.create(title: 'doctor', summary:'help others and cure cancer' , detailed_description: 'basic knowledge of medicine',
+doctor = Career.create(title: 'doctor', summary:'help others and cure cancer' , detailed_description: 'basic knowledge of medicine',
                       social_interaction: 'very high', salary: 52000 ,  entry_barriers: 'difficult', remote_flexibility: 'none',
                       international_flexibility: 'high', working_hour_flexibility:'very high',
                       next_steps:'1. Take acting classes , 2. Go to clown school, 3. Buy a custume and makeup')
 
-lawyer= Career.create(title: 'lawyer', summary:'Perform legal work for individuals or businesses.',
+lawyer = Career.create(title: 'lawyer', summary:'Perform legal work for individuals or businesses.',
                       detailed_description: 'As advocates, they represent one of the parties in a criminal or civil trial by presenting evidence and arguing in support of their client.
                                             As advisors, lawyers counsel their clients about their legal rights and obligations and suggest courses of action in business and personal matters.
                                             All attorneys research the intent of laws and judicial decisions and apply the laws to the specific circumstances that their clients face.',
@@ -227,11 +285,11 @@ lawyer= Career.create(title: 'lawyer', summary:'Perform legal work for individua
 puts "Creating questions..."
 
 questions = []
-questions << Question.create(question: 'I often spend time exploring unrealistic yet intriguing ideas')
-questions << Question.create(question: 'I prefer variety to routine')
-questions << Question.create(question: 'When I face a problem, I prefer talking to others about it and involve them in my problem solving process.')
-questions << Question.create(question: 'When working in teams, I usually take the initiative and the other team members follow my lead.')
-questions << Question.create(question: 'When making a decision, I rather analise the situation than trust my gut feeling.')
+questions << Question.create(question: 'I often spend time exploring unrealistic yet intriguing ideas.')
+questions << Question.create(question: 'I prefer variety to routine.')
+questions << Question.create(question: 'When I face a problem I prefer talking to others about it and involve them in my problem solving process.')
+questions << Question.create(question: 'When working in teams I usually take the initiative and the other team members follow my lead.')
+questions << Question.create(question: 'When making a decision I rather analyze the situation than trust my gut feeling.')
 
 puts "Creating traits..."
 
@@ -332,6 +390,31 @@ CareerTrait.create(career: photographer, trait: traits[3])
 CareerTrait.create(career: photographer, trait: traits[4])
 CareerTrait.create(career: photographer, trait: traits[6])
 CareerTrait.create(career: photographer, trait: traits[8])
+
+# CONDUCTOR
+CareerTrait.create(career: conductor, trait: traits[0])
+CareerTrait.create(career: conductor, trait: traits[3])
+CareerTrait.create(career: conductor, trait: traits[4])
+CareerTrait.create(career: conductor, trait: traits[6])
+CareerTrait.create(career: conductor, trait: traits[8])
+# ARCHITECT
+CareerTrait.create(career: architect, trait: traits[0])
+CareerTrait.create(career: architect, trait: traits[3])
+CareerTrait.create(career: architect, trait: traits[4])
+CareerTrait.create(career: architect, trait: traits[6])
+CareerTrait.create(career: architect, trait: traits[8])
+# MUSICPRODUCER
+CareerTrait.create(career: music_producer, trait: traits[0])
+CareerTrait.create(career: music_producer, trait: traits[3])
+CareerTrait.create(career: music_producer, trait: traits[4])
+CareerTrait.create(career: music_producer, trait: traits[6])
+CareerTrait.create(career: music_producer, trait: traits[8])
+# CHEF
+CareerTrait.create(career: chef, trait: traits[0])
+CareerTrait.create(career: chef, trait: traits[3])
+CareerTrait.create(career: chef, trait: traits[4])
+CareerTrait.create(career: chef, trait: traits[6])
+CareerTrait.create(career: chef, trait: traits[8])
 
 #OTHER CAREERS
 

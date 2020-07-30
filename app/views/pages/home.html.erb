@@ -16,8 +16,14 @@
       <div id="typed-strings">
         <p>find your passion, start your career</p>
       </div>
-      <h1>enchoosiast</h1>
-      <h2 id="home-animation"></h2>
+      <div class="header-landing">
+        <div class="landing-img">
+          <%= image_tag "enchoosiast_logo_white.png", height: "250", class: "logo-img" %>
+        </div>
+        <div class="landing-animation">
+          <h2 id="home-animation"></h2>
+        </div>
+      </div>
     </div>
     <div class="button-div">
       <%= link_to "Take your personality test", "/answers/new", class: "dark-button" %>
