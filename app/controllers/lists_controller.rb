@@ -50,7 +50,7 @@ class ListsController < ApplicationController
     )
 
     edu2 = Todo.create(
-    title: 'Software Product Management - University of Washington',
+    title: 'University of Washington - Software Product Management',
     description: '',
     completed: false,
     category: 'education',
